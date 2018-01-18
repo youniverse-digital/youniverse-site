@@ -2,7 +2,7 @@
 
 - uses parcel bundler https://parceljs.org/
 
-#dev
+# dev
 
 - cd to the folder 'youniverse' and run
 
@@ -16,6 +16,6 @@ parcel index.html
 
 to develop on localhost:1234
 
-#production
+# production
 
 upload the contents of dist to the server
