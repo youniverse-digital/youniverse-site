@@ -1,0 +1,7 @@
+header {
+	img {
+		max-width: 100%;
+		width: 100%;
+		@include slantedBottom($percent: 58%);
+	}
+}

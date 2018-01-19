@@ -1,0 +1,50 @@
+.team-panel {
+	
+	margin-bottom: $section-bottom-margin;
+
+	img {
+		width: 100%;
+		display: block;
+	}
+
+	ul {
+		display: flex;
+		padding: 0;
+		margin: $column-padding 0;
+		list-style-type: none;
+		flex-wrap: nowrap;
+		
+		li {
+			flex-grow: 1;
+			font-weight: bold;
+
+			@media(min-width: $tablet){
+				font-size: 24px;
+			}
+
+			&.active {
+				&:after {
+					display: block;
+					content: '';
+					background-color: #000;
+					width: 10px;
+					height: 2px;
+
+					@media(min-width: $tablet){
+						width: 55px;
+						height: 5px;
+					}
+				}
+			}
+		}
+	}
+
+	.team-member-info {
+		display: none;
+		padding: 0;
+
+		&.active {
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.logo {
+	z-index: 1;
+	position: fixed;
+	width: 30%;
+	min-width: 320px;
+
+	img {
+		@include slanted($top: 0%, $bottom: 0%);
+		max-width: 100%;
+		width: 100%;
+	}
+
+	&-footer {
+		position: absolute;
+		bottom: 0;
+		right:0;
+
+		img {
+			@include slanted($top: 100%, $bottom: 100%);
+			display: block;
+		}
+	}
+}
