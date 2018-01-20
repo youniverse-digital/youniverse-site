@@ -1,7 +1,52 @@
 header {
+	
+	position: relative;
+
 	img {
+		
 		max-width: 100%;
 		width: 100%;
-		@include slantedBottom($percent: 58%);
+
+		&.hero-img {
+			position: absolute;
+			top: 3%;
+			left: 0;
+			width: 80%;
+			right: 0;
+			margin: auto;
+		}
+
+		&.hero-bg {
+			@include slantedBottom($percent: 58%);
+		}
 	}
+
+	// .captions {
+	// 	position: absolute;
+	// 	top: 3%;
+	// 	left: 0;
+	// 	width: 80%;
+	// 	right: 0;
+	// 	margin: auto;
+	// 	color: #fff;
+
+	// 	h1 {
+
+	// 		margin: $column-gutter 0;
+
+	// 		&:after {
+	// 			display: block;
+	// 			content: '';
+	// 			background-color: #fff;
+	// 			transition: all $transition-time ease-out;
+	// 			width: 10px;
+	// 			height: 2px;
+
+	// 			@media(min-width: $tablet){
+	// 				width: 55px;
+	// 				height: 5px;
+	// 			}
+	// 		}
+	// 	}
+	// }
 }

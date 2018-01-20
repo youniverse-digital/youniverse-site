@@ -1,0 +1,17 @@
+.knowledge-icon {
+	display: block;
+	width: 100px;
+	margin: auto;
+	display: none;
+
+	@media(min-width: $tablet){
+		display: block;
+		right: $column-gutter;
+		top: $column-gutter;
+		position: fixed;
+	}
+
+	img {
+		width: 100%;
+	}
+}

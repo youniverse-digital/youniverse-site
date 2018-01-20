@@ -3,7 +3,11 @@
 	background-size: cover;
 	background-position: center center;
 	color: #fff;
-	padding: 200px 0 0 0;
+	padding: $column-padding 0 100px 0;
+	
+	@media(min-width: $tablet) {
+		padding: 200px 0 0 0;
+	}
  
 	.terms {
 		padding: $column-padding;

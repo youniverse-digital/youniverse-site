@@ -1,8 +1,13 @@
 .logo {
 	z-index: 1;
-	position: fixed;
 	width: 30%;
-	min-width: 320px;
+	min-width: 200px;
+	position: fixed;
+
+	@media(min-width: $tablet) {
+		position: fixed;
+		min-width: 320px;
+	}
 
 	img {
 		@include slanted($top: 0%, $bottom: 0%);

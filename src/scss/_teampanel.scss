@@ -17,23 +17,29 @@
 		li {
 			flex-grow: 1;
 			font-weight: bold;
+			cursor: pointer;
 
 			@media(min-width: $tablet){
 				font-size: 24px;
 			}
 
+			&:after {
+				display: block;
+				content: '';
+				background-color: transparent;
+				transition: all $transition-time ease-out;
+				width: 10px;
+				height: 2px;
+
+				@media(min-width: $tablet){
+					width: 55px;
+					height: 5px;
+				}
+			}
+
 			&.active {
 				&:after {
-					display: block;
-					content: '';
 					background-color: #000;
-					width: 10px;
-					height: 2px;
-
-					@media(min-width: $tablet){
-						width: 55px;
-						height: 5px;
-					}
 				}
 			}
 		}

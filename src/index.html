@@ -14,12 +14,32 @@
 		<div class="logo">
 			<img src="img/logo.jpg" alt="">
 		</div>
-		
+	
 		<header>
-			<img src="img/header.jpg" alt="">
+			<img src="img/header.jpg" alt="header image" class="hero-bg">
+			<img src="img/hero.png" alt="hero image" class="hero-img">
+			<!-- <div class="captions">
+				<h1>Smart</h1>
+				<h1>Beautiful</h1>
+				<h1>Rewarding</h1>
+			</div> -->
 		</header>
 
-		<section>
+		<nav class="menu">
+			<ul>
+				<li><a href="#about" class="current-item">About</a></li>
+				<li><a href="#why">Why</a></li>
+				<li><a href="#work">Work</a></li>
+				<li><a href="#clients">Clients</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+
+		<a href="#" class="knowledge-icon">
+			<img src="img/knowledge.png">
+		</a>
+
+		<section id="about">
 			<div class="container two-cols">
 				<div>
 					<img src="img/chris-hoy.png">
@@ -35,7 +55,8 @@
 			</div>
 		</section>
 
-		<section class="intro-panel">
+		<section id="why">
+			<img src="img/book.png" class="mckenna-book">
 			<div class="container">
 				<h2>We’re here to support you, champion you. To help you grow.</h2>
 				<div class="two-cols">
@@ -58,7 +79,7 @@
 		<section class="team-panel">
 			<img src="img/team.jpg">
 			<div class="container">
-				<ul>
+				<ul class="team-list">
 					<li data-target='team_mem_1' class="active">Joe</li>
 					<li data-target='team_mem_2'>Alex</li>
 					<li data-target='team_mem_3'>Dale</li>
@@ -77,7 +98,7 @@
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
 				<div id="team_mem_2" class="team-member-info">
-					<h3>Development</h3>
+					<h3>Creative Direction</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -95,7 +116,7 @@
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
 				<div id="team_mem_4" class="team-member-info">
-					<h3>Development</h3>
+					<h3>Design</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -113,7 +134,7 @@
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
 				<div id="team_mem_6" class="team-member-info">
-					<h3>Development</h3>
+					<h3>Project Managment</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -133,13 +154,13 @@
 			</div>
 		</section>
 
-		<section class="work-slider">
+		<section class="work-slider" id="work">
 			<div class="container">
 				<img src="img/partridge.jpg">
 			</div>
 		</section>
 
-		<section class="work-panels">
+		<section class="work-panels" id="clients">
 			<div class="container">
 				<div class="work-item">
 					<div class="inner-bg">
@@ -149,56 +170,62 @@
 						<h4>Chris Hoy</h4>
 						<p>Website</p>
 					</div>
+					<img src="img/bonnier.png" class="client">
 				</div>
 				<div class="work-item" style="">
 					<div class="inner-bg">
-						<img src="img/work-chris.jpg">
+						<img src="img/snowman.jpg">
 					</div>
 					<div class="captions">
 						<h4>Chris Hoy</h4>
 						<p>Website</p>
 					</div>
+					<img src="img/penguin.png" class="client">
 				</div>
 				<div class="work-item">
 					<div class="inner-bg">
-						<img src="img/work-chris.jpg">
+						<img src="img/verve-color.jpg">
 					</div>
 					<div class="captions">
 						<h4>Chris Hoy</h4>
 						<p>Website</p>
 					</div>
+					<img src="img/verve.png" class="client">
 				</div>
 				<div class="work-item">
 					<div class="inner-bg">
-						<img src="img/work-chris.jpg">
+						<img src="img/crayons.jpg">
 					</div>
 					<div class="captions">
 						<h4>Chris Hoy</h4>
 						<p>Website</p>
 					</div>
+					<img src="img/hachette.png" class="client">
 				</div>
 				<div class="work-item">
 					<div class="inner-bg">
-						<img src="img/work-chris.jpg">
+						<img src="img/apollo.jpg">
 					</div>
 					<div class="captions">
 						<h4>Chris Hoy</h4>
 						<p>Website</p>
 					</div>
+					<img src="img/bbc.png" class="client">
 				</div>
 				<div class="work-item">
 					<div class="inner-bg">
-						<img src="img/work-chris.jpg">
+						<img src="img/beckett.jpg">
 					</div>
 					<div class="captions">
 						<h4>Chris Hoy</h4>
 						<p>Website</p>
 					</div>
+					<img src="img/hulu.png" class="client">
 				</div>
 			</div>
 		</section>
 
-		<section class="contact">
+		<section class="contact" id="contact">
 			<div class="container two-cols">
 				<div>
 					<img src="img/map.png">
@@ -228,11 +255,18 @@
 			<img src="img/logo-footer.png" alt="">
 		</div>
 
-
-
-
-
-
-
 	</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+

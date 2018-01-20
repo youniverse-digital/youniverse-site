@@ -1,0 +1,16 @@
+#why {
+	margin-bottom: $section-bottom-margin;
+	position: relative;
+
+	.mckenna-book {
+		max-width: 100%;
+		float: right;
+		width: 50%;
+
+		@media(min-width: $tablet) {
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+}
