@@ -1,0 +1,33 @@
+#about {
+	position: relative;
+	
+	@media(min-width: $tablet){
+		@include slanted($bottom: 40%, $top: 0%);
+		@include angle(after, false, 19.8deg, 30px, #e5eff3);
+
+		&:after {
+			bottom: 56%;
+			z-index: 0;
+		}
+	}
+
+	.blue-bar {
+		position: absolute;
+		width: 100%;
+		bottom: -33%;
+	}
+
+	.container {
+		@media(min-width: $tablet){
+			margin-top: -15%;	
+		}
+
+		h2 {
+			margin-top: 0;
+		}
+		
+		.about-image {
+			margin-top: 15%;
+		}
+	}
+}

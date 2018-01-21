@@ -9,11 +9,15 @@ header {
 
 		&.hero-img {
 			position: absolute;
-			top: 3%;
+			top: 8%;
 			left: 0;
 			width: 80%;
 			right: 0;
 			margin: auto;
+
+			@media(min-width: $lg-phone){
+				top: 5%;
+			}
 		}
 
 		&.hero-bg {

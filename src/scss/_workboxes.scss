@@ -16,8 +16,12 @@
 
 			@media(min-width: $tablet) {
 				margin: 0;
+			}
+
+			@media(min-width: $laptop){
 				height: 350px;
 			}
+
 
 			&:nth-child(1){
 				background: -webkit-linear-gradient(302deg, rgb(49, 190, 217) 0%, rgb(70, 201, 209) 100%);

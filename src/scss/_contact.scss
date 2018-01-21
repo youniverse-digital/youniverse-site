@@ -4,9 +4,26 @@
 	background-position: center center;
 	color: #fff;
 	padding: $column-padding 0 100px 0;
+	position: relative;
 	
 	@media(min-width: $tablet) {
 		padding: 200px 0 0 0;
+	}
+
+	.alpha-bg {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		background: rgba(0,0,0,0.2);
+		z-index: 1;
+	}
+
+	.container {
+		position: relative;
+		z-index: 2;
 	}
  
 	.terms {

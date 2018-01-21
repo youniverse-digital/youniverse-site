@@ -1,6 +1,21 @@
 #why {
 	margin-bottom: $section-bottom-margin;
 	position: relative;
+	
+	@media(min-width: $tablet){
+		// @include slanted($bottom: 40%, $top: 0%);
+		@include angle(before, false, -20.2deg, 10px, $youniverse-red);
+
+		&:before {
+			top: -23%;
+			z-index: 0;
+		}
+	}
+
+	@media(min-width: $tablet) {
+		padding-top: 300px;
+		margin-top: -20%;
+	}
 
 	.mckenna-book {
 		max-width: 100%;

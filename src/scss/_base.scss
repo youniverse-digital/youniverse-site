@@ -20,11 +20,38 @@ h1 {
 h2 {
 
 }
+
 p {
 	margin: $column-gutter 0;
+}
+
+a {
+	color: $youniverse-red;
+	text-decoration: none;
+	font-weight: bold;
 }
 
 blockquote {
 	padding: 0;
 	margin: $column-gutter 0;
+	font-weight: bold;
+
+	&:before {
+		content: '';
+		display: block;
+		background-color: $youniverse-red;
+		width: 100%;
+		height: 2px;
+		margin-bottom: 10px;
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		background-color: $youniverse-red;
+		width: 100%;
+		height: 2px;
+		margin-top: 10px;
+	}
+
 }
