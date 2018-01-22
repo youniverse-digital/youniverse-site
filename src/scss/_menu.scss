@@ -7,17 +7,29 @@
 	transition: background-color 0.1s ease-in-out, left 0.4s ease-in-out, opacity 0.3s ease-in-out;
 	font-family: Helvetica, Arial, sans-serif;
 	position: fixed;
-	top: 200px;
+	top: 100px;
 
 	&.active {
 		background-color: #fff;
-		// width: 100%;
 	}
-
 
 	&.nav-hide {
 		opacity: 0;
 		left: -300px;
+	}
+
+	@media(min-width: $tablet) {
+		position: fixed;
+		top: 200px;
+		width: 120px;
+	}
+
+	@media(min-width: $desktop){
+		top: 300px;
+	}
+
+	@media(min-width: $large-desktop){
+		top: 400px;
 	}
 
 	#menuToggle {
@@ -69,20 +81,6 @@
 				}
 			}
 		}
-	}
-
-	@media(min-width: $tablet) {
-		position: fixed;
-		top: 200px;
-		width: 120px;
-	}
-
-	@media(min-width: $desktop){
-		top: 300px;
-	}
-
-	@media(min-width: $large-desktop){
-		top: 400px;
 	}
 
 	ul {

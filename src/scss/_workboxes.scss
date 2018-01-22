@@ -1,9 +1,13 @@
 .work-panels {
 
-	margin-bottom: $section-bottom-margin;
+	margin-bottom: $section-bottom-margin/2;
+
+    @media(min-width: $tablet){
+        margin-bottom: $section-bottom-margin;
+    }
 
 	.container {
-		@media(min-width: $tablet){
+		@media(min-width: 600px){
 			display: grid;
 		    grid-template-columns: repeat(2, 1fr);
 		}
@@ -15,6 +19,7 @@
 			margin: $column-gutter auto;
 			color: $font-colour;
 			display: block;
+			width: 100%;
 
 			@media(min-width: $tablet) {
 				margin: 0;
@@ -23,7 +28,6 @@
 			@media(min-width: $laptop){
 				height: 350px;
 			}
-
 
 			&:nth-child(1){
 				background: -webkit-linear-gradient(302deg, rgb(49, 190, 217) 0%, rgb(70, 201, 209) 100%);
@@ -113,10 +117,6 @@
 				bottom: 0;
 				left: 0;
 				padding: ($column-padding/2) $column-padding;
-
-				// @media(min-width: $tablet) {
-				// 	padding: $column-padding;
-				// }
 
 				h4 {
 					margin: 0;

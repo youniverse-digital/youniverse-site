@@ -1,6 +1,10 @@
 .work-slider {
 
-    margin-bottom: $section-bottom-margin;
+    margin-bottom: $section-bottom-margin/2;
+
+    @media(min-width: $tablet){
+        margin-bottom: $section-bottom-margin;
+    }
 
     .slider-wrapper {
 
@@ -47,6 +51,11 @@
             cursor: pointer;
             z-index: 3;
             background-color: #fff;
+            display: none;
+
+            @media(min-width: $tablet){
+                display: block;
+            }
 
             svg {
                 width: 25px;

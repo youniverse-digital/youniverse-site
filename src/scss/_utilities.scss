@@ -71,9 +71,13 @@
     background-position: center center;
     background-repeat: no-repeat;
     display: block;
-    margin: $column-gutter 0;
-    max-width: 100%;
-    padding: 20px 0;
+    margin: $column-gutter auto;
+    max-width: 260px;
+    padding: 13px 0;
+
+    // @media(min-width: $tablet){
+    // 	padding: 20px 0;
+    // }
 }
 
 

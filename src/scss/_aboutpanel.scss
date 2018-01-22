@@ -1,54 +1,90 @@
 #about {
 	position: relative;
+	margin-top: -18%;
 
 	@media(min-width: $tablet){
-		@include slanted($bottom: 40%, $top: 0%);
-		// @include angle(after, false, 19.8deg, 30px, #e5eff3);
+		margin-top: -24%;
+	}
 
-		&:after {
-			bottom: 56%;
-			z-index: 0;
-		}
+	@media(min-width: $tablet-landscape){
+		margin-top: -40%;
+	}
+
+	@media(min-width: $laptop) {
+		margin-top:	-53%;
 	}
 
 	.knowledge-icon {
 		right: $column-gutter;
-		top: -70px;
+		top: -20px;
 		position: absolute;
 		z-index: 2;
 		display: block;
+
 		@media(min-width: $tablet){
 			display: none;
 		}
 	}
 
-	.blue-bar {
-		position: absolute;
+	.about-bg {
+		@include slantedBottom($percent: 80%);
 		width: 100%;
-		bottom: -33%;
 	}
 
 	.container {
 
+		margin-top: -97%;
+
 		@media(min-width: $tablet){
-			margin-top: -15%;
+			margin-top: -100%;
+		}
+
+		@media(min-width: $tablet-landscape){
+			margin-top: -80%;
+		}
+
+		@media(min-width: $laptop) {
+			margin-top: -69%;
+		}
+
+		@media(min-width: $huge-desktop){
+			margin-top: -32%;
 		}
 
 		h2 {
 			margin-top: 0;
 		}
 
+		div {
+
+			&:last-child {
+				margin-top: 17%;
+			}
+		}
+
 		.about-image {
 			display: block;
 			margin: 0 auto;
 			@include slantedBottom($percent: 80%);
-			
+			width: 47.7%;
+
 			@media(min-width: $tablet){
-				margin: 15% auto auto auto;
+				margin: 99.5% auto auto auto;
+				width: 100%;
+				max-width: 100%;
+			}
+
+			@media(min-width: 900px){
+				margin: 96% auto auto auto;
+			}
+
+			@media(min-width: $tablet-landscape){
+				margin-top: 36%;
 			}
 
 			@media(min-width: $laptop) {
-				margin: 20% auto auto auto;
+				margin: 35% auto auto auto;
+				width: 80%;
 			}
 		}
 	}

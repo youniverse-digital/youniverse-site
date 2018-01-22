@@ -1,6 +1,10 @@
 .team-panel {
-	
-	margin-bottom: $section-bottom-margin;
+
+	margin-bottom: $section-bottom-margin/2;
+
+    @media(min-width: $tablet){
+        margin-bottom: $section-bottom-margin;
+    }
 
 	img {
 		width: 100%;
@@ -12,22 +16,28 @@
 		padding: 0;
 		margin: $column-padding 0;
 		list-style-type: none;
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
+
+		@media(min-width: $tablet){
+			flex-wrap: nowrap;
+		}
 
 		@media(min-width: $desktop){
 			margin: ($column-padding*3) 0;
 		}
-		
+
 		li {
-			flex-grow: 1;
+			flex-grow: 0;
 			font-weight: bold;
 			cursor: pointer;
-			&::selection {
-			  background: transparent;
-			}
+			width: 25%;
+			margin-bottom: 8px;
 
 			@media(min-width: $tablet){
+				flex-grow: 1;
 				font-size: 14px;
+				width: auto;
+				margin-bottom: 0;
 			}
 
 			@media(min-width: $laptop){
@@ -41,6 +51,7 @@
 				transition: all $transition-time ease-out;
 				width: 10px;
 				height: 2px;
+				margin: 5px 0 0 0;
 
 				@media(min-width: $tablet){
 					width: 25px;

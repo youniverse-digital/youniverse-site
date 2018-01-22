@@ -49,8 +49,9 @@ a {
 
 blockquote {
 	padding: 0;
-	margin: 0 0 $column-gutter 0;
 	font-weight: bold;
+    max-width: 320px;
+    margin: 25px auto 0px auto;
 
 	&:before {
 		content: '';
@@ -58,7 +59,7 @@ blockquote {
 		background-color: $youniverse-red;
 		width: 100%;
 		height: $youniverse-thin-line-height;
-		margin-bottom: 10px;
+		margin: 20px 0;
 	}
 
 	&:after {
@@ -67,7 +68,31 @@ blockquote {
 		background-color: $youniverse-red;
 		width: 100%;
 		height: $youniverse-thin-line-height;
-		margin-top: 10px;
+		margin: 20px 0 10px 0;
 	}
 
+	@media(min-width: $tablet){
+	    max-width: none;
+	    margin: 0 0 $column-gutter 0;
+	}
 }
+
+.quote-source {
+	max-width: 320px;
+    margin: 0 auto 20px auto;
+
+    @media(min-width: $tablet){
+	    max-width: none;
+	    margin: 0 0 $column-gutter 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,10 +1,10 @@
 #why {
-	margin-bottom: $section-bottom-margin;
+	margin-bottom: $section-bottom-margin/2;
 	position: relative;
 
 	@media(min-width: $tablet){
-		// @include slanted($bottom: 40%, $top: 0%);
-		// @include angle(before, false, -20.2deg, 10px, $youniverse-red);
+
+		margin-bottom: $section-bottom-margin;
 
 		&:before {
 			top: -23%;
@@ -17,18 +17,31 @@
 		margin-top: -20%;
 	}
 
+	@media(min-width: $tablet-landscape) {
+		padding-top: 250px;
+	}
+
 	@media(min-width: $laptop) {
 		padding-top: 300px;
-		margin-top: -15%;
+	    margin-top: -22%;
 	}
 
 	@media(min-width: $desktop) {
 		padding-bottom: 100px;
+		margin-top: -12%;
+	}
+
+	@media(min-width: $large-desktop) {
+
+	}
+
+	@media(min-width: $huge-desktop) {
+		margin-top: -10%;
 	}
 
 	.container {
 		h2 {
-			
+
 			max-width: 500px;
 
 			&:after {
@@ -36,9 +49,9 @@
 			}
 		}
 		.two-cols {
-			
+
 			@media(min-width: $desktop){
-				margin-top: 50px; 
+				margin-top: 50px;
 			}
 
 			div {
@@ -70,13 +83,17 @@
 		@media(min-width: $tablet) {
 			position: absolute;
 			right: 0;
-			top: -5%;
+			top: 5%;
 			max-width: 400px;
 		}
 
 		@media(min-width: $desktop) {
 		    max-width: 600px;
 		    top: -10%;
+		}
+
+		@media(min-width: $large-desktop) {
+			width: 90%;
 		}
 	}
 }

@@ -7,7 +7,7 @@
 	position: relative;
 
 	@media(min-width: $tablet) {
-		padding: 200px 0 0 0;
+		padding: 80px 0 20px 0;
 	}
 
 	.alpha-bg {
@@ -28,8 +28,6 @@
 		&.two-cols {
 			div {
 				h2 {
-					// @include bottomLine($color: #fff, $width: 30px);
-					// font-size: 40px;
 					&:after {
 						background-color: #fff;
 					}
@@ -46,9 +44,13 @@
 				&:first-child {
 					img {
 						width: 100%;
-						max-width: 350px;
+						max-width: 260px;
 						margin: auto;
 						display: block;
+
+						@media(min-width: $tablet){
+							max-width: 350px;
+						}
 
 						@media(min-width: $desktop){
 							max-width: 450px;
