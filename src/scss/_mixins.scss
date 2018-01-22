@@ -1,0 +1,14 @@
+@mixin bottomLine($color, $width){
+	&:after {
+		display: block;
+		content: '';
+		background-color: $color;
+		transition: all $transition-time ease-out;
+		width: $width;
+		height: 2px;
+
+		@media(min-width: $laptop){
+
+		}
+	}
+}

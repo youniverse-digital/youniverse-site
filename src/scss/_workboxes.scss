@@ -1,7 +1,7 @@
 .work-panels {
-	
+
 	margin-bottom: $section-bottom-margin;
-	
+
 	.container {
 		@media(min-width: $tablet){
 			display: grid;
@@ -74,7 +74,7 @@
 				img {
 					width: 100%;
 					height: 100%;
-					object-fit: cover;				
+					object-fit: cover;
 				}
 			}
 

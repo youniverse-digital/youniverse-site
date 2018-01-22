@@ -8,21 +8,17 @@
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cutive+Mono|Lato:300,400">
 	</head>
 	<body>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/lory.js/2.3.4/lory.min.js" type="text/javascript"></script>
+		<script src="https://rawgit.com/ruyadorno/simple-slider/master/dist/simpleslider.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 		<script src="./index.js" type="text/javascript"></script>
-		
+
 		<div class="logo">
 			<img src="img/logo.jpg" alt="">
 		</div>
-	
+
 		<header>
 			<img src="img/header.jpg" alt="header image" class="hero-bg">
 			<img src="img/hero.png" alt="hero image" class="hero-img">
-			<!-- <div class="captions">
-				<h1>Smart</h1>
-				<h1>Beautiful</h1>
-				<h1>Rewarding</h1>
-			</div> -->
 		</header>
 
 		<nav class="menu">
@@ -73,11 +69,13 @@
 							They have revolutionised the way my products look with their creative vision.
 						</blockquote>
 						<p>Paul McKenna</p>
+						<a href="#" class="button">Our services</a>
+						<a href="#" class="button">Our knowledge network</a>
 					</div>
 				</div>
 			</div>
 		</section>
-		
+
 		<section class="team-panel">
 			<img src="img/team.jpg">
 			<div class="container">
@@ -158,45 +156,32 @@
 
 		<section class="work-slider" id="work">
 			<div class="container">
-				<!-- <ul>
-					<li class="active"><img src="img/partridge.jpg"></li>
-					<li><img src="img/work-item-2.jpg"></li>
-					<li><img src="img/work-item-3.jpg"></li>
-					<li><img src="img/work-item-4.jpg"></li>
-				</ul> -->
-
-				
-				<div class="slider js_simple_dots simple">
-	                <div class="frame js_frame">
-	                    <ul class="slides js_slides">
-	                        <li class="js_slide"><img src="img/partridge.jpg"></li>
-	                        <li class="js_slide"><img src="img/partridge.jpg"></li>
-	                        <li class="js_slide"><img src="img/partridge.jpg"></li>
-	                        <li class="js_slide"><img src="img/partridge.jpg"></li>
-	                        <li class="js_slide"><img src="img/partridge.jpg"></li>
-	                        <li class="js_slide"><img src="img/partridge.jpg"></li>
-	                </ul>
-	                </div>
-
-	                <span class="js_prev prev">
-	                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#2E435A" d="M302.67 90.877l55.77 55.508L254.575 250.75 358.44 355.116l-55.77 55.506L143.56 250.75z"></path></g></svg>
+	            <div class="slider-wrapper">
+	            	<div class="slider" id="myslider">
+						<img src="img/partridge.jpg">
+						<img src="img/work-item-2.jpg">
+						<img src="img/work-item-3.jpg">
+						<img src="img/work-item-4.jpg">
+					</div>
+					<ul class="dots">
+					    <li class="active"></li>
+					    <li></li>
+					    <li></li>
+					    <li></li>
+					</ul>
+					<span class="prev">
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#2E435A" d="M302.67 90.877l55.77 55.508L254.575 250.75 358.44 355.116l-55.77 55.506L143.56 250.75z"/></g></svg>
 	                </span>
-
-	                <span class="js_next next">
-	                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#2E435A" d="M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z"></path></g></svg>
+	                <span class="next">
+	                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#2E435A" d="M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z"/></g></svg>
 	                </span>
-
-	                <ul class="js_dots dots"><li class="active"></li><li></li><li></li><li></li><li></li><li></li></ul>
 	            </div>
-
-
-
 			</div>
 		</section>
 
 		<section class="work-panels" id="clients">
 			<div class="container">
-				<div class="work-item">
+				<a class="work-item" href="./single-work.html">
 					<div class="inner-bg">
 						<img src="img/work-chris.jpg">
 					</div>
@@ -205,8 +190,8 @@
 						<p>Website</p>
 					</div>
 					<img src="img/bonnier.png" class="client">
-				</div>
-				<div class="work-item" style="">
+				</a>
+				<a class="work-item" style="" href="./single-work.html">
 					<div class="inner-bg">
 						<img src="img/snowman.jpg">
 					</div>
@@ -215,8 +200,8 @@
 						<p>Website</p>
 					</div>
 					<img src="img/penguin.png" class="client">
-				</div>
-				<div class="work-item">
+				</a>
+				<a class="work-item" href="./single-work.html">
 					<div class="inner-bg">
 						<img src="img/verve-color.jpg">
 					</div>
@@ -225,8 +210,8 @@
 						<p>Website</p>
 					</div>
 					<img src="img/verve.png" class="client">
-				</div>
-				<div class="work-item">
+				</a>
+				<a class="work-item" href="./single-work.html">
 					<div class="inner-bg">
 						<img src="img/crayons.jpg">
 					</div>
@@ -235,8 +220,8 @@
 						<p>Website</p>
 					</div>
 					<img src="img/hachette.png" class="client">
-				</div>
-				<div class="work-item">
+				</a>
+				<a class="work-item" href="./single-work.html">
 					<div class="inner-bg">
 						<img src="img/apollo.jpg">
 					</div>
@@ -245,8 +230,8 @@
 						<p>Website</p>
 					</div>
 					<img src="img/bbc.png" class="client">
-				</div>
-				<div class="work-item">
+				</a>
+				<a class="work-item" href="./single-work.html">
 					<div class="inner-bg">
 						<img src="img/beckett.jpg">
 					</div>
@@ -255,7 +240,7 @@
 						<p>Website</p>
 					</div>
 					<img src="img/hulu.png" class="client">
-				</div>
+				</a>
 			</div>
 		</section>
 
@@ -267,15 +252,18 @@
 				</div>
 				<div>
 					<h2>Contact</h2>
-					<p>0116 261 6853</p>
-					<p>Our studios are locatated in London and Leicester.</p>
-					<p>We’re based anywhere and everywhere.</p>
-					<p>Enlightened design at your service,</p>
-					<p>Leicester Studio</p>
+					<p class="phone">0116 261 6853</p>
+					<p>Our studios are locatated in London and Leicester. We’re based anywhere and everywhere.</p>
+					<p>Enlightened design at your service</p>
+					<br>
+					<br>
+					<p><strong>Leicester Studio</strong></p>
 					<p>31 Rutland St</p>
 					<p>Leicester</p>
 					<p>LE1 1RE</p>
-					<p>contact@youniverse.co.uk</p>
+					<br>
+					<br>
+					<p><a href="mailto:contact@youniverse.co.uk">contact@youniverse.co.uk</a></p>
 					<p>Skype us: youniverseltd</p>
 				</div>
 			</div>

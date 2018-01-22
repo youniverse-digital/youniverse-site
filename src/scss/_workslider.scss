@@ -1,81 +1,74 @@
 .work-slider {
-	
-	margin-bottom: $section-bottom-margin;
 
-	ul {
-		margin: 0;
-		padding: 0;
-		list-style-type: none;
+    margin-bottom: $section-bottom-margin;
 
-		li {
-			// display: none;
+    .slider-wrapper {
 
-			// &.active {
-			// 	display: block;
-			// }
+        position: relative;
 
-			img {
-				width: 100%;
-			}
-		}
-	}
+        .slider {
+            width: 100%;
+            padding-bottom: 64%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .dots {
+
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            position: absolute;
+            bottom: $column-gutter;
+            right: $column-gutter;
+            z-index: 3;
+
+            li {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                background-color: #fff;
+                border-radius: 50%;
+                transition: all $transition-time ease-out;
+
+                &.active {
+                    background-color: $youniverse-teal;
+                }
+            }
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            margin-top: -25px;
+            display: block;
+            cursor: pointer;
+            z-index: 3;
+            background-color: #fff;
+
+            svg {
+                width: 25px;
+            }
+        }
+
+        .next {
+            right: 0;
+        }
+
+        .prev {
+            left: 0;
+        }
+    }
 }
 
 
-   /**
-             * (optional) define here the style definitions which should be applied on the slider container
-             * e.g. width including further controls like arrows etc.
-             */
-            .slider {
-            	height: 500px;
-            }
 
-            .frame {
-                /**
-                 * (optional) wrapper width, specifies width of the slider frame.
-                 */
-                width: 880px;
 
-                position: relative;
-                font-size: 0;
-                line-height: 0;
-                overflow: hidden;
-                white-space: nowrap;
-            }
 
-            .slides {
-                display: inline-block;
-                height: 100%;
-            }
 
-            li {
-                position: relative;
-                display: inline-block;
 
-                /**
-                 * (optional) if the content inside the slide element has a defined size.
-                 */
-                width: 880px;
-                height: 100%;
-            }
 
-            .prev, .next {
-                position: absolute;
-                top: 50%;
-                margin-top: -25px;
-                display: block;
-                cursor: pointer;
-            }
 
-            .next {
-                right: 0;
-            }
 
-            .prev {
-                left: 0;
-            }
-
-            .next svg, .prev svg {
-                width: 25px;
-            }
-            

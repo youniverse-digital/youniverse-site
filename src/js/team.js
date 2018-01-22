@@ -1,4 +1,5 @@
-window.onload = function(){
+function init(){
+	console.log('set tea');
 	const teamBtns = document.querySelectorAll('.team-list li');
 
 	teamBtns.forEach(function(memberBtn){
@@ -10,5 +11,10 @@ window.onload = function(){
 		e.target.classList.add('active');
 		document.querySelector('.team-member-info.active').classList.remove('active');
 		document.getElementById(e.target.dataset.target).classList.add('active');
-	}	
+	}
+}
+
+
+module.exports = {
+	init : init
 }

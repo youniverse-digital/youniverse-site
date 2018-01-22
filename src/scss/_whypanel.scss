@@ -1,10 +1,10 @@
 #why {
 	margin-bottom: $section-bottom-margin;
 	position: relative;
-	
+
 	@media(min-width: $tablet){
 		// @include slanted($bottom: 40%, $top: 0%);
-		@include angle(before, false, -20.2deg, 10px, $youniverse-red);
+		// @include angle(before, false, -20.2deg, 10px, $youniverse-red);
 
 		&:before {
 			top: -23%;
@@ -17,6 +17,22 @@
 		margin-top: -20%;
 	}
 
+	.container {
+
+		div {
+			&:first-child {
+				&:before {
+					content: '';
+					display: block;
+					background-color: #000;
+					width: 30px;
+					height: 2px;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+
 	.mckenna-book {
 		max-width: 100%;
 		float: right;
@@ -25,7 +41,8 @@
 		@media(min-width: $tablet) {
 			position: absolute;
 			right: 0;
-			top: 0;
+			top: -5%;
+			max-width: 500px;
 		}
 	}
 }

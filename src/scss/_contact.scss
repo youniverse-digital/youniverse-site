@@ -5,7 +5,7 @@
 	color: #fff;
 	padding: $column-padding 0 100px 0;
 	position: relative;
-	
+
 	@media(min-width: $tablet) {
 		padding: 200px 0 0 0;
 	}
@@ -17,15 +17,45 @@
 		top: 0;
 		bottom: 0;
 		margin: auto;
-		background: rgba(0,0,0,0.2);
+		background: rgba(0,0,0,0.3);
 		z-index: 1;
 	}
 
 	.container {
 		position: relative;
 		z-index: 2;
+
+		&.two-cols {
+			div {
+				h2 {
+					@include bottomLine($color: #fff, $width: 30px);
+					font-size: 40px;
+				}
+
+				.phone {
+					font-size: 50px;
+				}
+
+				a {
+					color: #fff;
+				}
+
+				&:first-child {
+					img {
+						width: 100%;
+						max-width: 350px;
+						margin: auto;
+						display: block;
+
+						@media(min-width: $desktop){
+							max-width: 450px;
+						}
+					}
+				}
+			}
+		}
 	}
- 
+
 	.terms {
 		padding: $column-padding;
 	}

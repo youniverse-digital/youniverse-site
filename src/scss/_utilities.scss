@@ -132,9 +132,9 @@
 
 	@media(min-width: $tablet){
 		@include columns(2, 10px);
-		padding: $column-padding;
+		// padding: $column-padding;
 	}
-	
+
 	div {
 		img {
 			max-width: 100%;
@@ -146,15 +146,12 @@
 	max-width: 1170px;
 	margin: auto;
 	padding: $column-padding;
-	
+
 	@media(min-width: $tablet){
 		padding: 0;
 		width: 70%;
 	}
 }
-
-
-
 
 .red-bar {
 	position: absolute;
@@ -163,7 +160,18 @@
 }
 
 
-
+.button {
+    text-align: center;
+    color: $font-colour;
+    background: url('../img/button-bg.jpg');
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    margin: $column-gutter 0;
+    max-width: 100%;
+    padding: 20px 0;
+}
 
 
 

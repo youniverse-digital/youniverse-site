@@ -5,6 +5,11 @@
 	left: 0;
 	width: 100%;
 	padding: $column-padding;
+	transition: all 0.3s ease-in-out;
+
+	&.nav-hide {
+		opacity: 0;
+	}
 
 	@media(min-width: $tablet) {
 		position: fixed;
@@ -20,7 +25,7 @@
 		@media(min-width: $tablet) {
 			width: 200px;
 		}
-		
+
 		li {
 			cursor: pointer;
 
@@ -30,7 +35,8 @@
 				text-transform: uppercase;
 				text-decoration: none;
 				color: $font-colour;
-				text-shadow: 4px 4px 9px rgba(255, 255, 255, 1);
+				margin: ($column-gutter) 0;
+
 
 				&:after {
 					display: block;
@@ -41,13 +47,13 @@
 					height: 2px;
 
 					@media(min-width: $laptop){
-						width: 55px;
-						height: 5px;
+						// width: 55px;
+						// height: 2px;
 					}
 				}
 
 				&.current-item {
-					color: #0eb8c3;
+					color: $youniverse-teal;
 
 					&:after {
 						background-color: #000;
