@@ -2,6 +2,12 @@ header {
 	
 	position: relative;
 
+	// @media(min-width: $large-desktop){
+	// 	height: 100vh;
+	// 	background-color: blue;
+	// 	@include slantedBottom($percent: 58%);
+	// }
+
 	img {
 		
 		max-width: 100%;
@@ -14,6 +20,7 @@ header {
 			width: 80%;
 			right: 0;
 			margin: auto;
+			max-width: 1400px;
 
 			@media(min-width: $lg-phone){
 				top: 5%;
@@ -21,7 +28,18 @@ header {
 		}
 
 		&.hero-bg {
-			@include slantedBottom($percent: 58%);
+			// @include slantedBottom($percent: 58%);
+			@include slantedBottom($percent: 80%);
+
+			@media(min-width: $large-desktop){
+				// display: none;
+			}
+
+			@media(min-width: $huge-desktop){
+				// width: 100%;
+			 //    height: 100%;
+			 //    object-fit: cover;
+			}
 		}
 	}
 

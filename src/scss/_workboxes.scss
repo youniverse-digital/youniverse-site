@@ -13,6 +13,8 @@
 			position: relative;
 			overflow: hidden;
 			margin: $column-gutter auto;
+			color: $font-colour;
+			display: block;
 
 			@media(min-width: $tablet) {
 				margin: 0;

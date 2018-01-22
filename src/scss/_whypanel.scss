@@ -17,17 +17,46 @@
 		margin-top: -20%;
 	}
 
-	.container {
+	@media(min-width: $laptop) {
+		padding-top: 300px;
+		margin-top: -15%;
+	}
 
-		div {
-			&:first-child {
-				&:before {
-					content: '';
-					display: block;
-					background-color: #000;
-					width: 30px;
-					height: 2px;
-					margin-bottom: 10px;
+	@media(min-width: $desktop) {
+		padding-bottom: 100px;
+	}
+
+	.container {
+		h2 {
+			
+			max-width: 500px;
+
+			&:after {
+				display: none;
+			}
+		}
+		.two-cols {
+			
+			@media(min-width: $desktop){
+				margin-top: 50px; 
+			}
+
+			div {
+				&:first-child {
+					&:before {
+						content: '';
+						display: block;
+						background-color: #000;
+						width: 30px;
+						height: 4px;
+						margin-bottom: 10px;
+					}
+				}
+
+				&:last-child {
+					@media(min-width: $laptop){
+						padding-left: 100px;
+					}
 				}
 			}
 		}
@@ -42,7 +71,12 @@
 			position: absolute;
 			right: 0;
 			top: -5%;
-			max-width: 500px;
+			max-width: 400px;
+		}
+
+		@media(min-width: $desktop) {
+		    max-width: 600px;
+		    top: -10%;
 		}
 	}
 }

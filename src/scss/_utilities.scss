@@ -1,98 +1,7 @@
-@mixin slantedBottom($percent){
-	clip-path: polygon(0 0, 100% 0, 100% $percent, 0 100%);
-}
-
-@mixin slanted($top, $bottom){
-	clip-path: polygon(0% $top, 100% 0%, 100% $bottom, 0% 100%);
-	-webkit-clip-path: polygon(0% $top, 100% 0%, 100% $bottom, 0% 100%);
-}
-
 .slanted {
 	@include slanted($bottom: 10%, $top: 89%);
 	width: 100%;
 	max-width: 100%;
-}
-
-@mixin columns($numCols, $gridGap) {
-	display: grid;
-	grid-template-columns: repeat($numCols, 1fr);
-	grid-gap: $gridGap;
-}
-
-
-@mixin angle($pseudo, $flip: false, $angle: 1.5deg, $height: inherit, $bg-color: inherit) {
-  // Possible values for $pseudo are: before, after, both
-  @if $pseudo == 'before' or $pseudo == 'after' or $pseudo == 'both' {
-    position: relative;
-    z-index: 1;
-    $selector: if($pseudo == 'both', '&:before,&:after', '&:#{$pseudo}');
-
-    #{$selector} {
-      background: $bg-color;
-      content: '';
-      display: block;
-      height: $height;
-      left: 0;
-      position: absolute;
-      right: 0;
-      z-index: -1;
-      -webkit-backface-visibility: hidden; // for Chrome Windows
-    }
-
-    @if $pseudo == 'before' {
-      #{$selector} {
-        top: 0;
-
-        @if $flip {
-          transform: skewY($angle * -1);
-          transform-origin: 0 0;
-        } @else {
-          transform: skewY($angle);
-          transform-origin: 100% 0;
-        }
-      }
-    }
-
-    @if $pseudo == 'after' {
-      #{$selector} {
-        bottom: 0;
-
-        @if $flip {
-          transform: skewY($angle);
-          transform-origin: 0 100%;
-        } @else {
-          transform: skewY($angle * -1);
-          transform-origin: 100%;
-        }
-      }
-    }
-
-    @if $pseudo == 'both' {
-      &:before {
-        top: 0;
-
-        @if $flip {
-          transform: skewY($angle * -1);
-          transform-origin: 0 0;
-        } @else {
-          transform: skewY($angle);
-          transform-origin: 100% 0;
-        }
-      }
-
-      &:after {
-        bottom: 0;
-
-        @if $flip {
-          transform: skewY($angle);
-          transform-origin: 0 0;
-        } @else {
-          transform: skewY($angle * -1);
-          transform-origin: 100%;
-        }
-      }
-    }
-  }
 }
 
 // slanted edges here
@@ -120,19 +29,13 @@
   @include angle(both, true);
 }
 
-
-
-
-
-
-
-
-
 .two-cols {
 
 	@media(min-width: $tablet){
 		@include columns(2, 10px);
-		// padding: $column-padding;
+		@media(min-width: $tablet){
+            @include columns(2, 30px);
+        }
 	}
 
 	div {

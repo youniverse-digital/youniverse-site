@@ -2,6 +2,11 @@
 	box-sizing : border-box;
 }
 
+::selection {
+  background: $youniverse-teal;
+  background: transparent;
+}
+
 *::-webkit-scrollbar {
 	display: none;
 }
@@ -15,6 +20,21 @@ body {
     line-height: 1.4;
     color: $font-colour;
     position: relative;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 25px;
+	margin-bottom: 20px;
+	@include bottomLine($color: #000, $width: 30px, $height: $youniverse-thin-line-height);
+
+	@media(min-width: $tablet){
+		font-size: 35px;
+	}
+
+	&:after {
+		margin-top: 20px;
+	}
 }
 
 p {
@@ -37,7 +57,7 @@ blockquote {
 		display: block;
 		background-color: $youniverse-red;
 		width: 100%;
-		height: 2px;
+		height: $youniverse-thin-line-height;
 		margin-bottom: 10px;
 	}
 
@@ -46,7 +66,7 @@ blockquote {
 		display: block;
 		background-color: $youniverse-red;
 		width: 100%;
-		height: 2px;
+		height: $youniverse-thin-line-height;
 		margin-top: 10px;
 	}
 

@@ -11,6 +11,17 @@
 		}
 	}
 
+	.knowledge-icon {
+		right: $column-gutter;
+		top: -70px;
+		position: absolute;
+		z-index: 2;
+		display: block;
+		@media(min-width: $tablet){
+			display: none;
+		}
+	}
+
 	.blue-bar {
 		position: absolute;
 		width: 100%;
@@ -28,10 +39,16 @@
 		}
 
 		.about-image {
-			margin-top: 15%;
+			display: block;
+			margin: 0 auto;
+			@include slantedBottom($percent: 80%);
+			
+			@media(min-width: $tablet){
+				margin: 15% auto auto auto;
+			}
 
 			@media(min-width: $laptop) {
-				margin-top: 20%;
+				margin: 20% auto auto auto;
 			}
 		}
 	}
