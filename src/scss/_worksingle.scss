@@ -1,0 +1,51 @@
+.work-info {
+	padding-top: 100px;
+
+	.container {
+		.two-cols {
+			margin-bottom: $section-bottom-margin;
+			div {
+				position: relative;	
+
+				.client-logo {
+					display: block;
+					position: absolute;
+					bottom: 0px;
+					margin: auto;
+					left: 0;
+					// right: 0;
+				}
+			}
+		}
+	}
+
+	.work-images {
+		img {
+			max-width: 100%;
+			margin-bottom: $section-bottom-margin;
+			display: block;
+		}
+	}
+}
+
+.footer-spacer {
+	position: absolute;
+	bottom: 0;
+	right:0;
+    width: 40%;
+    min-width: 280px;
+
+	@media(min-width: $lg-phone) {
+		min-width: 300px;
+	}
+
+	@media(min-width: $tablet) {
+		min-width: 400px;
+	}
+
+	img {
+		@include slanted($top: 100%, $bottom: 100%);
+		display: block;
+		max-width: 100%;
+	}
+}

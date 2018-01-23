@@ -70,14 +70,15 @@
     background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
-    display: block;
-    margin: $column-gutter auto;
+    display: inline-block;
+    margin: $column-gutter auto $column-gutter 0;
+    width: 260px;
     max-width: 260px;
     padding: 13px 0;
 
-    // @media(min-width: $tablet){
-    // 	padding: 20px 0;
-    // }
+    @media(min-width: $large-desktop){
+    	margin: $column-gutter $column-gutter $column-gutter 0;
+    }
 }
 
 

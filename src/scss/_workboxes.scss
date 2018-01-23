@@ -1,9 +1,9 @@
 .work-panels {
 
-	margin-bottom: $section-bottom-margin/2;
+	padding-bottom: $section-bottom-margin/2;
 
     @media(min-width: $tablet){
-        margin-bottom: $section-bottom-margin;
+        padding-bottom: $section-bottom-margin;
     }
 
 	.container {

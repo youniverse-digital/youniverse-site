@@ -3,18 +3,14 @@
 	position: relative;
 
 	@media(min-width: $tablet){
-
+		padding-top: 300px;
+		margin-top: -20%;
 		margin-bottom: $section-bottom-margin;
 
 		&:before {
 			top: -23%;
 			z-index: 0;
 		}
-	}
-
-	@media(min-width: $tablet) {
-		padding-top: 300px;
-		margin-top: -20%;
 	}
 
 	@media(min-width: $tablet-landscape) {
@@ -32,11 +28,12 @@
 	}
 
 	@media(min-width: $large-desktop) {
-
+		padding-top: 2%;
+		margin-top: 0%;
 	}
 
 	@media(min-width: $huge-desktop) {
-		margin-top: -10%;
+		// margin-top: -10%;
 	}
 
 	.container {
@@ -94,6 +91,8 @@
 
 		@media(min-width: $large-desktop) {
 			width: 90%;
+			top: 4%;
+			display: none;
 		}
 	}
 }

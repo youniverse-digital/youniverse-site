@@ -6,7 +6,7 @@
 	transition: all 0.3s ease-in-out;
 
 	@media(min-width: $tablet){
-		display: block;
+		// display: block;
 		right: $column-gutter;
 		top: $column-gutter;
 		position: fixed;

@@ -14,6 +14,47 @@
 		margin-top:	-53%;
 	}
 
+	@media(min-width: $large-desktop){
+		// height: 690px;
+	    margin-top: 0%;
+	}
+
+	&:before {
+		content: '';
+		width: 100%;
+	    height: 50px;
+	    position: absolute;
+	    background: #e4eef2;
+	    z-index: -1;
+	    bottom: 0;
+	    left: 0;
+	    transform-origin: left bottom;
+	    // transform: skewY(-20deg);
+	    display: none;
+
+	    @media(min-width: $large-desktop){
+			display: block;
+		}
+	}
+
+	&:after {
+		content: '';
+		width: 100%;
+	    height: 5px;
+	    position: absolute;
+	    background: #f3326c;
+	    z-index: -1;
+	    bottom: 0;
+	    left: 0;
+	    transform-origin: left bottom;
+	    // transform: skewY(-20deg);
+	    display: none;
+
+	    @media(min-width: $large-desktop){
+			display: block;
+		}
+	}
+
 	.knowledge-icon {
 		right: $column-gutter;
 		top: -20px;
@@ -27,9 +68,17 @@
 	}
 
 	.about-bg {
-		@include slantedBottom($percent: 80%);
+		// @include slantedBottom($percent: 80%);
 		width: 100%;
+
+		@media(min-width: $large-desktop){
+			display: none;
+		}
 	}
+
+	// .stretchme-bg {
+	// 	background-image: url('../img/why-bg.png');
+	// }
 
 	.container {
 
@@ -47,8 +96,8 @@
 			margin-top: -69%;
 		}
 
-		@media(min-width: $huge-desktop){
-			margin-top: -32%;
+		@media(min-width: $large-desktop){
+			margin-top: 0%;
 		}
 
 		h2 {
@@ -85,6 +134,13 @@
 			@media(min-width: $laptop) {
 				margin: 35% auto auto auto;
 				width: 80%;
+			}
+
+			@media(min-width: $large-desktop){
+				width: auto;
+				clip-path: polygon(0% 0%, 100% 0%, 100% 99%, 0% 99.5%);
+				-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 99.5%, 0% 99%);
+				margin: 18.5% auto auto auto;
 			}
 		}
 	}
