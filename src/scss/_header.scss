@@ -1,6 +1,13 @@
 header {
 
 	position: relative;
+	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40vw), 0 100%);
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40vw), 0 100%);
+
+	@media(min-width: $large-desktop){
+		clip-path: none;
+		-webkit-clip-path: none;
+	}
 
 	&:after {
 		content: '';
