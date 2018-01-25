@@ -63,18 +63,11 @@ function init(){
 		});
 	}
 
-	if(window.innerWidth < 768){
-		
-		menuBtn.addEventListener('click', function(e){
-			menuBtn.classList.toggle('active');
-			menu.classList.toggle('active');
-			menuList.classList.toggle('active');
-		}, {passive : true});
-	}
-
-	function toggleMenu(){
-		
-	}
+	menuBtn.addEventListener('click', function(e){
+		menuBtn.classList.toggle('active');
+		menu.classList.toggle('active');
+		menuList.classList.toggle('active');
+	}, {passive : true});
 }
 
 module.exports = {

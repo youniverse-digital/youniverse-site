@@ -1,13 +1,12 @@
 .menu {
 
 	z-index: 4;
-	top: 0;
-	left: 0;
-	padding: $column-padding;
+	top: $column-padding;
+	left: $column-padding*2;
 	transition: background-color 0.1s ease-in-out, left 0.4s ease-in-out, opacity 0.3s ease-in-out;
 	font-family: Helvetica, Arial, sans-serif;
 	position: fixed;
-	top: 100px;
+	// width: 100%;
 
 	&.active {
 		background-color: #fff;
@@ -18,30 +17,25 @@
 		left: -300px;
 	}
 
-	@media(min-width: $tablet) {
-		position: fixed;
-		top: 200px;
-		width: 120px;
-	}
+	// @media(min-width: $tablet) {
+	// 	// position: fixed;
+	// 	// top: 200px;
+	// 	// width: 120px;
+	// }
 
-	@media(min-width: $desktop){
-		top: 300px;
-	}
+	// @media(min-width: $desktop){
+	// 	// top: 300px;
+	// }
 
-	@media(min-width: $large-desktop){
-		top: 400px;
-	}
+	// @media(min-width: $large-desktop){
+	// 	// top: 400px;
+	// }
 
 	#menuToggle {
 		background-color: #fff;
-		border-radius: 5px;
 	    padding: 5px 0;
 	    width: 35px;
 	    opacity: 0.8;
-
-	    @media(min-width: $tablet) {
-	    	display: none;
-	    }
 
 		span {
 			display: block;
@@ -92,6 +86,7 @@
 		overflow: hidden;
 		transition: all $transition-time ease-in-out;
 		height: 0;
+		width: 100%;
 
 		&.active {
 			left: 0;
@@ -99,9 +94,8 @@
 		}
 
 		@media(min-width: $tablet) {
-			width: 200px;
+			// width: 200px;
 			height: auto;
-			left: 0;
 		}
 
 		li {

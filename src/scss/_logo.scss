@@ -1,31 +1,10 @@
 .logo {
-	z-index: 4;
-	width: 30%;
-	min-width: 230px;
-	position: fixed;
-
-	@media(min-width: $lg-phone) {
-		min-width: 250px;
-	}
-
-	@media(min-width: $tablet) {
-		min-width: 320px;
-	}
 
 	img {
-		@include slanted($top: 0%, $bottom: 0%);
-		max-width: 100%;
-		width: 100%;
-	}
-
-	&-footer {
 		position: absolute;
-		bottom: 0;
-		right:0;
-
-		img {
-			@include slanted($top: 100%, $bottom: 100%);
-			display: block;
-		}
+		left: 0;
+		right: 0;
+		margin: $column-padding auto auto auto;
+		z-index: 2;
 	}
 }
