@@ -1,5 +1,16 @@
 .knowledge-network {
+	max-width: 1440px;
+	margin: auto;
+	
+	img {
+		max-width: 100%;
+	}
+
 	.split-container {
-		width: ($large-container-width - ($large-container-width - $main-container-width)/2)px;
+		@media(min-width: $large-container-width){
+			width: ($large-container-width - ($large-container-width - $container-width)/2);
+			max-width: 100%;
+			margin-left: auto;
+		}
 	}
 }

@@ -46,13 +46,22 @@
 }
 
 .container {
-	max-width: 1170px;
+	max-width: $container-width;
 	margin: auto;
 	padding: $column-padding;
+
+	&-large{
+		max-width: $large-container-width;
+		margin: auto;
+	}
 
 	@media(min-width: $tablet){
 		padding: 0;
 		width: 70%;
+	}
+
+	@media(min-width: $laptop){
+		width: 100%;
 	}
 }
 

@@ -47,14 +47,14 @@ function init(){
 			if(!scrolling){
 				scrolling = true;
 				document.querySelector('.menu').classList.add('nav-hide');
-				document.querySelector('.knowledge-icon').classList.add('hide');
+				// document.querySelector('.knowledge-icon').classList.add('hide');
 			}
 		}, {passive : true});
 
 		scrollStop(function () {
 			if(scrolling){
 				document.querySelector('.menu').classList.remove('nav-hide')
-				document.querySelector('.knowledge-icon').classList.remove('hide');
+				// document.querySelector('.knowledge-icon').classList.remove('hide');
 				scrolling = false;
 				menuBtn.classList.remove('active');
 				menu.classList.remove('active');
