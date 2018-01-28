@@ -75,19 +75,12 @@
 .button {
     text-align: center;
     color: $font-colour;
-    background: url('../img/button-bg.jpg');
-    background-size: 100% 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
+    font-size: 44px;
+    font-weight: 600px;
     display: inline-block;
     margin: $column-gutter auto $column-gutter 0;
-    width: 260px;
-    max-width: 260px;
-    padding: 13px 0;
-
-    @media(min-width: $large-desktop){
-    	margin: $column-gutter $column-gutter $column-gutter 0;
-    }
+    border: 3px solid #000;
+    padding: $column-padding $column-padding*2;
 }
 
 .divider-line {

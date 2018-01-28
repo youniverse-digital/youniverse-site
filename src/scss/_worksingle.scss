@@ -1,5 +1,6 @@
 .work-info {
 	padding-top: 100px;
+	margin-bottom: $section-bottom-margin;
 
 	.container {
 		.two-cols {
@@ -13,7 +14,6 @@
 					bottom: 0px;
 					margin: auto;
 					left: 0;
-					// right: 0;
 				}
 			}
 		}
@@ -28,24 +28,23 @@
 	}
 }
 
-.footer-spacer {
-	position: absolute;
-	bottom: 0;
-	right:0;
-    width: 40%;
-    min-width: 280px;
-
-	@media(min-width: $lg-phone) {
-		min-width: 300px;
-	}
-
-	@media(min-width: $tablet) {
-		min-width: 400px;
-	}
+.phone-anim {
+	position: relative;
+	overflow:hidden;
 
 	img {
-		@include slanted($top: 100%, $bottom: 100%);
+		margin: auto;
 		display: block;
-		max-width: 100%;
+		position: relative;
+		z-index: 2;
 	}
+
+	.website-scroll {
+		position: absolute;
+		left: 0;
+		right: 0;
+		width: 29%;
+		top:10px;
+		z-index: 1;
+	}	
 }

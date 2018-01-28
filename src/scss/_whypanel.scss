@@ -1,9 +1,17 @@
 #why {
+	margin-bottom: $section-bottom-margin/2;
 
+    @media(min-width: $tablet){
+        margin-bottom: $section-bottom-margin;
+    }
 	.container {
 
-		.two-cols {
+		h2 {
+			font-size: 66px;
+		}
 
+		p {
+			font-size: 48px;
 		}
 	}
 }
