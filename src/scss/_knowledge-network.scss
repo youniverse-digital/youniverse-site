@@ -1,30 +1,29 @@
 .knowledge-network {
 	max-width: 1440px;
 	margin: auto;
-	background: repeating-linear-gradient(
-	  -55deg,
-	  #e1e1e1,
-	  #e1e1e1 1px,
-	  #fff 1px,
-	  #fff 5px
-	);
+	background: repeating-linear-gradient(-55deg, #e1e1e1, #e1e1e1 1px, #fff 1px, #fff 5px);
 
-	padding: $column-padding*10 0;
-	margin-bottom: $section-bottom-margin/2;
+	padding: $column-padding*4 0;
+	margin-bottom: $mobile-section-bottom-margin;
 
     @media(min-width: $tablet){
         margin-bottom: $section-bottom-margin;
+        padding: $column-padding*10 0;
     }
-	
+
 	img {
 		max-width: 100%;
 	}
 
-	.split-container {
-		@media(min-width: $large-container-width){
-			width: ($large-container-width - ($large-container-width - $container-width)/2);
-			max-width: 100%;
-			margin-left: auto;
+	.two-cols {
+		div {
+			&:first-child {
+				margin-bottom: $mobile-section-bottom-margin;
+
+				@media(min-width: $tablet){
+			        margin-bottom: 0;
+			    }
+			}
 		}
 	}
 }

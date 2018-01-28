@@ -1,6 +1,6 @@
 header {
 	position: relative;
-	margin-bottom: $section-bottom-margin/2;
+	margin-bottom: $mobile-section-bottom-margin;
 
     @media(min-width: $tablet){
         margin-bottom: $section-bottom-margin;
@@ -14,7 +14,6 @@ header {
 		height: 100%;
 		transition: all $transition-time*2 ease-in-out;
 		clip-path: polygon(0% 0%, 100% 0%, 100% -10%, 0% 90%);
-		// clip-path: polygon(0% 0%, 100% 0%, 100% -10%, 0% 90%);
 		position: absolute;
 		top: 0;
 	}
@@ -26,12 +25,12 @@ header {
 		width: 100%;
 		height: 100%;
 		transition: all $transition-time*2 ease-in-out;
-		// clip-path: polygon(10% 100%, 100% 10%, 100% 100%, 0% 100%);
+		clip-path: polygon(10% 100%, 100% 10%, 100% 100%, 0% 100%);
 		position: absolute;
 		top: 0;
 	}
 
-	@media(min-width: $tablet){
+	@media(min-width: 320px){
 		width: 100vw;
 		height: 100vh;
 	}
@@ -41,52 +40,82 @@ header {
 		height: 100%;
 		object-fit: cover;
 
+		&.hero-bg {
+
+			&-small {
+				display: block;
+
+				@media(min-width: $tablet){
+					display: none;
+				}
+			}
+
+			&-medium {
+				display: none;
+
+				@media(min-width: $tablet){
+					display: block;
+				}
+
+				@media(min-width: $desktop){
+					display: none;
+				}
+			}
+
+			&-large {
+				display: none;
+
+				@media(min-width: $desktop){
+					display: block;
+				}
+			}
+		}
+
 		&.header-text {
 			position: absolute;
 			left: 0;
 			top: 0;
 			object-fit: contain;
 			z-index: 1;
-			opacity: 0;
-			transition: all $transition-time*2 ease-in-out;
+			transition: all 0.5s linear 1s;
 		}
 	}
 
 	&.animate {
 
 		&:before {
-			// clip-path: polygon(0% 0%, 100% 0%, 100% -10%, 0% 90%);
-			animation: topanim 4s forwards;
+			clip-path: polygon(0% 0%, 100% 0%, 100% -10%, 0% 90%);
+			animation: topAnim 3s linear 1s forwards;
 		}
 
 		&:after {
-			// clip-path: polygon(10% 100%, 100% 10%, 100% 100%, 0% 100%);
-			animation: bottomAnim 4s forwards;
+			clip-path: polygon(10% 100%, 100% 10%, 100% 100%, 0% 100%);
+			animation: bottomAnim 3s linear 1s forwards;
 		}
 
 		img {
 			&.header-text {
-				opacity: 1;
+				opacity: 0;
 			}
 		}
 	}
 }
 
 
-@keyframes topanim {
+@keyframes topAnim {
   0% {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% -10%, 0% 90%);
   }
   100% {
-    clip-path: polygon(0% 0%, 100% 0%, 100% -10%, 0% 90%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% -100%, 0% 0%);
   }
 }
 
 @keyframes bottomAnim {
   0% {
-    clip-path: polygon(0% 100%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(10% 100%, 100% 10%, 100% 100%, 0% 100%);
   }
   100% {
-    clip-path: polygon(10% 100%, 100% 10%, 100% 100%, 0% 100%);
+    clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 0% 100%);
   }
 }

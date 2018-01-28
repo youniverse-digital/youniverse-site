@@ -1,5 +1,3 @@
-// import scrollStop from './scrollStop.js';
-
 /*! scrollStop.js | (c) 2017 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/scrollStop */
 /**
  * Run functions after scrolling has stopped
@@ -42,26 +40,31 @@ function init(){
 		});
 	}
 
-	if(window.innerWidth > 0) {
-		window.addEventListener('scroll', function(){
-			if(!scrolling){
-				scrolling = true;
-				document.querySelector('.menu').classList.add('nav-hide');
-				// document.querySelector('.knowledge-icon').classList.add('hide');
-			}
-		}, {passive : true});
+	window.addEventListener('scroll', function(){
+		if(!scrolling){
+			scrolling = true;
+			document.querySelector('.menu').classList.add('nav-hide');
+		}
 
-		scrollStop(function () {
-			if(scrolling){
-				document.querySelector('.menu').classList.remove('nav-hide')
-				// document.querySelector('.knowledge-icon').classList.remove('hide');
-				scrolling = false;
-				menuBtn.classList.remove('active');
-				menu.classList.remove('active');
-				menuList.classList.remove('active');
+		if(window.innerWidth < 768) {
+			if(document.scrollingElement.scrollTop > window.innerHeight/2){
+				document.querySelector('.menu').classList.add('scrolled');
+			}else {
+				document.querySelector('.menu').classList.remove('scrolled');
 			}
-		});
-	}
+		}
+
+	}, {passive : true});
+
+	scrollStop(function () {
+		if(scrolling){
+			document.querySelector('.menu').classList.remove('nav-hide');
+			scrolling = false;
+			menuBtn.classList.remove('active');
+			menu.classList.remove('active');
+			menuList.classList.remove('active');
+		}
+	});
 
 	menuBtn.addEventListener('click', function(e){
 		menuBtn.classList.toggle('active');

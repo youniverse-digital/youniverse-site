@@ -1,12 +1,18 @@
 .work-info {
 	padding-top: 100px;
-	margin-bottom: $section-bottom-margin;
+	margin-bottom: $mobile-section-bottom-margin;
+	@media(min-width: $tablet){
+        margin-bottom: $section-bottom-margin;
+    }
 
 	.container {
 		.two-cols {
-			margin-bottom: $section-bottom-margin;
+			margin-bottom: $mobile-section-bottom-margin;
+			@media(min-width: $tablet){
+		        margin-bottom: $section-bottom-margin;
+		    }
 			div {
-				position: relative;	
+				position: relative;
 
 				.client-logo {
 					display: block;
@@ -46,5 +52,5 @@
 		width: 29%;
 		top:10px;
 		z-index: 1;
-	}	
+	}
 }

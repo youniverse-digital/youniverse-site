@@ -1,6 +1,6 @@
 .team-panel {
 
-	margin-bottom: $section-bottom-margin/2;
+	margin-bottom: $mobile-section-bottom-margin;
 
     @media(min-width: $tablet){
         margin-bottom: $section-bottom-margin;
@@ -32,17 +32,15 @@
 			cursor: pointer;
 			width: 25%;
 			margin-bottom: 8px;
-			font-size: 37px;
 
 			@media(min-width: $tablet){
 				flex-grow: 1;
-				// font-size: 14px;
 				width: auto;
 				margin-bottom: 0;
 			}
 
 			@media(min-width: $laptop){
-				// font-size: 18px;
+				font-size: 37px;
 			}
 
 			&:after {
@@ -78,7 +76,9 @@
 
 		h3 {
 			font-weight: bold;
-			font-size: 37px;
+			@media(min-width: $laptop){
+				font-size: 37px;
+			}
 		}
 
 		&.active {

@@ -1,6 +1,6 @@
 #about {
 	position: relative;
-	margin-bottom: $section-bottom-margin/2;
+	margin-bottom: $mobile-section-bottom-margin;
 
     @media(min-width: $tablet){
         margin-bottom: $section-bottom-margin;
@@ -8,11 +8,15 @@
 
 	.container {
 		h2 {
-			font-size: 72px;
+			@media(min-width: $laptop){
+				font-size: 72px;
+			}
 		}
 
 		p {
-			font-size: 66px;
+			@media(min-width: $laptop){
+				font-size: 66px;
+			}
 		}
 	}
 }

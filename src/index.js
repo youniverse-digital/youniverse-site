@@ -4,7 +4,7 @@ import slider from './js/slider.js';
 import menu from './js/menu.js';
 import headerAnim from './js/headerAnimation.js';
 import animations from 'create-keyframe-animation';
-
+import phoneAnimation from './js/phoneAnimation.js';
 
 window.onload = function(){
 	menu.init();
@@ -21,35 +21,8 @@ window.onload = function(){
 		headerAnim.init();
 	}
 
-	// var animations = require('create-keyframe-animation')
-	const yVal = document.querySelector('.website-scroll').clientHeight;
-	const yDelta = document.querySelector('.phone-anim-phone').clientHeight;
-	// this creates the animation above
-	animations.registerAnimation({
-	  name: 'move',
-	  // the actual array of animation changes
-	  animation: [
-		[0,0], 
-		[0, -(yVal - yDelta)]
-	  ],
-	  // optional presets for when actually running the animation
-	  presets: {
-	    duration: 1000,
-	    easing: 'linear',
-	    delay: 500,
-	    resetWhenDone: true
-	  }
-	})
-
-	// then run it
-	const el = document.querySelector('.website-scroll');
-
-	animations.runAnimation(el, 'move', startAnim);
-
-	function startAnim(){
-		el.style.transform = '';
-		el.style.animation = '';
-		// animations.runAnimation(el, 'move', startAnim);
+	if(document.querySelector('.website-scroll')){
+		phoneAnimation.init();
 	}
 
 	const pageLinks = document.querySelectorAll('.pageLink');
@@ -61,4 +34,4 @@ window.onload = function(){
 	function goToPage(e){
 		window.location.href = e.target.dataset.location + '.html';
 	}
-}
+};
