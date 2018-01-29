@@ -1,33 +1,34 @@
+import animations from 'create-keyframe-animation';
+
 function init(){
-	// var animations = require('create-keyframe-animation')
 	const yVal = document.querySelector('.website-scroll').clientHeight;
 	const yDelta = document.querySelector('.phone-anim-phone').clientHeight;
-	// this creates the animation above
+
 	animations.registerAnimation({
-	  name: 'move',
-	  // the actual array of animation changes
-	  animation: [
-		[0,0],
-		[0, -(yVal - yDelta)]
-	  ],
-	  // optional presets for when actually running the animation
-	  presets: {
-	    duration: 1000,
-	    easing: 'linear',
-	    delay: 500,
-	    resetWhenDone: true
-	  }
+		name: 'move',
+	  	// the actual array of animation changes
+	  	animation: [
+			[0,0],
+			[0, -(yVal - yDelta)],
+			[0, 0],
+	  	],
+	  	// optional presets for when actually running the animation
+	  	presets: {
+			duration: 30000,
+	    	easing: 'linear',
+	    	delay: 500,
+	    	iterations: 100,
+	  	}
 	});
 
 	// then run it
 	const el = document.querySelector('.website-scroll');
 
-	animations.runAnimation(el, 'move', startAnim);
+	animations.runAnimation(el, 'move', animFinished);
 
-	function startAnim(){
-		el.style.transform = '';
-		el.style.animation = '';
-		// animations.runAnimation(el, 'move', startAnim);
+	function animFinished(){
+		// el.style.transform = '';
+		// el.style.animation = '';
 	}
 }
 

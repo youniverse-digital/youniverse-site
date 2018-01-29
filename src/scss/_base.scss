@@ -22,6 +22,14 @@ body {
     position: relative;
 }
 
+h1 {
+	@include bottomLine($color: #000, $width: 30px, $height: $youniverse-thin-line-height);
+
+	@media(min-width: $laptop){
+		font-size: 54px;
+	}
+}
+
 h2 {
 	font-weight: bold;
 	margin-bottom: 20px;
@@ -37,8 +45,15 @@ h2 {
 	}
 }
 
+li {
+	@media(min-width: $laptop){
+		font-size: 27px;
+	}
+}
+
 p {
 	margin: $column-gutter 0;
+
 	@media(min-width: $laptop){
 		font-size: 27px;
 	}
@@ -48,6 +63,15 @@ a {
 	color: $youniverse-red;
 	text-decoration: none;
 	font-weight: bold;
+	font-size: 14px;
+
+	@media(min-width: $tablet){
+		font-size: 16px;
+	}
+
+	@media(min-width: $desktop){
+		font-size: 27px;
+	}
 }
 
 img {

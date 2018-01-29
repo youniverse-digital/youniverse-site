@@ -1,10 +1,20 @@
 .work-slider {
 
-    margin-bottom: $mobile-section-bottom-margin;
+    // margin-bottom: $mobile-section-bottom-margin;
 
-    @media(min-width: $tablet){
-        margin-bottom: $section-bottom-margin;
-    }
+    // @media(min-width: $tablet){
+    //     margin-bottom: $tablet-section-bottom-margin;
+    // }
+
+    // @media(min-width: $laptop){
+    //     margin-bottom: $laptop-section-bottom-margin;
+    // }
+
+    // @media(min-width: $desktop){
+    //     margin-bottom: $section-bottom-margin;
+    // }
+
+    @extend .section-margins;
 
     .slider-wrapper {
 

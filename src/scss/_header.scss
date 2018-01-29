@@ -3,6 +3,14 @@ header {
 	margin-bottom: $mobile-section-bottom-margin;
 
     @media(min-width: $tablet){
+        margin-bottom: $tablet-section-bottom-margin;
+    }
+
+    @media(min-width: $laptop){
+        margin-bottom: $laptop-section-bottom-margin;
+    }
+
+    @media(min-width: $desktop){
         margin-bottom: $section-bottom-margin;
     }
 
@@ -45,7 +53,7 @@ header {
 			&-small {
 				display: block;
 
-				@media(min-width: $tablet){
+				@media(min-width: $tablet-landscape){
 					display: none;
 				}
 			}
@@ -53,7 +61,7 @@ header {
 			&-medium {
 				display: none;
 
-				@media(min-width: $tablet){
+				@media(min-width: $tablet-landscape){
 					display: block;
 				}
 

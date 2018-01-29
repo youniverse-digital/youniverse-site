@@ -1,0 +1,34 @@
+.alt-logo {
+	img {
+		position: relative;
+		max-width: 300px;
+	}
+}
+
+.playbook {
+
+	@extend .section-paddings;
+
+	&:nth-of-type(even) {
+		background-color: #eeeeee;
+	}
+
+	&.playbook-start {
+		margin-top: 100px;
+
+		p {
+			@media(min-width: $desktop){
+				font-size: 60px;
+			}
+		}
+
+		.pdf-link {
+			float: right;
+		}
+	}
+
+	h2 {
+		display: inline-block;
+		@include bottomLine($color: #000, $width: 100%, $height: $youniverse-thin-line-height);
+	}
+}

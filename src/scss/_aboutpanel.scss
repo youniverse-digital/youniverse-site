@@ -3,18 +3,34 @@
 	margin-bottom: $mobile-section-bottom-margin;
 
     @media(min-width: $tablet){
+        margin-bottom: $tablet-section-bottom-margin;
+    }
+
+    @media(min-width: $laptop){
+        margin-bottom: $laptop-section-bottom-margin;
+    }
+
+    @media(min-width: $desktop){
         margin-bottom: $section-bottom-margin;
     }
 
 	.container {
 		h2 {
 			@media(min-width: $laptop){
+				font-size: 52px;
+			}
+
+			@media(min-width: $desktop){
 				font-size: 72px;
 			}
 		}
 
 		p {
 			@media(min-width: $laptop){
+				font-size: 42px;
+			}
+
+			@media(min-width: $desktop){
 				font-size: 66px;
 			}
 		}

@@ -14,21 +14,14 @@
 		color: #fff;
 	}
 
-	// .alpha-bg {
-	// 	position: absolute;
-	// 	left: 0;
-	// 	right: 0;
-	// 	top: 0;
-	// 	bottom: 0;
-	// 	margin: auto;
-	// 	background: rgba(0,0,0,0.3);
-	// 	z-index: 1;
-	// }
-
 	.container {
 
 		z-index: 2;
 		text-align: center;
+
+		@media(min-width: $huge-desktop){
+			padding: 250px 0;
+		}
 
 		.map {
 			position: relative;
@@ -39,7 +32,15 @@
 			img {
 				margin: 0 auto;
 				display: block;
-				max-width: 100%;
+				max-width: 570px;
+
+				@media(min-width: $desktop){
+					max-width: 800px;
+				}
+
+				@media(min-width: $huge-desktop){
+					max-width: 1000px;
+				}
 			}
 
 			div {
@@ -54,8 +55,15 @@
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
+
 				p {
 					max-width: 50%;
+					margin: 2px 0;
+
+					@media(min-width: $tablet){
+						font-size: 18px;
+						margin: 5px 0;
+					}
 				}
 			}
 		}

@@ -1,19 +1,24 @@
 #why {
-	margin-bottom: $mobile-section-bottom-margin;
+	@extend .section-margins;
 
-    @media(min-width: $tablet){
-        margin-bottom: $section-bottom-margin;
-    }
 	.container {
 
 		h2 {
 			@media(min-width: $laptop){
+				font-size: 52px;
+			}
+
+			@media(min-width: $desktop){
 				font-size: 66px;
 			}
 		}
 
 		p {
 			@media(min-width: $laptop){
+				font-size: 42px;
+			}
+
+			@media(min-width: $desktop){
 				font-size: 48px;
 			}
 		}

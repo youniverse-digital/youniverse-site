@@ -1,18 +1,33 @@
 .knowledge-network {
-	max-width: 1440px;
+	// max-width: 1440px;
 	margin: auto;
 	background: repeating-linear-gradient(-55deg, #e1e1e1, #e1e1e1 1px, #fff 1px, #fff 5px);
 
-	padding: $column-padding*4 0;
+	padding: $mobile-section-bottom-margin 0;
 	margin-bottom: $mobile-section-bottom-margin;
 
     @media(min-width: $tablet){
+        margin-bottom: $tablet-section-bottom-margin;
+        padding: $tablet-section-bottom-margin 0;
+    }
+
+    @media(min-width: $laptop){
+        margin-bottom: $laptop-section-bottom-margin;
+        padding:  $laptop-section-bottom-margin 0;
+    }
+
+    @media(min-width: $desktop){
         margin-bottom: $section-bottom-margin;
-        padding: $column-padding*10 0;
+        padding:  $section-bottom-margin 0;
     }
 
 	img {
 		max-width: 100%;
+	}
+
+	.inner {
+		max-width: 1440px;
+		margin: auto;
 	}
 
 	.two-cols {

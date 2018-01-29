@@ -1,20 +1,11 @@
 .work-panels {
 
-	margin-bottom: $mobile-section-bottom-margin;
-
-    @media(min-width: $tablet){
-        margin-bottom: $section-bottom-margin;
-    }
+	@extend .section-margins;
 
 	.container-large {
-		margin-bottom: $mobile-section-bottom-margin;
-
-	    @media(min-width: $tablet){
-	        margin-bottom: $section-bottom-margin;
-	    }
+		@extend .section-margins;
 
 		.work-item {
-			height: 250px;
 			position: relative;
 			overflow: hidden;
 			margin: $column-gutter auto;
@@ -27,11 +18,11 @@
 			}
 
 			@media(min-width: $laptop){
-				height: 350px;
+				// height: 350px;
 			}
 
 			@media(min-width: $desktop) {
-				height: auto;
+				// height: auto;
 			}
 
 			.inner-bg {
@@ -54,10 +45,11 @@
 			    max-width: 80%;
 			    max-height: 60px;
 			    transition: all $transition-time ease-out;
-			    opacity: 0;
+			    opacity: 1;
 
-			    @media(min-width: $tablet) {
+			    @media(min-width: $laptop) {
 			    	max-height: none;
+			    	opacity: 0;
 			    }
 			}
 

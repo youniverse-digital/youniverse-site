@@ -7,6 +7,7 @@
 	position: fixed;
 	bottom: $column-padding;
 	transition: all $transition-time ease-in-out;
+	width: 30px;
 
 	@media(min-width: $tablet){
 		top: $column-padding;
@@ -20,6 +21,11 @@
 
 	&.active {
 		background-color: #fff;
+		width: 100%;
+		left: 0;
+		padding: 10px;
+		top: 0;
+		bottom: auto;
 	}
 
 	&.nav-hide {
@@ -129,5 +135,19 @@
 				}
 			}
 		}
+	}
+}
+
+.menu-bg-alpha {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	background-color: rgba(255,255,255,0.8);
+	z-index: 3;
+
+	&.active {
+		height: 100%;
 	}
 }

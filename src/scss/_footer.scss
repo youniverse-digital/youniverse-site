@@ -5,7 +5,16 @@
 	overflow: hidden;
 	text-align: center;
 
+	@media(min-width: $laptop){
+		padding: $column-padding 0;
+	}
+
+	p {
+		font-size: 12px;
+	}
+
 	a {
 		color: #fff;
+		font-size: 12px;
 	}
 }

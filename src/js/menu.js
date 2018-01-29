@@ -23,10 +23,11 @@ var scrollStop = function ( callback ) {
 
 function init(){
 	const menuItems = document.querySelectorAll('.menu ul li a');
-	let scrolling = false;
-	const menuBtn = document.querySelector('.mobile-menu');
-	const menu = document.querySelector('.menu');
-	const menuList = document.querySelector('.menu ul');
+	let scrolling 	= false;
+	const menuBtn 	= document.querySelector('.mobile-menu');
+	const menu 		= document.querySelector('.menu');
+	const menuList 	= document.querySelector('.menu ul');
+	const menuBg 	= document.querySelector('.menu-bg-alpha');
 
 	menuItems.forEach(function(item){
 		item.addEventListener('click', scrollToLink, {passive : false})
@@ -44,6 +45,7 @@ function init(){
 		if(!scrolling){
 			scrolling = true;
 			document.querySelector('.menu').classList.add('nav-hide');
+			menuBg.classList.remove('active');
 		}
 
 		if(window.innerWidth < 768) {
@@ -70,6 +72,7 @@ function init(){
 		menuBtn.classList.toggle('active');
 		menu.classList.toggle('active');
 		menuList.classList.toggle('active');
+		menuBg.classList.toggle('active');
 	}, {passive : true});
 }
 

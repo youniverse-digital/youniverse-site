@@ -3,8 +3,8 @@ import team from './js/team.js';
 import slider from './js/slider.js';
 import menu from './js/menu.js';
 import headerAnim from './js/headerAnimation.js';
-import animations from 'create-keyframe-animation';
 import phoneAnimation from './js/phoneAnimation.js';
+import accordions from './js/accordions.js';
 
 window.onload = function(){
 	menu.init();
@@ -23,6 +23,10 @@ window.onload = function(){
 
 	if(document.querySelector('.website-scroll')){
 		phoneAnimation.init();
+	}
+
+	if(document.querySelector('.accordion')){
+		accordions.init();
 	}
 
 	const pageLinks = document.querySelectorAll('.pageLink');

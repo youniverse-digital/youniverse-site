@@ -1,0 +1,38 @@
+.accordion {
+	h3 {
+
+		position: relative;
+		padding-left: 20px;
+		cursor: pointer;
+		cursor: hand;
+
+		&:before {
+			content: '';
+			width: 0;
+			height: 0;
+			position: absolute;
+			left: 0;
+			border-top: 10px solid transparent;
+			border-bottom: 10px solid transparent;
+			border-left: 10px solid #009fe3;
+		}
+
+		&.active {
+			&:before {
+				border-top: 10px solid transparent;
+				border-bottom: 10px solid transparent;
+				border-left: 10px solid #009fe3;
+			}
+		}
+	}
+
+	.content {
+		max-height: 0;
+		overflow: hidden;
+		transition: all $transition-time ease-in-out;
+
+		&.active {
+			max-height: none;
+		}
+	}
+}
