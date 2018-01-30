@@ -13,6 +13,7 @@
     "node-sass": "^4.7.2"
   },
   "devDependencies": {
+    "autoprefixer": "^7.2.5",
     "create-keyframe-animation": "^0.1.0",
     "node-sass": "^4.7.2"
   }

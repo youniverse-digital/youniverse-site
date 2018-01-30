@@ -18,6 +18,10 @@
 			flex-wrap: nowrap;
 		}
 
+		@media(min-width: $tablet-landscape){
+			margin: ($column-padding*2) 0;
+		}
+
 		@media(min-width: $desktop){
 			margin: ($column-padding*3) 0;
 		}
