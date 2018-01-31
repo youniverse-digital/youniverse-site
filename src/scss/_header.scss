@@ -66,7 +66,7 @@ header {
 				}
 
 				@media(min-width: $desktop){
-					display: none;
+					// display: none;
 				}
 			}
 
@@ -74,7 +74,7 @@ header {
 				display: none;
 
 				@media(min-width: $desktop){
-					display: block;
+					// display: block;
 				}
 			}
 		}

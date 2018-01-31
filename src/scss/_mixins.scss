@@ -6,11 +6,18 @@
 		transition: all $transition-time ease-out;
 		width: $width;
 		height: $height;
-
-		@media(min-width: $laptop){
-
-		}
 	}
+}
+
+@mixin topLine($color, $width, $height: 2px){
+  &:before {
+        display: block;
+        content: '';
+        background-color: $color;
+        transition: all $transition-time ease-out;
+        width: $width;
+        height: $height;
+    }
 }
 
 @mixin slantedBottom($percent){

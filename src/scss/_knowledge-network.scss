@@ -3,10 +3,10 @@
 	padding: $mobile-section-bottom-margin 0;
 	margin-bottom: $mobile-section-bottom-margin;
 	background: #f1f1f1;
+	max-width: 1440px;
 
     @media(min-width: $tablet){
-    	background: repeating-linear-gradient(-55deg, #e1e1e1, #e1e1e1 1px, #fff 1px, #fff 5px);
-		background:	-webkit-repeating-linear-gradient(-55deg, #e1e1e1, #e1e1e1 1px, #fff 1px, #fff 5px);
+		background-image: url("../img/stripe_a8f79ad9f43ad379a30cb324d5dbae53.png");
         margin-bottom: $tablet-section-bottom-margin;
         padding: $tablet-section-bottom-margin 0;
     }
@@ -18,25 +18,54 @@
 
     @media(min-width: $desktop){
         margin-bottom: $section-bottom-margin;
-        padding:  $section-bottom-margin 0;
+        padding:  $section-bottom-margin*0.66 0;
+    }
+
+    @media(min-width: $desktop){
+    	padding-bottom: 290px;
     }
 
 	img {
 		max-width: 100%;
 	}
 
+	h2 {
+		
+		font-weight: 100;
+		margin-top: 20px;
+
+		@media(min-width: $large-desktop){
+			font-size: 46px;
+			margin-bottom: 100px; 
+		}
+
+		&:after {
+			display:none;
+		}
+	}
+
 	.inner {
-		max-width: 1440px;
 		margin: auto;
 	}
 
 	.two-cols {
 		div {
 			&:first-child {
+				@include topLine($color: #000, $width: 30px, $height: $youniverse-thin-line-height);
 				margin-bottom: $mobile-section-bottom-margin;
 
 				@media(min-width: $tablet){
 			        margin-bottom: 0;
+			    }
+
+			    @media(min-width: $large-desktop){
+			    	@include topLine($color: #000, $width: 50px, $height: 4px);
+			    }
+
+			    &:before {
+			    	@media(min-width: $large-desktop){
+			    		margin-bottom: 50px;	
+			    	}	
 			    }
 			}
 		}

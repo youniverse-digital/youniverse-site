@@ -9,12 +9,31 @@
 		padding: $column-padding 0;
 	}
 
+	@media(min-width: $large-desktop){
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
 	p {
 		font-size: 12px;
+		margin: 0;
+		font-weight: 100;
+
+		@media(min-width: $large-desktop){
+			font-size: 18px;
+			font-weight: 100;
+		}
 	}
 
 	a {
 		color: #fff;
 		font-size: 12px;
+		margin-bottom: 10px;
+		display: inline-block;
+
+		@media(min-width: $large-desktop){
+			font-size: 18px;
+			font-weight: 100;
+		}
 	}
 }

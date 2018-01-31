@@ -26,6 +26,10 @@
 			margin: ($column-padding*3) 0;
 		}
 
+		@media(min-width: $desktop){
+			margin: ($column-padding*6) 0 ($column-padding*10) 0;
+		}
+
 		li {
 			flex-grow: 0;
 			font-weight: bold;
@@ -43,13 +47,10 @@
 				font-size: 37px;
 			}
 
+			@include bottomLine($color: transparent, $width: 10px, $height: 2px);
+
 			&:after {
-				display: block;
-				content: '';
-				background-color: transparent;
 				transition: all $transition-time ease-out;
-				width: 10px;
-				height: 2px;
 				margin: 5px 0 0 0;
 
 				@media(min-width: $tablet){
@@ -59,6 +60,12 @@
 				@media(min-width: $laptop){
 					width: 35px;
 					height: $youniverse-thin-line-height;
+				}
+
+				@media(min-width: $large-desktop){
+					width: 55px;
+					height: 5px;
+					margin: 15px 0 0 0;
 				}
 			}
 
@@ -76,6 +83,8 @@
 
 		h3 {
 			font-weight: bold;
+			margin-bottom: 15px;
+
 			@media(min-width: $laptop){
 				font-size: 37px;
 			}

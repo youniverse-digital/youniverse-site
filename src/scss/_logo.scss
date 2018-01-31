@@ -1,5 +1,4 @@
 .logo {
-
 	img {
 		position: absolute;
 		left: 0;
@@ -7,5 +6,10 @@
 		margin: $column-padding auto auto auto;
 		z-index: 2;
 		max-width: 90%;
+
+		@media(min-width: $large-desktop){
+			margin: 45px auto auto auto;
+			width: 450px;
+		}
 	}
 }

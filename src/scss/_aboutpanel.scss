@@ -23,6 +23,16 @@
 			@media(min-width: $desktop){
 				font-size: 72px;
 			}
+
+			@media(min-width: $large-desktop){
+				margin-bottom: 40px;
+			}
+
+			&:after {
+				@media(min-width: $large-desktop){
+					margin-top: 45px;
+				}
+			}
 		}
 
 		p {
@@ -31,7 +41,7 @@
 			}
 
 			@media(min-width: $desktop){
-				font-size: 66px;
+				font-size: 64px;
 			}
 		}
 	}

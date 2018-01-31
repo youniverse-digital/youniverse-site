@@ -4,12 +4,24 @@
 	.container {
 
 		h2 {
+			margin-bottom: $column-gutter;
+
+			&:after {
+				display:none;
+			}
+
 			@media(min-width: $laptop){
 				font-size: 52px;
+				margin-bottom: $column-gutter*2;
 			}
 
 			@media(min-width: $desktop){
 				font-size: 66px;
+				margin-bottom: $column-gutter*4;
+			}
+
+			@media(min-width: $large-desktop){
+				margin-bottom: 100px;
 			}
 		}
 

@@ -10,6 +10,11 @@
 		padding: 80px 0 20px 0;
 	}
 
+	@media(min-width: $large-desktop){
+		padding-top: 70px;
+		padding-bottom: 300px;
+	}
+
 	a {
 		color: #fff;
 	}
@@ -42,8 +47,9 @@
 					max-width: 800px;
 				}
 
-				@media(min-width: $huge-desktop){
-					max-width: 1000px;
+				@media(min-width: $large-desktop){
+					max-width: 1300px;
+					width: 900px;
 				}
 			}
 
@@ -64,10 +70,35 @@
 					max-width: 50%;
 					margin: 2px 0;
 
+					strong {
+						@include bottomLine($color: #fff, $width: 100%, $height: $youniverse-thin-line-height);
+					}
+
 					@media(min-width: $tablet){
 						font-size: 18px;
-						margin: 5px 0;
 					}
+
+					@media(min-width: $large-desktop){
+						font-size: 37px;
+					}
+
+					&.phone {
+						@media(min-width: $large-desktop){
+							font-size: 66px;
+							font-weight: 600;
+							margin-bottom: 50px;
+						}
+					}
+				}
+
+				a {
+					display: block;
+					font-weight: 100;
+					margin: 0;
+
+					@media(min-width: $large-desktop){
+						font-size: 27px;
+					}	
 				}
 			}
 		}

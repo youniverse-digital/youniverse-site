@@ -1,18 +1,8 @@
 .work-slider {
 
-    // margin-bottom: $mobile-section-bottom-margin;
-
-    // @media(min-width: $tablet){
-    //     margin-bottom: $tablet-section-bottom-margin;
-    // }
-
-    // @media(min-width: $laptop){
-    //     margin-bottom: $laptop-section-bottom-margin;
-    // }
-
-    // @media(min-width: $desktop){
-    //     margin-bottom: $section-bottom-margin;
-    // }
+    @media(min-width: $large-desktop){
+        margin-bottom: 165px;
+    }
 
     @extend .section-margins;
 
@@ -38,6 +28,7 @@
             bottom: -$column-gutter*2;
             right: 0;
             z-index: 3;
+            display: none;
 
             li {
                 display: inline-block;
@@ -64,7 +55,7 @@
             display: none;
 
             @media(min-width: $tablet){
-                display: block;
+                // display: block;
             }
 
             svg {

@@ -38,4 +38,8 @@ window.onload = function(){
 	function goToPage(e){
 		window.location.href = e.target.dataset.location + '.html';
 	}
+
+	document.querySelector('.screensize').addEventListener('click', function(){
+		alert(window.innerWidth);
+	}, {passive:true});
 };

@@ -5,7 +5,7 @@
         <meta name="description" content="Youniverse Digital Website">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Youniverse</title>
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+		<link href="https://use.typekit.net/lgy5mzb.css" rel="stylesheet">
 	</head>
 	<body>
 
@@ -20,19 +20,31 @@
 			<img src="img/identity-print-screen.png" alt="header text" class="header-text">
 		</header>
 
+		<div id="menuToggle">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+
 		<nav class="menu">
-			<div class="mobile-menu" id="menuToggle">
-				<span></span>
-				<span></span>
-				<span></span>
+			<div class="logo">
+				<img src="img/ydl-logo-black.png" alt="youniverse logo">
 			</div>
-			<ul>
-				<li><a href="#about" class="current-item">About</a></li>
-				<li><a href="#why">Why</a></li>
-				<li><a href="#work">Work</a></li>
-				<li><a href="#clients">Clients</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
+			<div class="menu-menu">
+				<div class="mobile-menu active" id="menuToggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<ul>
+					<li><a href="#intro" class="current-item">Intro</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#about">Profile</a></li>
+					<li><a href="#ckn">Creative Knowledge Network</a></li>
+					<li><a href="#clients">Clients</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
 		</nav>
 
 		<section id="about">
@@ -74,7 +86,7 @@
 			<div class="container">
 				<h2>We’re here to support you, champion you. To help you grow.</h2>
 				<p>See if we’re the right fit for you.</p>
-				<a href="javascript:void(0);" class="button pageLink" data-location="playbook">View Playbook</a>
+				<a href="javascript:void(0);" class="button pageLink" data-location="playbook">View resume</a>
 			</div>
 		</section>
 
@@ -95,9 +107,7 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					consequat.</p>
 				</div>
 				<div id="team_mem_2" class="team-member-info">
 					<h3>Creative Direction</h3>
@@ -166,6 +176,10 @@
 					<div class="two-cols">
 						<div>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<br>
+							<p>Od tempor incididunt ut labore et dolore magna aliqua.</p>
+							<br>
+							<br>
 							<a href="javascript:void(0);" class="button pageLink" data-location="playbook">Find out more</a>
 						</div>
 						<div>
@@ -182,60 +196,35 @@
 					<div class="inner-bg">
 						<img src="img/mckenna.jpg">
 					</div>
-					<!-- <div class="captions">
-						<h4>Chris Hoy</h4>
-						<p>Website</p>
-					</div> -->
 					<img src="img/penguin.jpg" class="client">
 				</a>
 				<a class="work-item" style="" href="javascript:void(0);">
 					<div class="inner-bg">
 						<img src="img/apollo.jpg">
 					</div>
-					<!-- <div class="captions">
-						<h4>Chris Hoy</h4>
-						<p>Website</p>
-					</div> -->
 					<img src="img/bbc.jpg" class="client">
 				</a>
 				<a class="work-item pageLink" href="javascript:void(0);" data-location="single-work">
 					<div class="inner-bg">
 						<img src="img/snowman.jpg">
 					</div>
-					<!-- <div class="captions">
-						<h4>Chris Hoy</h4>
-						<p>Website</p>
-					</div> -->
 					<img src="img/penguin.jpg" class="client">
 				</a>
 				<a class="work-item pageLink" href="javascript:void(0);" data-location="single-work">
 					<div class="inner-bg">
 						<img src="img/inspiring.jpg">
 					</div>
-					<!-- <div class="captions">
-						<h4>Chris Hoy</h4>
-						<p>Website</p>
-					</div> -->
-					<!-- <img src="img/hachette.png" class="client"> -->
 				</a>
 				<a class="work-item pageLink" href="javascript:void(0);" data-location="single-work">
 					<div class="inner-bg">
 						<img src="img/verve.jpg">
 					</div>
-					<!-- <div class="captions">
-						<h4>Chris Hoy</h4>
-						<p>Website</p>
-					</div> -->
 					<img src="img/verve-client-logo.jpg" class="client">
 				</a>
 				<a class="work-item pageLink" href="javascript:void(0);" data-location="single-work">
 					<div class="inner-bg">
 						<img src="img/hodder.jpg">
 					</div>
-					<!-- <div class="captions">
-						<h4>Chris Hoy</h4>
-						<p>Website</p>
-					</div> -->
 					<img src="img/hachete.jpg" class="client">
 				</a>
 
@@ -244,7 +233,6 @@
 		</section>
 
 		<section class="contact" id="contact">
-			<!-- <div class="alpha-bg"></div> -->
 			<div class="container">
 				<div class="map">
 					<img src="img/glow.png">
@@ -255,7 +243,7 @@
 						<p>Leicester</p>
 						<p>LE1 1RE</p>
 						<p><a href="mailto:contact@youniverse.co.uk">contact@youniverse.co.uk</a></p>
-						<p>Skype us: youniverseltd</p>
+						<p><a href="">Skype us: youniverseltd</p></a>
 					</div>
 				</div>
 			</div>
@@ -263,11 +251,13 @@
 
 		<div class="footer">
 			<div class="container">
-				<p><a href="">Terms and conditions</a> | <a href="">Privacy and cookies</a> | <a href="">Accessibility</a></p>
+				<a href="">Terms and conditions</a> | <a href="">Privacy and cookies</a> | <a href="">Accessibility</a>
+				<br>
 				<p>Copyright Youniverse Digital Limited 2017. Youniverse Digital Ltd.</p>
 				<p>Registered in England number 07401187.</p>
 			</div>
 		</div>
+		<div class="screensize" style="position: absolute; top: 20px; right:20px; width:20px; height: 20px; background: #ccc; z-index: 9999;"></div>
 		<div class="menu-bg-alpha"></div>
 		<script src="https://rawgit.com/ruyadorno/simple-slider/master/dist/simpleslider.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
