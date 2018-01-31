@@ -1,10 +1,10 @@
-import './scss/main.scss';
-import team from './js/team.js';
-import slider from './js/slider.js';
-import menu from './js/menu.js';
-import headerAnim from './js/headerAnimation.js';
-import phoneAnimation from './js/phoneAnimation.js';
-import accordions from './js/accordions.js';
+import './assets/scss/styles.scss';
+import team from './assets/js/team.js';
+import slider from './assets/js/slider.js';
+import menu from './assets/js/menu.js';
+import headerAnim from './assets/js/headerAnimation.js';
+import phoneAnimation from './assets/js/phoneAnimation.js';
+import accordions from './assets/js/accordions.js';
 
 window.onload = function(){
 	menu.init();
@@ -38,8 +38,4 @@ window.onload = function(){
 	function goToPage(e){
 		window.location.href = e.target.dataset.location + '.html';
 	}
-
-	document.querySelector('.screensize').addEventListener('click', function(){
-		alert(window.innerWidth);
-	}, {passive:true});
 };

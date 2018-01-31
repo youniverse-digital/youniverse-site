@@ -1,5 +1,4 @@
 function init(){
-	console.log('set tea');
 	const teamBtns = document.querySelectorAll('.team-list li');
 
 	teamBtns.forEach(function(memberBtn){

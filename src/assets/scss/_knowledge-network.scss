@@ -6,7 +6,7 @@
 	max-width: 1440px;
 
     @media(min-width: $tablet){
-		background-image: url("../img/stripe_a8f79ad9f43ad379a30cb324d5dbae53.png");
+		background-image: url('/assets/media/stripe.png');
         margin-bottom: $tablet-section-bottom-margin;
         padding: $tablet-section-bottom-margin 0;
     }
