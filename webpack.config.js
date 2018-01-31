@@ -87,6 +87,10 @@ const config = {
 			template: 'playbook.html',
 			filename: 'playbook.html'
 		}),
+		new HtmlWebpackPlugin({
+			template: 'ckn.html',
+			filename: 'ckn.html'
+		}),
 		extractPlugin
 	],
   	devServer: {
