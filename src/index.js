@@ -5,6 +5,8 @@ import menu from './assets/js/menu.js';
 import headerAnim from './assets/js/headerAnimation.js';
 import phoneAnimation from './assets/js/phoneAnimation.js';
 import accordions from './assets/js/accordions.js';
+import contactImage from './assets/media/contact.jpg';
+import stripeImage from './assets/media/stripe.png';
 
 window.onload = function(){
 	menu.init();

@@ -40,16 +40,16 @@ const config = {
 				use: extractPlugin.extract({
 					use: [
 						{
-						loader: 'css-loader',
-						options: {
-						  sourceMap: true
-						}
+							loader: 'css-loader',
+							options: {
+							  sourceMap: true
+							}
 						},
 						{
-						loader: 'sass-loader',
-						options: {
-						  sourceMap: true
-						}
+							loader: 'sass-loader',
+							options: {
+							  sourceMap: true
+							}
 						}
 					],
 					fallback: 'style-loader'
@@ -63,6 +63,7 @@ const config = {
 						options: {
 							name: '[name].[ext]',
 							outputPath: './assets/media/',
+							// limit: 8000
 						}
 					}
 				]

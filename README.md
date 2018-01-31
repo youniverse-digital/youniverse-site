@@ -1,15 +1,20 @@
 # youniverse-site
 
-- uses webpack 
+- webpack bundler
+- sass for styles
+- babel for es6
 
-## development
+## install
 
 cd to the folder 'youniverse-site' and 
 
-	- npm install (installs dependencies)
-	- npm run dev (starts dev server on localhost:12000)
-	- npm build:prod (build production files)
+- npm install (installs dependencies)
+
+## development
+
+- npm run dev (starts dev server on localhost:12000)
 
 ## production
 
-once built upload the contents of /dist/ to the server
+- npm run build:prod
+- once built upload the contents of /dist/ to the server
