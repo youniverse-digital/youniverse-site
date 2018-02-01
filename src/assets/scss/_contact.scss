@@ -1,18 +1,29 @@
 .contact {
-	background-image: url('./../media/contact.jpg');
-	background-size: cover;
-	background-position: center center;
 	color: #fff;
 	padding: $column-padding 0 100px 0;
 	position: relative;
 
 	@media(min-width: $tablet) {
-		padding: 80px 0 20px 0;
+		padding: 80px 0 20% 0;
 	}
 
 	@media(min-width: $large-desktop){
 		padding-top: 70px;
 		padding-bottom: 300px;
+	}
+
+	.contact-bg {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: bottom;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		// @media(min-width: $tablet){
+		// 	position: relative;
+		// }
 	}
 
 	a {
@@ -23,6 +34,14 @@
 
 		z-index: 2;
 		text-align: center;
+
+		// position: absolute;
+	 //    top: 0;
+	 //    left: 0;
+	 //    right: 0;
+	 //    bottom: 0;
+	 //    margin: auto;
+	 //    height: 500px;
 
 		@media(min-width: $huge-desktop){
 			padding: 250px 0;
@@ -37,10 +56,14 @@
 			img {
 				margin: 0 auto;
 				display: block;
-				max-width: 100%;
+				max-width: 300px;
 
 				@media(min-width: $tablet){
-					max-width: 570px;
+					max-width: 470px;
+				}
+
+				@media(min-width: $laptop){
+					max-width: 600px;
 				}
 
 				@media(min-width: $desktop){
@@ -67,8 +90,9 @@
 				align-items: center;
 
 				p {
-					max-width: 50%;
+					max-width: 60%;
 					margin: 2px 0;
+					font-size: 14px;
 
 					strong {
 						@include bottomLine($color: #fff, $width: 100%, $height: $youniverse-thin-line-height);
@@ -76,6 +100,14 @@
 
 					@media(min-width: $tablet){
 						font-size: 18px;
+					}
+
+					@media(min-width: $laptop){
+						font-size: 22px;
+					}
+
+					@media(min-width: $desktop){
+						font-size: 27px;
 					}
 
 					@media(min-width: $large-desktop){
@@ -98,7 +130,7 @@
 
 					@media(min-width: $large-desktop){
 						font-size: 27px;
-					}	
+					}
 				}
 			}
 		}

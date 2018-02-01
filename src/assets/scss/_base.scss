@@ -4,7 +4,7 @@
 
 ::selection {
   background: $youniverse-teal;
-  background: transparent;
+  // background: transparent;
 }
 
 *::-webkit-scrollbar {
@@ -25,6 +25,26 @@ body {
     &.fixed {
     	overflow: hidden;
     }
+
+    @media(min-width: $med-phone){
+    	font-size: 18px;
+    }
+
+    @media(min-width: $small-tablet){
+		font-size: 20px;
+	}
+
+	@media(min-width: $tablet){
+		// font-size: 24px;
+	}
+
+	@media(min-width: $tablet-landscape){
+		font-size: 22px;
+	}
+
+    @media(min-width: $laptop){
+		font-size: 27px;
+	}
 
     @media(min-width: $large-desktop){
 		line-height: 1.2;
@@ -67,23 +87,23 @@ li {
 p {
 	margin: $column-gutter 0;
 
-	@media(min-width: $laptop){
-		font-size: 27px;
-	}
+	// @media(min-width: $laptop){
+	// 	font-size: 27px;
+	// }
 }
 
 a {
 	color: $youniverse-red;
 	text-decoration: none;
 	font-weight: bold;
-	font-size: 14px;
+	// font-size: 14px;
 
 	@media(min-width: $tablet){
-		font-size: 16px;
+		// font-size: 16px;
 	}
 
 	@media(min-width: $desktop){
-		font-size: 27px;
+		// font-size: 27px;
 	}
 }
 

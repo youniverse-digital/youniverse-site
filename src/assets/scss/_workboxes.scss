@@ -46,7 +46,7 @@
 			    transition: all $transition-time ease-out;
 			    opacity: 1;
 
-			    @media(min-width: $laptop) {
+			    @media(min-width: $tablet-landscape) {
 			    	opacity: 0;
 			    }
 			}

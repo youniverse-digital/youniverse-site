@@ -8,10 +8,10 @@ const extractPlugin = new ExtractTextPlugin({
 });
 
 const config = {
- 	context: path.resolve(__dirname, 'src'),  
+ 	context: path.resolve(__dirname, 'src'),
  	entry: {
     	// removing 'src' directory from entry point, since 'context' is taking care of that
-    	app: './index.js'
+    	app: './app.js'
   	},
   	output: {
    		path: path.resolve(__dirname, 'dist'),
@@ -27,11 +27,11 @@ const config = {
 					loader: "babel-loader",
 					options: {
 						presets: ['env']
-					} 
+					}
 				}
 			},
-			{ 
-				test: /\.html$/, 
+			{
+				test: /\.html$/,
 				use: ['html-loader']
 			},
 			{
@@ -42,13 +42,15 @@ const config = {
 						{
 							loader: 'css-loader',
 							options: {
-							  sourceMap: true
+								url : false
+							  	// sourceMap: true
 							}
 						},
 						{
 							loader: 'sass-loader',
 							options: {
-							  sourceMap: true
+								url : false
+							  // sourceMap: true
 							}
 						}
 					],
@@ -59,11 +61,11 @@ const config = {
 				test: /\.(jpg|png|gif|svg)$/,
 				use: [
 					{
-						loader: 'file-loader',
+						loader: 'url-loader',
 						options: {
 							name: '[name].[ext]',
 							outputPath: './assets/media/',
-							// limit: 8000
+							limit: 8000
 						}
 					}
 				]
@@ -94,11 +96,12 @@ const config = {
 		extractPlugin
 	],
   	devServer: {
-  		contentBase: path.resolve(__dirname, "./dist/assets/media"),
+  		contentBase: path.resolve(__dirname, "./dist/"),
 		compress: true,
 		port: 12000,
 		stats: 'errors-only',
-		open: true
+		open: true,
+		// hot: true
   	},
   	devtool: 'inline-source-map'
 };

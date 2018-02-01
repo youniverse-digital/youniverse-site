@@ -50,13 +50,7 @@ function init(){
 			document.querySelector('.menu').classList.add('nav-hide');
 		}
 
-		if(window.innerWidth < 768) {
-			if(document.scrollingElement.scrollTop > window.innerHeight/2){
-				document.querySelector('.menu').classList.add('scrolled');
-			}else {
-				document.querySelector('.menu').classList.remove('scrolled');
-			}
-		}
+		checkMenuPos();
 
 	}, {passive : false});
 
@@ -77,9 +71,20 @@ function init(){
 
 	function toggleMenuSystem(){
 		menu.classList.toggle('active');
-		// menuBg.classList.toggle('active');
 		document.body.classList.toggle('fixed');
 	}
+
+	function checkMenuPos(){
+		if(window.innerWidth < 768) {
+			if(document.scrollingElement.scrollTop > window.innerHeight/4){
+				menuBtn.classList.add('scrolled');
+			}else {
+				menuBtn.classList.remove('scrolled');
+			}
+		}
+	}
+
+	checkMenuPos();
 }
 
 module.exports = {

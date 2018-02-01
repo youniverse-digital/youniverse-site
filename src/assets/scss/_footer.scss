@@ -5,6 +5,10 @@
 	overflow: hidden;
 	text-align: center;
 
+	@media(min-width: $tablet){
+		padding: $column-padding 0;
+	}
+
 	@media(min-width: $laptop){
 		padding: $column-padding 0;
 	}
@@ -19,6 +23,10 @@
 		margin: 0;
 		font-weight: 100;
 
+		@media(min-width: $small-tablet){
+	        font-size: 14px;
+	    }
+
 		@media(min-width: $large-desktop){
 			font-size: 18px;
 			font-weight: 100;
@@ -28,12 +36,29 @@
 	a {
 		color: #fff;
 		font-size: 12px;
-		margin-bottom: 10px;
-		display: inline-block;
+		margin-bottom: 5px;
+		display: block;
+
+		@media(min-width: $small-tablet){
+	        font-size: 14px;
+	    }
+
+		@media(min-width: $tablet){
+			display: inline-block;
+		}
 
 		@media(min-width: $large-desktop){
 			font-size: 18px;
 			font-weight: 100;
+			display: inline-block;
+			margin-bottom: 10px;
+		}
+	}
+
+	span {
+		display: none;
+		@media(min-width: $tablet){
+			display: inline-block;
 		}
 	}
 }

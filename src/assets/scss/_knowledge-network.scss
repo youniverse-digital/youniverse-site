@@ -2,11 +2,12 @@
 	margin: auto;
 	padding: $mobile-section-bottom-margin 0;
 	margin-bottom: $mobile-section-bottom-margin;
-	background: #f1f1f1;
+	// background: #f1f1f1;
 	max-width: 1440px;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAAJElEQVQImT2JsQ0AMAyDyP9X2o+QIWqZEJDEx6gA0JZr9/mmLvUvKHNnB/qvAAAAAElFTkSuQmCC');
 
     @media(min-width: $tablet){
-		background-image: url('/assets/media/stripe.png');
+		// background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAAJElEQVQImT2JsQ0AMAyDyP9X2o+QIWqZEJDEx6gA0JZr9/mmLvUvKHNnB/qvAAAAAElFTkSuQmCC');
         margin-bottom: $tablet-section-bottom-margin;
         padding: $tablet-section-bottom-margin 0;
     }
@@ -32,10 +33,11 @@
 	h2 {
 		font-weight: 800;
 		margin-top: 0;
+		margin-bottom: 0;
 
 		@media(min-width: $large-desktop){
 			font-size: 66px;
-			margin-bottom: 0px; 
+			// margin-bottom: 0px;
 		}
 
 		span {
@@ -48,18 +50,30 @@
 	}
 
 	h3 {
-		
+
 		font-weight: 100;
-		margin-top: 20px;
+		margin-top: 10px;
+		margin-bottom: 0;
+
+		@media(min-width: $tablet){
+			margin-top: 5px;
+			margin-bottom: 40px;
+		}
 
 		@media(min-width: $large-desktop){
 			font-size: 32px;
-			margin-bottom: 60px; 
+			margin-bottom: 60px;
 			margin-top: 5px;
 		}
 
 		&:after {
 			display:none;
+		}
+	}
+
+	.button {
+		@media(min-width: $large-desktop){
+			margin-top: 30px;
 		}
 	}
 
@@ -83,8 +97,8 @@
 
 			    &:before {
 			    	@media(min-width: $large-desktop){
-			    		margin-bottom: 50px;	
-			    	}	
+			    		margin-bottom: 50px;
+			    	}
 			    }
 			}
 		}

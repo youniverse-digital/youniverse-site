@@ -55,14 +55,18 @@
 	margin: auto;
 	padding: $column-padding;
 
+    @media(min-width: $small-tablet){
+        width: 95%;
+    }
+
 	@media(min-width: $tablet){
 		padding: 0;
-		width: 80%;
-	}
-
-	@media(min-width: $laptop){
 		width: 85%;
 	}
+
+	// @media(min-width: $laptop){
+	// 	width: 85%;
+	// }
 
 	@media(min-width: $desktop){
 		width: 100%;
@@ -71,6 +75,15 @@
 	&-large{
 		@extend .container;
 		margin: auto;
+
+        @media(min-width: $tablet){
+            padding: 0;
+            width: 90%;
+        }
+
+        // @media(min-width: $laptop){
+        //     width: 90%;
+        // }
 
 		@media(min-width: 1500px){
 			max-width: $large-container-width;
@@ -98,6 +111,10 @@
     margin: $column-gutter auto $column-gutter 0;
     border: 3px solid #000;
     padding: $column-padding/2 $column-padding;
+
+    @media(min-width: $med-phone){
+
+    }
 
     @media(min-width: $laptop){
     	font-size: 30px;
