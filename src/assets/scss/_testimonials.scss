@@ -1,0 +1,10 @@
+.testimonials {
+	background-color: $youniverse-pink;
+	color: #fff;
+	margin-top: 30px;
+	padding: $column-padding*2 20px;
+
+	@media(min-width: $tablet){
+		padding: $column-padding*4;
+	}
+}

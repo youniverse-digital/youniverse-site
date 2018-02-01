@@ -1,34 +1,74 @@
-.alt-logo {
-	img {
-		position: relative;
-		max-width: 300px;
-	}
-}
-
 .playbook {
 
 	@extend .section-paddings;
+
+	// @media(min-width: $tablet){
+	// 	@extend .section-paddings;
+	// }
 
 	&:nth-of-type(even) {
 		background-color: #eeeeee;
 	}
 
-	&.playbook-start {
-		margin-top: 100px;
-
-		p {
-			@media(min-width: $desktop){
-				font-size: 60px;
-			}
+	&#who {
+		img {
+			margin-top: 30px;
 		}
+	}
 
-		.pdf-link {
-			float: right;
-		}
+	img {
+		max-width: 100%;
 	}
 
 	h2 {
 		display: inline-block;
+		margin-top: 0;
 		@include bottomLine($color: #000, $width: 100%, $height: $youniverse-thin-line-height);
+
+		@media(min-width: $tablet){
+			margin-top: 20px;
+		}
 	}
+}
+
+.playbook-start {
+
+	margin-top: 30px;
+
+	@media(min-width: $tablet){
+		margin-top: 100px;
+	}
+
+	.container {
+		display: flex;
+		margin-bottom: 30px;
+
+		h1 {
+			flex-grow: 1;
+			margin: 0;
+			color: $youniverse-pink;
+			position: relative;
+
+			&:after {
+				position: absolute;
+				bottom: 0;
+			}
+
+			span {
+				color: #bfbfbf;
+				font-weight: 100;
+			}
+		}
+
+		.pdf-link {
+
+			width: 50px;
+
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+
+
 }

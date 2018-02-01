@@ -20,6 +20,8 @@ $menuRight : 10px;
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: center center;
+    cursor: pointer;
+    cursor: hand;
 
     &.scrolled {
     	top: $menuTop;
@@ -92,9 +94,7 @@ $menuRight : 10px;
 				text-transform: uppercase;
 				text-decoration: none;
 				color: #000;
-				// margin: ($column-gutter) 0;
 				font-size: 22px;
-				// margin-bottom: 25px;
 
 				@media(min-width: $small-tablet){
 			        font-size: 30px;
@@ -102,22 +102,18 @@ $menuRight : 10px;
 
 				@media(min-width: $tablet){
 					font-size: 36px;
-					// margin-bottom: 55px;
 				}
 
 				@media(min-width: $tablet-landscape){
 					font-size: 46px;
-					// margin-bottom: 55px;
 				}
 
 				@media(min-width: $laptop){
 					font-size: 48px;
-					// margin-bottom: 55px;
 				}
 
 				@media(min-width: $desktop){
 					font-size: 62px;
-					// margin-bottom: 55px;
 				}
 
 				&.current-item {
@@ -125,6 +121,40 @@ $menuRight : 10px;
 
 					&:after {
 						background-color: #000;
+					}
+				}
+			}
+		}
+	}
+
+	&.playbook-menu {
+		ul {
+			display: block;
+
+			li {
+				display: inline-block;
+
+				a {
+					position: relative;
+				    padding-right: 18px;
+				    padding-left: 10px;
+				    text-transform: none;
+
+					&:after {
+						content: '';
+						position: absolute;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+						width: 2px;
+						height: 52%;
+						background-color: #c1c1c1;
+						display: block;
+					}
+
+					&.current-item {
+						color: #3f51b5;
 					}
 				}
 			}

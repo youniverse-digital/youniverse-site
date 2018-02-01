@@ -113,32 +113,33 @@ img {
 
 blockquote {
 	padding: 0;
-	font-weight: bold;
-    max-width: 320px;
-    margin: 25px auto 0px auto;
+	margin: 0;
+	// font-weight: bold;
+    // max-width: 320px;
+    // margin: 25px auto 0px auto;
 
-	&:before {
-		content: '';
-		display: block;
-		background-color: $youniverse-red;
-		width: 100%;
-		height: $youniverse-thin-line-height;
-		margin: 20px 0;
-	}
+	// &:before {
+	// 	content: '';
+	// 	display: block;
+	// 	background-color: $youniverse-red;
+	// 	width: 100%;
+	// 	height: $youniverse-thin-line-height;
+	// 	margin: 20px 0;
+	// }
 
-	&:after {
-		content: '';
-		display: block;
-		background-color: $youniverse-red;
-		width: 100%;
-		height: $youniverse-thin-line-height;
-		margin: 20px 0 10px 0;
-	}
+	// &:after {
+	// 	content: '';
+	// 	display: block;
+	// 	background-color: $youniverse-red;
+	// 	width: 100%;
+	// 	height: $youniverse-thin-line-height;
+	// 	margin: 20px 0 10px 0;
+	// }
 
-	@media(min-width: $tablet){
-	    max-width: none;
-	    margin: 0 0 $column-gutter 0;
-	}
+	// @media(min-width: $tablet){
+	//     max-width: none;
+	//     margin: 0 0 $column-gutter 0;
+	// }
 }
 
 .quote-source {
