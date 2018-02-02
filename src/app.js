@@ -5,37 +5,18 @@ import menu from './assets/js/menu.js';
 import headerAnim from './assets/js/headerAnimation.js';
 import phoneAnimation from './assets/js/phoneAnimation.js';
 import accordions from './assets/js/accordions.js';
+import showWork from './assets/js/showWork.js';
 
 window.onload = function(){
-	menu.init();
-
-	if(document.querySelector('.team-panel')){
-		team.init();
-	}
-
-	if(document.querySelector('.work-slider')){
-		slider.init();
-	}
-
-	if(document.querySelector('.animating-header')){
-		headerAnim.init();
-	}
-
-	if(document.querySelector('.website-scroll')){
-		phoneAnimation.init();
-	}
-
-	if(document.querySelector('.accordion')){
-		accordions.init();
-	}
-
-	const pageLinks = document.querySelectorAll('.pageLink');
-
-	pageLinks.forEach(function(link){
-		link.addEventListener('click', goToPage, {passive : false});
-	});
-
-	function goToPage(e){
-		window.location.href = e.target.dataset.location + '.html';
-	}
+	elementExists('.menu') && menu.init();
+	elementExists('.team-panel') && team.init();
+	elementExists('.work-slider') && slider.init();
+	elementExists('.animating-header') && headerAnim.init();
+	elementExists('.website-scroll') && phoneAnimation.init();
+	elementExists('.accordion') && accordions.init();
+	elementExists('.view-more-work') && showWork.init();
 };
+
+function elementExists(selector){
+	return document.querySelector(selector);
+}

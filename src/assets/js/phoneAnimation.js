@@ -3,32 +3,32 @@ import animations from 'create-keyframe-animation';
 function init(){
 	const yVal = document.querySelector('.website-scroll').clientHeight;
 	const yDelta = document.querySelector('.phone-anim-phone').clientHeight;
+	const duration = yVal*20;
+	console.log(duration);
 
 	animations.registerAnimation({
 		name: 'move',
-	  	// the actual array of animation changes
+	  	// the array of animation changes
 	  	animation: [
 			[0,0],
 			[0, -(yVal - yDelta)],
 			[0, 0],
 	  	],
-	  	// optional presets for when actually running the animation
+	  	// optional presets for when running the animation
 	  	presets: {
-			duration: 30000,
+			duration:duration ,
 	    	easing: 'linear',
 	    	delay: 500,
 	    	iterations: 100,
 	  	}
 	});
 
-	// then run it
+	// then run the animation
 	const el = document.querySelector('.website-scroll');
-
 	animations.runAnimation(el, 'move', animFinished);
 
 	function animFinished(){
-		// el.style.transform = '';
-		// el.style.animation = '';
+
 	}
 }
 

@@ -21,6 +21,10 @@
 			display: block;
 			width: 100%;
 
+			&:nth-child(n+7){
+				display: none;
+			}
+
 			@media(min-width: $tablet) {
 				margin: 0;
 			}
@@ -62,6 +66,18 @@
 		.button {
 			@media(min-width: $large-desktop) {
 				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.work-panels {
+	&.show-all {
+		.container-large {
+			.work-item{
+				&:nth-child(n+7){
+					display: block;
+				}
 			}
 		}
 	}

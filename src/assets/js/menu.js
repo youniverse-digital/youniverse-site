@@ -27,7 +27,6 @@ function init(){
 	const menuBtn 	= document.querySelector('#menuToggle');
 	const menu 		= document.querySelector('.menu');
 	const closeMenu = document.querySelector('#close-menu');
-	// const menuList 	= document.querySelector('.menu ul');
 	const menuBg 	= document.querySelector('.menu-bg-alpha');
 
 	menuItems.forEach(function(item){
@@ -61,11 +60,11 @@ function init(){
 		}
 	});
 
-	menuBtn.addEventListener('click', function(e){
+	menuBtn && menuBtn.addEventListener('click', function(e){
 		toggleMenuSystem();
 	}, {passive : true});
 
-	closeMenu.addEventListener('click', function(e){
+	closeMenu && closeMenu.addEventListener('click', function(e){
 		toggleMenuSystem();
 	}, {passive : true});
 

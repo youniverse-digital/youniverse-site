@@ -4,6 +4,14 @@
 
 	@extend .section-margins;
 
+	img {
+		max-width: 100%;
+	}
+
+	video {
+		max-width: 100%;
+	}
+
 	.container {
 		.two-cols {
 			@extend .section-margins;
@@ -24,7 +32,8 @@
 	.work-images {
 		img {
 			@extend .section-margins;
-			max-width: 100%;
+			width: 100%;
+			// max-width: 100%;
 			display: block;
 		}
 	}

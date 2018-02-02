@@ -73,7 +73,11 @@ const config = {
 			{
 				test: /\.(woff|woff2|eot|ttf|otf)$/,
 				use: ['file-loader']
-			}
+			},
+			{
+			  test: /\.mp4$/,
+			  loader: 'file',
+			},
 		]
 	},
   	plugins: [
@@ -82,17 +86,42 @@ const config = {
 			template: 'index.html'
 		}),
 		new HtmlWebpackPlugin({
-			template: 'work-single.html',
-			filename: 'work-single.html'
-		}),
-		new HtmlWebpackPlugin({
 			template: 'playbook.html',
 			filename: 'playbook.html'
 		}),
 		new HtmlWebpackPlugin({
-			template: 'ckn.html',
-			filename: 'ckn.html'
+			template: 'flying-fergus.html',
+			filename: 'flying-fergus.html'
 		}),
+		new HtmlWebpackPlugin({
+			template: 'snowman-game.html',
+			filename: 'snowman-game.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: 'mckenna.html',
+			filename: 'mckenna.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: 'apollo.html',
+			filename: 'apollo.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: 'inspiring-people.html',
+			filename: 'inspiring-people.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: 'verve.html',
+			filename: 'verve.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: 'hodder-staunton.html',
+			filename: 'hodder-staunton.html'
+		}),
+		// new HtmlWebpackPlugin({
+		// 	template: '.html',
+		// 	filename: '.html'
+		// }),
+
 		extractPlugin
 	],
   	devServer: {
