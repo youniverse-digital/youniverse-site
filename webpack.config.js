@@ -6,6 +6,7 @@ const webpack = require('webpack');
 const extractPlugin = new ExtractTextPlugin({
   filename: './assets/css/app.css'
 });
+const DashboardPlugin = require('webpack-dashboard/plugin');
 
 const config = {
  	context: path.resolve(__dirname, 'src'),
@@ -117,6 +118,7 @@ const config = {
 			template: 'hodder-staunton.html',
 			filename: 'hodder-staunton.html'
 		}),
+		new DashboardPlugin(),
 		// new HtmlWebpackPlugin({
 		// 	template: '.html',
 		// 	filename: '.html'
