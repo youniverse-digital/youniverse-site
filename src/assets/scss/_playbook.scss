@@ -33,10 +33,14 @@
 
 .playbook-start {
 
-	margin-top: 30px;
+	padding-top: 30px;
 
 	@media(min-width: $tablet){
-		margin-top: 100px;
+		padding-top: 100px;
+	}
+
+	@media(min-width: $laptop){
+		padding-top: 250px;
 	}
 
 	.container {

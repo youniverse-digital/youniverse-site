@@ -66,7 +66,7 @@ const config = {
 						options: {
 							name: '[name].[ext]',
 							outputPath: './assets/media/',
-							limit: 8000
+							limit: 10000
 						}
 					}
 				]
@@ -91,32 +91,8 @@ const config = {
 			filename: 'playbook.html'
 		}),
 		new HtmlWebpackPlugin({
-			template: 'flying-fergus.html',
-			filename: 'flying-fergus.html'
-		}),
-		new HtmlWebpackPlugin({
-			template: 'snowman-game.html',
-			filename: 'snowman-game.html'
-		}),
-		new HtmlWebpackPlugin({
-			template: 'mckenna.html',
-			filename: 'mckenna.html'
-		}),
-		new HtmlWebpackPlugin({
-			template: 'apollo.html',
-			filename: 'apollo.html'
-		}),
-		new HtmlWebpackPlugin({
-			template: 'inspiring-people.html',
-			filename: 'inspiring-people.html'
-		}),
-		new HtmlWebpackPlugin({
-			template: 'verve.html',
-			filename: 'verve.html'
-		}),
-		new HtmlWebpackPlugin({
-			template: 'hodder-staunton.html',
-			filename: 'hodder-staunton.html'
+			template: 'single-work.html',
+			filename: 'single-work.html'
 		}),
 		new DashboardPlugin(),
 		// new HtmlWebpackPlugin({
