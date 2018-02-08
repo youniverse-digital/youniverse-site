@@ -1,25 +1,19 @@
 <?php /* Template Name: Home Page Template */ ?>
 
 <?php get_header(); ?>
-	<div class="logo">
-		<a href="<?php echo home_url(); ?>">
-			<?php
-				$mainLogo = get_field('main_logo', 'options');
-				if($mainLogo){
-					echo '<img src="'.$mainLogo.'" alt="Logo">';
-				}else {
-					echo '<img src="'.get_template_directory_uri().'/dist/assets/media/logo.png" alt="Logo">';
-				}
-			?>
-		</a>
-	</div>
 
-	<header class="animating-header" id="intro">
-		<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/header-small.jpg" alt="header image" class="hero-bg-small">
-		<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/header.jpg" alt="header image" class="hero-bg-medium">
-		<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/header-large.jpg" alt="header image" class="hero-bg-large">
-		<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/identity-print-screen.png" alt="header text" class="header-text">
-	</header>
+	<div class="header">
+		<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/hero-1.jpg" alt="hero image 2020" class="bg-image">
+		<?php
+			$mainLogo = get_field('main_logo', 'options');
+			if($mainLogo){
+				echo '<img src="'.$mainLogo.'" alt="Logo" class="logo-image">';
+			}else {
+				echo '<img src="'.get_template_directory_uri().'/dist/assets/media/logo.png" alt="Logo" class="logo-image">';
+			}
+		?>
+		<h2>Identity. Print. Screen</h2>
+	</div>
 
 	<div id="menuToggle"></div>
 

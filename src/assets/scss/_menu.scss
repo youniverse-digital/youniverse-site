@@ -9,9 +9,9 @@ $menuRight : 10px;
 #menuToggle {
 	@extend .menuSize;
 	position: fixed;
-	bottom: 10px;
+	top: 10px;
 	left: 10px;
-	top: auto;
+	// top: auto;
 	background-color: #fff;
     padding: 5px 8px;
     opacity: 1;

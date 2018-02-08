@@ -49,7 +49,7 @@ function init(){
 			document.querySelector('.menu').classList.add('nav-hide');
 		}
 
-		checkMenuPos();
+		// checkMenuPos();
 
 	}, {passive : false});
 
@@ -83,7 +83,7 @@ function init(){
 		}
 	}
 
-	checkMenuPos();
+	// checkMenuPos();
 }
 
 module.exports = {
