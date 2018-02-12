@@ -1,7 +1,6 @@
 function init(){
 
     // documentation for slider here http://ruyadorno.github.io/simple-slider/
-
     var isNext = true;
     let direction = 'forwards';
     var sliderElem = document.getElementById('myslider');
@@ -28,37 +27,30 @@ function init(){
         prevSlide();
     });
 
-    document.querySelector('.next').addEventListener('click', nextSlide, {passive : true});
-    document.querySelector('.prev').addEventListener('click', prevSlide, {passive : true});
+    // document.querySelector('.next').addEventListener('click', nextSlide, {passive : true});
+    // document.querySelector('.prev').addEventListener('click', prevSlide, {passive : true});
+}
 
-    function nextSlide(){
-        if (!isNext) {
-            slider.reverse();
-            isNext = true;
-        }
-        slider.next();
+function nextSlide(){
+    if (!isNext) {
+        slider.reverse();
+        isNext = true;
     }
+    slider.next();
+}
 
-    function prevSlide(){
-        if (isNext) {
-            slider.reverse();
-            isNext = false;
-        }
-        slider.next();
+function prevSlide(){
+    if (isNext) {
+        slider.reverse();
+        isNext = false;
     }
+    slider.next();
+}
 
-    function changeDots(){
-        // const activeDot = document.querySelector('.dots li.active');
-
-        // if(direction == 'forwards'){
-        //     activeDot.nextElementSibling.classList.add('active');
-        // }else {
-        //     activeDot.prevElementSibling.classList.add('active');
-        // }
-
-        // activeDot.classList.remove('active');
-    }
-
+function changeDots(prevIndex, nextIndex){
+    const activeDot = document.querySelector('.dots li.active');
+    document.querySelector('.dots li:nth-child('+(nextIndex+1)+')').classList.add('active');
+    activeDot.classList.remove('active');
 }
 
 module.exports = {

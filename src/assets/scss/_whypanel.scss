@@ -6,13 +6,17 @@
 		h2 {
 			margin-bottom: $column-gutter;
 
+			@media(min-width: $small-tablet){
+				margin-bottom: 30px;
+			}
+
 			&:after {
 				display:none;
 			}
 
 			@media(min-width: $laptop){
 				font-size: 52px;
-				margin-bottom: $column-gutter*2;
+				margin-bottom: $column-gutter*3;
 			}
 
 			@media(min-width: $desktop){
@@ -32,6 +36,17 @@
 
 			@media(min-width: $desktop){
 				font-size: 48px;
+			}
+		}
+
+		.button {
+			@media(min-width: $small-tablet){
+				margin-top: 30px;
+				margin-bottom: 50px;
+			}
+
+			@media(min-width: $laptop){
+				margin-top: 50px;
 			}
 		}
 	}

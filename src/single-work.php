@@ -12,7 +12,7 @@
 		</a>
 	</div>
 
-	<a href="<?php echo home_url(); ?>" class="back-to-home"></a>
+	<a href="<?php echo home_url(); ?>" class="back-to-home home-link"></a>
 
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
@@ -51,14 +51,14 @@
 							</div>
 							<div class="phone-anim">
 								<img src="'.get_template_directory_uri().'/dist/assets/media/phone.png" class="phone-anim-phone" alt="">
-								<img src="'.$phone_image.'" class="website-scroll" alt="">
+								<div class="inner">
+									<img src="'.$phone_image.'" class="website-scroll" alt="">
+								</div>
 							</div>
 						</div>
 					';
 				}else {
-					echo '
-						<div>'.the_content().'</div><br><br>
-					';
+					echo '<div class="intro-text-full">'.the_content().'</div><br><br>';
 				}
 			?>
 		</div>

@@ -44,26 +44,20 @@
 			border-top: 6px solid transparent;
 			border-bottom: 6px solid transparent;
 			border-left: 9px solid #fff;
+			transition: all $transition-time ease-in-out;
 		}
 
 		&.active {
 			&:before {
-				border-top: 6px solid transparent;
-				border-bottom: 6px solid transparent;
-				border-left: 9px solid #fff;
+				transform: rotate(90deg);
 			}
 		}
 	}
 
 	.content {
-		max-height: 0;
 		overflow: hidden;
 		transition: all $transition-time ease-in-out;
 		background-color: rgba(63, 81, 181, 0.2);
-
-		&.active {
-			max-height: none;
-		}
 
 		#what & {
 			background-color: rgba(0, 159, 227, 0.2);

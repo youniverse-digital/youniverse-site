@@ -17,7 +17,14 @@
 	<div id="menuToggle"></div>
 	<nav class="menu playbook-menu">
 		<div class="logo">
-			<img src="assets/media/ydl-logo-black.png" alt="youniverse logo">
+			<?php
+				$altLogo = get_field('alt_logo', 'options');
+				if($altLogo){
+					echo '<img src="'.$altLogo.'" alt="Logo">';
+				}else {
+					echo '<img src="'.get_template_directory_uri().'/dist/assets/media/ydl-logo-black.png" alt="Logo">';
+				}
+			?>
 		</div>
 		<div class="mobile-menu" id="close-menu"></div>
 		<ul>
@@ -29,13 +36,14 @@
 			<li><a href="#testimonials">Testimonials</a></li>
 			<li><a href="#contacts">Contacts</a></li>
 			<li><a href="#not-included">What we dont do</a></li>
+			<li><a href="/?location=why" class="home-link">Homepage</a></li>
 		</ul>
 	</nav>
 	<section class="playbook-start">
 		<div class="container">
 			<h1>Resume <span>v1.0</span></h1>
 			<a href="#" class="pdf-link">
-				<img src="assets/media/ydl-pdf.png" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/ydl-pdf.png" alt="">
 			</a>
 		</div>
 	</section>
@@ -153,7 +161,7 @@
 		<div class="container">
 			<h2>Who we do it for</h2>
 			<p>We work with a number of diverse clients, ranging from boutique start-ups to global organisations. Here’s a selection:</p>
-			<img src="assets/media/clients-moodboard.jpg" alt="clients image">
+			<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/clients-moodboard.jpg" alt="clients image">
 		</div>
 	</section>
 

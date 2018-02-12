@@ -46,6 +46,7 @@
 
 	.client-image {
 		max-width: 50%;
+		margin-left: 0;
 	}
 
 	video {
@@ -70,6 +71,24 @@
 	}
 
 	.work-images {
+
+		margin-top: 30px;
+
+		@media(min-width: $tablet){
+			margin-top: 60px;
+			margin-bottom: 60px;
+		}
+
+		@media(min-width: $laptop){
+			margin-top: 100px;
+			margin-bottom: 100px;
+		}
+
+		@media(min-width: $large-desktop){
+			margin-top: 150px;
+			margin-bottom: 150px;
+		}
+
 		img {
 			@extend .section-margins;
 			width: 100%;
@@ -83,42 +102,23 @@
 	}
 }
 
-.intro-text {
-	background-color: #eeeeee;
-	// padding-top: 10px;
-	// padding-bottom: 30px;
-
-	@extend .section-paddings;
-	@extend .section-margins;
+.intro-text-full {
+	padding-bottom: 30px;
 
 	@media(min-width: $tablet){
-		// padding-top: 30px;
-		padding-bottom: 0;
+		padding-bottom: 80px;
 	}
 
 	@media(min-width: $laptop){
-		padding-bottom: 0;
-	}
-
-	@media(min-width: $desktop){
-		padding-bottom: 0;
+		padding-bottom: 200px;
 	}
 
 	@media(min-width: $large-desktop){
-		padding-top: 0;
-	}
-
-	.container {
-		// padding-bottom: 0;
-		// @media(min-width: $tablet){
-		// 	padding-bottom: 13px;
-		// }
+		padding-bottom: 250px;
 	}
 }
 
 .other-work-images {
-	// @extend .section-paddings;
-	// @extend .section-margins;
 	padding-top: 30px;
 	margin-bottom: 30px;
 

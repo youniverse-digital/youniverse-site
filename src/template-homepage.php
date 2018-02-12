@@ -12,7 +12,9 @@
 				echo '<img src="'.get_template_directory_uri().'/dist/assets/media/logo.png" alt="Logo" class="logo-image">';
 			}
 		?>
-		<h2>Identity. Print. Screen</h2>
+		<div class="container">
+			<h2>Identity. Print. Screen</h2>
+		</div>
 	</div>
 
 	<div id="menuToggle"></div>
@@ -46,13 +48,40 @@
 		<div class="container-large">
             <div class="slider-wrapper">
             	<div class="slider" id="myslider">
-					<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/partridge.jpg">
-					<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/work-item-2.jpg">
-					<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/work-item-3.jpg">
-					<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/work-item-4.jpg">
+					<div>
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/work-item-3.jpg">
+						<p>Brand Identity</p>
+					</div>
+					<div>
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/slider-item.jpg">
+						<p>Digital Development</p>
+					</div>
+					<div>
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/slider-item-2.jpg">
+						<p>Author Support</p>
+					</div>
+					<div>
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/slider-item-3.jpg">
+						<p>Reports</p>
+					</div>
+					<div>
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/slider-item-4.jpg">
+						<p>TV title sequence</p>
+					</div>
+					<div>
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/slider-item-5.jpg">
+						<p>Illustration</p>
+					</div>
+					<div>
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/slider-item-6.jpg">
+						<p>Compositing</p>
+					</div>
 				</div>
 				<ul class="dots">
 				    <li class="active"></li>
+				    <li></li>
+				    <li></li>
+				    <li></li>
 				    <li></li>
 				    <li></li>
 				    <li></li>
@@ -207,6 +236,7 @@
 					<p><a href="mailto:contact@youniverse.co.uk">contact@youniverse.co.uk</a></p>
 					<p><a href="">Skype us: youniverseltd</p></a>
 				</div>
+				<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/map.png" class="map-overlay">
 			</div>
 		</div>
 	</section>

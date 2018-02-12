@@ -1,3 +1,4 @@
+import scrollToElement from 'scroll-to-element';
 /*! scrollStop.js | (c) 2017 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/scrollStop */
 /**
  * Run functions after scrolling has stopped
@@ -22,40 +23,26 @@ var scrollStop = function ( callback ) {
 ///////////////////////////////////////////////////////////////////////////////////
 
 function init(){
-	const menuItems = document.querySelectorAll('.menu ul li a');
+	const menuItems = document.querySelectorAll('.menu ul li:not(.home-link) a');
 	let scrolling 	= false;
 	const menuBtn 	= document.querySelector('#menuToggle');
 	const menu 		= document.querySelector('.menu');
 	const closeMenu = document.querySelector('#close-menu');
-	const menuBg 	= document.querySelector('.menu-bg-alpha');
 
 	menuItems.forEach(function(item){
-		item.addEventListener('click', scrollToLink, {passive : false})
+		item.addEventListener('click', scrollToLink, {passive : false});
 	});
 
-	function scrollToLink(e){
-		e.preventDefault();
-		const element = e.target.getAttribute('href');
-		document.querySelector(element).scrollIntoView({
-			behavior: 'smooth'
-		});
-		toggleMenuSystem();
-	}
-
 	window.addEventListener('scroll', function(e){
-
 		if(!scrolling){
 			scrolling = true;
-			document.querySelector('.menu').classList.add('nav-hide');
+			menu.classList.add('nav-hide');
 		}
-
-		// checkMenuPos();
-
 	}, {passive : false});
 
 	scrollStop(function () {
 		if(scrolling){
-			document.querySelector('.menu').classList.remove('nav-hide');
+			menu.classList.remove('nav-hide');
 			scrolling = false;
 		}
 	});
@@ -67,23 +54,29 @@ function init(){
 	closeMenu && closeMenu.addEventListener('click', function(e){
 		toggleMenuSystem();
 	}, {passive : true});
+}
 
-	function toggleMenuSystem(){
-		menu.classList.toggle('active');
-		document.body.classList.toggle('fixed');
-	}
-
-	function checkMenuPos(){
-		if(window.innerWidth < 768) {
-			if(document.scrollingElement.scrollTop > window.innerHeight/4){
-				menuBtn.classList.add('scrolled');
-			}else {
-				menuBtn.classList.remove('scrolled');
-			}
+function checkMenuPos(){
+	const menuBtn = document.querySelector('#menuToggle');
+	if(window.innerWidth < 768) {
+		if(document.scrollingElement.scrollTop > window.innerHeight/4){
+			menuBtn.classList.add('scrolled');
+		}else {
+			menuBtn.classList.remove('scrolled');
 		}
 	}
+}
 
-	// checkMenuPos();
+function toggleMenuSystem(){
+	const menu = document.querySelector('.menu');
+	menu.classList.toggle('active');
+	document.body.classList.toggle('fixed');
+}
+
+function scrollToLink(e){
+	const element = e.target.getAttribute('href');
+	scrollToElement(element);
+	toggleMenuSystem();
 }
 
 module.exports = {
