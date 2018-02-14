@@ -11,6 +11,10 @@
 			max-width: 90%;
 		}
 
+		@media(min-width: $laptop){
+			margin: 45px auto auto auto;
+		}
+
 		@media(min-width: $large-desktop){
 			margin: 45px auto auto auto;
 			width: 450px;
@@ -21,6 +25,6 @@
 .alt-logo {
 	img {
 		position: relative;
-		// max-width: 300px;
+		max-width: 60%;
 	}
 }

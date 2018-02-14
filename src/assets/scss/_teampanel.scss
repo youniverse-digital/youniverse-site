@@ -45,6 +45,13 @@
 			cursor: pointer;
 			width: 24%;
 			margin-bottom: 8px;
+			transition: all $transition-time ease-in-out;
+
+			&:hover {
+				&:after {
+					background-color: $youniverse-teal;
+				}
+			}
 
 			@media(min-width: $tablet){
 				flex-grow: 1;
@@ -88,7 +95,9 @@
 
 	.team-member-info {
 		display: none;
+		// opacity: 0;
 		padding: 0;
+		transition: all $transition-time ease-out;
 
 		h3 {
 			font-weight: bold;
@@ -100,7 +109,26 @@
 		}
 
 		&.active {
+		    animation: fadeInFromNone 1s ease-out;
 			display: block;
+			// opacity: 1;
 		}
 	}
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        // display: none;
+        opacity: 0;
+    }
+
+    1% {
+        // display: block;
+        opacity: 0;
+    }
+
+    100% {
+        // display: block;
+        opacity: 1;
+    }
 }

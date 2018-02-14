@@ -38,6 +38,9 @@ function init(){
 			scrolling = true;
 			menu.classList.add('nav-hide');
 		}
+		if(menuBtn.classList.contains('show-on-scroll')) {
+			checkMenuPos();
+		}
 	}, {passive : false});
 
 	scrollStop(function () {
@@ -58,25 +61,39 @@ function init(){
 
 function checkMenuPos(){
 	const menuBtn = document.querySelector('#menuToggle');
-	if(window.innerWidth < 768) {
-		if(document.scrollingElement.scrollTop > window.innerHeight/4){
-			menuBtn.classList.add('scrolled');
-		}else {
-			menuBtn.classList.remove('scrolled');
-		}
+	if(document.scrollingElement.scrollTop > window.innerHeight/4){
+		menuBtn.classList.add('scrolled');
+	}else {
+		menuBtn.classList.remove('scrolled');
 	}
 }
 
 function toggleMenuSystem(){
 	const menu = document.querySelector('.menu');
 	menu.classList.toggle('active');
-	document.body.classList.toggle('fixed');
+	// if(!menu.classList.contains('playbook-menu')){
+		document.body.classList.toggle('fixed');
+	// }
 }
 
 function scrollToLink(e){
 	const element = e.target.getAttribute('href');
+	const parent = document.querySelector('.top-menu');
 	scrollToElement(element);
-	toggleMenuSystem();
+	if(!isDescendant(parent, e.target)){
+		toggleMenuSystem();
+	}
+}
+
+function isDescendant(parent, child) {
+     var node = child.parentNode;
+     while (node != null) {
+         if (node == parent) {
+             return true;
+         }
+         node = node.parentNode;
+     }
+     return false;
 }
 
 module.exports = {

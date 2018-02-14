@@ -12,7 +12,7 @@
 		</a>
 	</div>
 
-	<a href="<?php echo home_url(); ?>" class="back-to-home home-link"></a>
+	<a href="<?php echo home_url(); ?>?location=client" class="back-to-home home-link"></a>
 
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
@@ -45,7 +45,7 @@
 				if($phone_image){
 					echo '
 						<div class="two-cols">
-							<div>';
+							<div class="text-side">';
 								the_content();
 								echo '
 							</div>
@@ -58,7 +58,9 @@
 						</div>
 					';
 				}else {
-					echo '<div class="intro-text-full">'.the_content().'</div><br><br>';
+					echo '<div class="intro-text-full">';
+							the_content();
+					echo '</div>';
 				}
 			?>
 		</div>

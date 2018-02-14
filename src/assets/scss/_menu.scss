@@ -9,8 +9,8 @@ $menuRight : 10px;
 #menuToggle {
 	@extend .menuSize;
 	position: fixed;
-	top: 10px;
-	left: 10px;
+	top: 8px;
+	left: 8px;
 	background-color: #fff;
     padding: 5px 8px;
     opacity: 1;
@@ -22,10 +22,18 @@ $menuRight : 10px;
     cursor: pointer;
     cursor: hand;
 
-    &.scrolled {
-    	top: $menuTop;
-    	bottom: auto;
-		left: $menuRight;
+  //   &.scrolled {
+  //   	top: $menuTop;
+  //   	bottom: auto;
+		// left: $menuRight;
+  //   }
+
+    &.show-on-scroll {
+    	left: -100px;
+
+    	&.scrolled {
+	    	left: 8px;
+	    }
     }
 
     @media(min-width: $tablet){
@@ -84,6 +92,10 @@ $menuRight : 10px;
 		justify-content: center;
 		align-items: center;
 
+		@media(min-width: $laptop){
+			height: calc(100% - 150px);
+		}
+
 		li {
 			cursor: pointer;
 			flex-grow: 1;
@@ -128,17 +140,52 @@ $menuRight : 10px;
 	}
 
 	&.playbook-menu {
+		height: auto;
+
 		ul {
 			display: block;
+			margin: 10px auto;
+			@extend .container;
+
+			@media(min-width: $tablet){
+				margin: 30px auto;
+			}
+
+			@media(min-width: $laptop){
+				margin: 50px auto;
+			}
+
+			@media(min-width: $tablet-landscape){
+				text-align: left;
+			}
 
 			li {
 				display: inline-block;
 
 				a {
 					position: relative;
-				    padding-right: 18px;
-				    padding-left: 10px;
+				    padding-right: 9px;
+				    padding-left: 5px;
 				    text-transform: none;
+				    font-size: 13px;
+
+				    @media(min-width: $small-tablet){
+				    	font-size: 16px;
+				    }
+
+				    @media(min-width: $tablet){
+				    	font-size: 20px;
+				    }
+
+				    @media(min-width: $tablet-landscape){
+				    	font-size: 22px;
+				    	padding-right: 18px;
+					    padding-left: 10px;
+				    }
+
+				    @media(min-width: $laptop){
+				    	font-size: 32px;
+				    }
 
 					&:after {
 						content: '';
@@ -174,6 +221,11 @@ $menuRight : 10px;
 							left: 0;
 							bottom: auto;
 							background-color: $youniverse-pink;
+
+							@media(min-width: $tablet-landscape){
+								left: 10px;
+								right: auto;
+							}
 						}
 					}
 				}
@@ -186,6 +238,16 @@ $menuRight : 10px;
 					}
 				}
 			}
+		}
+	}
+
+	&.top-menu {
+		position: relative;
+		left: auto;
+		z-index: 5;
+
+		ul {
+			margin-bottom: 0;
 		}
 	}
 }

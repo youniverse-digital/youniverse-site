@@ -1,32 +1,46 @@
 <?php /* Template Name: Playbook Template */ ?>
 
 <?php get_header(); ?>
-	<div class="logo">
-		<a href="<?php echo home_url(); ?>">
-			<?php
-				$altLogo = get_field('alt_logo', 'options');
-				if($altLogo){
-					echo '<img src="'.$altLogo.'" alt="Logo">';
-				}else {
-					echo '<img src="'.get_template_directory_uri().'/dist/assets/media/ydl-logo-black.png" alt="Logo">';
-				}
-			?>
-		</a>
-	</div>
+
 
 	<div id="menuToggle"></div>
 	<nav class="menu playbook-menu">
 		<div class="logo">
-			<?php
-				$altLogo = get_field('alt_logo', 'options');
-				if($altLogo){
-					echo '<img src="'.$altLogo.'" alt="Logo">';
-				}else {
-					echo '<img src="'.get_template_directory_uri().'/dist/assets/media/ydl-logo-black.png" alt="Logo">';
-				}
-			?>
+		<?php
+			$altLogo = get_field('alt_logo', 'options');
+			if($altLogo){
+				echo '<img src="'.$altLogo.'" alt="Logo">';
+			}else {
+				echo '<img src="'.get_template_directory_uri().'/dist/assets/media/ydl-logo-black.png" alt="Logo">';
+			}
+		?>
 		</div>
 		<div class="mobile-menu" id="close-menu"></div>
+		<ul>
+			<li><a href="#playbook-about" class="current-item">About us</a></li>
+			<li><a href="#what">What we do</a></li>
+			<li><a href="#how">How we do it</a></li>
+			<li><a href="#who">Who we do it for</a></li>
+			<li><a href="#project-management">Project management</a></li>
+			<li><a href="#testimonials">Testimonials</a></li>
+			<li><a href="#contacts">Contacts</a></li>
+			<li><a href="#not-included">What we dont do</a></li>
+			<li><a href="/?location=why" class="home-link">Homepage</a></li>
+		</ul>
+	</nav>
+	<div class="logo">
+		<a href="<?php echo home_url(); ?>">
+		<?php
+			$altLogo = get_field('alt_logo', 'options');
+			if($altLogo){
+				echo '<img src="'.$altLogo.'" alt="Logo">';
+			}else {
+				echo '<img src="'.get_template_directory_uri().'/dist/assets/media/ydl-logo-black.png" alt="Logo">';
+			}
+		?>
+		</a>
+	</div>
+	<nav class="menu playbook-menu top-menu">
 		<ul>
 			<li><a href="#playbook-about" class="current-item">About us</a></li>
 			<li><a href="#what">What we do</a></li>

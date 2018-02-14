@@ -2,10 +2,6 @@
 
 	@extend .section-paddings;
 
-	// @media(min-width: $tablet){
-	// 	@extend .section-paddings;
-	// }
-
 	&:nth-of-type(even) {
 		background-color: #eeeeee;
 	}
@@ -36,11 +32,11 @@
 	padding-top: 30px;
 
 	@media(min-width: $tablet){
-		padding-top: 100px;
+		padding-top: 50px;
 	}
 
 	@media(min-width: $laptop){
-		padding-top: 250px;
+		// padding-top: 280px;
 	}
 
 	.container {
@@ -67,12 +63,19 @@
 		.pdf-link {
 
 			width: 50px;
+			position: relative;
+			@include bottomLine($color: #000, $width: 30px, $height: $youniverse-thin-line-height);
+
+			&:after {
+				position: relative;
+				bottom: 0;
+				width: 100%;
+				margin-top: 10px;
+			}
 
 			img {
 				max-width: 100%;
 			}
 		}
 	}
-
-
 }

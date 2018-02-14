@@ -10,25 +10,42 @@
 
 	@media(min-width: $laptop){
 		padding-bottom: 0;
+		padding-top: 50px;
 	}
 
 	@media(min-width: $desktop){
 		padding-bottom: 0;
+		padding-top: 80px;
 	}
 
 	@media(min-width: $large-desktop){
-		// padding-top: 0;
+		padding-top: 100px;
 	}
 
 	.container {
+
 		.two-cols {
 
 			position: relative;
 
-			div {
-				&:first-child {
-					padding-bottom: 50px;
+			.text-side {
+
+				padding-bottom: 50px;
+
+				@media(min-width: $tablet){
 					min-height: 470px;
+				}
+
+				@media(min-width: $laptop){
+					min-height: 570px;
+				}
+
+				@media(min-width: $desktop){
+					min-height: 630px;
+				}
+
+				@media(min-width: $large-desktop){
+					min-height: 600px;
 				}
 			}
 
