@@ -31,7 +31,7 @@
                     left: 4%;
                     font-size: 25px;
                     font-weight: bold;
-                    text-shadow: 0 1px 0 black;
+                    z-index: 10;
 
                     @media(min-width: $tablet){
                         font-size: 35px;
@@ -39,6 +39,23 @@
 
                     @media(min-width: $laptop){
                         font-size: 58px;
+                    }
+                }
+
+                .text-underlay {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 200px;
+                    background: linear-gradient(transparent 30%, #888888 100%);
+
+                    &.gradient-dark {
+                        background: linear-gradient(transparent 30%,#383838 100%);
+                    }
+
+                    &.gradient-mid {
+                        background: linear-gradient(transparent 30%,#696969 100%);
                     }
                 }
             }

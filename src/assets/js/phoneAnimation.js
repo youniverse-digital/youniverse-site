@@ -84,7 +84,6 @@ function init(){
 function animationEnded(){
 	console.log('go back now please');
 }
-
-module.exports = {
+export default {
 	init : init
 };

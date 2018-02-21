@@ -24,12 +24,17 @@ const config = {
 				test: /\.js$/,
 				include: /src/,
 				exclude: /node_modules/,
-				use: {
-					loader: "babel-loader",
-					options: {
-						presets: ['es2016']
+				use: [
+					{
+						loader: 'babel-loader',
+						options: {
+							presets: ['es2016']
+						}
+					},
+					{
+						loader: 'imports-loader?define=>false' 
 					}
-				}
+				]
 			},
 			{
 				test: /\.html$/,
@@ -73,7 +78,14 @@ const config = {
 			},
 			{
 				test: /\.(woff|woff2|eot|ttf|otf)$/,
-				use: ['file-loader']
+				use: [
+					{
+						loader: 'url-loader',
+						options: {
+							name: './assets/fonts/[name].[ext]'
+						}
+					}
+				]
 			},
 			{
 			  test: /\.mp4$/,

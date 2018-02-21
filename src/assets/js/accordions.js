@@ -86,6 +86,6 @@ function changeAccordion(e){
 // 	}
 // });
 
-module.exports = {
+export default {
 	init : init
 }

@@ -20,6 +20,8 @@
 			color: $font-colour;
 			display: block;
 			width: 100%;
+			opacity: 0;
+			transition: opacity 0.3s ease-in;
 
 			&:nth-child(n+7){
 				display: none;

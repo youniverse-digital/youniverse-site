@@ -12,7 +12,7 @@
 				echo '<img src="'.get_template_directory_uri().'/dist/assets/media/logo.png" alt="Logo" class="logo-image">';
 			}
 		?>
-		<div class="container">
+		<div class="container container-header">
 			<h2>Identity. Print. Screen</h2>
 		</div>
 	</div>
@@ -51,30 +51,37 @@
 					<div>
 						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/work-item-3.jpg">
 						<p>Brand Identity</p>
+						<div class="text-underlay"></div>
 					</div>
 					<div>
 						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/slider-item.jpg">
 						<p>Digital Development</p>
+						<div class="text-underlay"></div>
 					</div>
 					<div>
 						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/slider-item-2.jpg">
 						<p>Author Support</p>
+						<div class="text-underlay"></div>
 					</div>
 					<div>
 						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/slider-item-3.jpg">
 						<p>Reports</p>
+						<div class="text-underlay"></div>
 					</div>
 					<div>
 						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/slider-item-4.jpg">
 						<p>TV title sequence</p>
+						<div class="text-underlay gradient-dark"></div>
 					</div>
 					<div>
 						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/slider-item-5.jpg">
 						<p>Illustration</p>
+						<div class="text-underlay gradient-mid"></div>
 					</div>
 					<div>
 						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/slider-item-6.jpg">
 						<p>Compositing</p>
+						<div class="text-underlay gradient-dark"></div>
 					</div>
 				</div>
 				<ul class="dots">
@@ -100,13 +107,30 @@
 		<div class="container">
 			<h2>We’re here to support you, champion you. To help you grow.</h2>
 			<p>See if we’re the right fit for you.</p>
-			<a href="/playbook/" class="button">View resume</a>
+			<a href="/playbook/" class="button">Find out more</a>
 		</div>
 	</section>
 
 	<section class="team-panel">
-		<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/team.jpg">
-		<div class="container">
+		<!-- <img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/team.jpg"> -->
+		<div class="team-images">
+			<div class="half">
+				<img src="<?php bloginfo('stylesheet_directory') ?>/src/img/team1.jpg" alt="">
+			</div>
+			
+			<div class="quarter multiple">
+				<div class="half-height">
+					<img src="<?php bloginfo('stylesheet_directory') ?>/src/img/team2.jpg" alt="">
+				</div>
+				<div class="half-height">
+					<img src="<?php bloginfo('stylesheet_directory') ?>/src/img/team3.jpg" alt="">
+				</div>
+			</div>
+			<div class="quarter">
+				<img src="<?php bloginfo('stylesheet_directory') ?>/src/img/team4.jpg" alt="">
+			</div>
+		</div>
+		<!-- <div class="container">
 			<ul class="team-list">
 				<li data-target='team_mem_1' class="active">Joe</li>
 				<li data-target='team_mem_2'>Alex</li>
@@ -119,6 +143,7 @@
 			<div id="team_mem_1" class="team-member-info active">
 				<h3>Front End Developer</h3>
 				<p>Sprite handler extraordinaire, Joe is our resident games and responsive design developer. His hobbies include snowboarding, Game Of Thrones quizzes and dressing up as Slash when answering the door. Why? We haven't asked. All the same - terrifying.</p>
+			
 			</div>
 			<div id="team_mem_2" class="team-member-info">
 				<h3>Managing Director</h3>
@@ -160,7 +185,7 @@
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
-		</div>
+		</div> -->
 	</section>
 
 	<section class="knowledge-network" id='ckn'>
@@ -196,14 +221,20 @@
 				$query = new WP_Query( $args );
 
 				if ( $query->have_posts() ) {
+					$count = 1;
 					// The Loop
 					while ( $query->have_posts() ) {
 						$query->the_post();
 						$thumb_id = get_post_thumbnail_id();
 						$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
 						$thumb_url = $thumb_url_array[0];
+						
 
 						$client_thumb = get_field('client_thumb');
+
+						// if ($count % 2 == 0) {
+						// 	echo '<div class="post-row">';
+						// };
 
 						echo '
 							<a class="work-item" href="'.get_the_permalink().'">
@@ -213,6 +244,12 @@
 								<img src="'.$client_thumb.'" class="client">
 							</a>
 						';
+
+						// if ($count % 2 == 0) {
+						// 	echo '</div>';
+						// };
+
+						$count++;
 
 					}
 					wp_reset_postdata();
@@ -228,7 +265,7 @@
 			<div class="map">
 				<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/glow.png">
 				<div>
-					<p class="phone">0116 261 6853</p>
+					<p class="phone">0116 253 3426</p>
 					<p><strong>Leicester Studio</strong></p>
 					<p>31 Rutland St</p>
 					<p>Leicester</p>

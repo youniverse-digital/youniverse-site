@@ -2,6 +2,6 @@ function init(){
 	document.querySelector('.animating-header').classList.add('animate');
 }
 
-module.exports = {
+export default {
 	init : init
 }

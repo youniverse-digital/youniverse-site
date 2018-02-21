@@ -96,6 +96,6 @@ function isDescendant(parent, child) {
      return false;
 }
 
-module.exports = {
+export default  {
     init : init
 }

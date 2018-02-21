@@ -53,6 +53,6 @@ function changeDots(prevIndex, nextIndex){
     activeDot.classList.remove('active');
 }
 
-module.exports = {
+export default {
     init : init
 }

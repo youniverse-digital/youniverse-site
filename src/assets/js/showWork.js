@@ -23,6 +23,6 @@ function init() {
 	}, {passive : true});
 }
 
-module.exports = {
+export default {
 	init : init
 };

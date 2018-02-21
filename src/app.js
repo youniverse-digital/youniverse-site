@@ -7,6 +7,8 @@ import phoneAnimation from './assets/js/phoneAnimation.js';
 import accordions from './assets/js/accordions.js';
 import showWork from './assets/js/showWork.js';
 import scrollToElement from 'scroll-to-element';
+import parallaxAnimations from './assets/js/parallaxAnimations';
+import seqLoad from './assets/js/seqLoad';
 
 window.onload = function(){
 	elementExists('.menu') && menu.init();
@@ -16,6 +18,8 @@ window.onload = function(){
 	elementExists('.website-scroll') && phoneAnimation.init();
 	elementExists('.accordion') && accordions.init();
 	elementExists('.view-more-work') && showWork.init();
+	elementExists('.parallax-header') && parallaxAnimations.init();
+	elementExists('.team-images') && seqLoad.init();
 	const scrollLoc = getQueryVariable("location");
 	if(scrollLoc){
 		scrollToElement('#' + scrollLoc);

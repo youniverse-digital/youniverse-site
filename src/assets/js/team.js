@@ -14,6 +14,6 @@ function init(){
 }
 
 
-module.exports = {
+export default {
 	init : init
 };
