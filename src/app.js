@@ -9,6 +9,7 @@ import showWork from './assets/js/showWork.js';
 import scrollToElement from 'scroll-to-element';
 import parallaxAnimations from './assets/js/parallaxAnimations';
 import seqLoad from './assets/js/seqLoad';
+import domManipulation from './assets/js/domManipulation';
 
 window.onload = function(){
 	elementExists('.menu') && menu.init();
@@ -20,6 +21,7 @@ window.onload = function(){
 	elementExists('.view-more-work') && showWork.init();
 	elementExists('.parallax-header') && parallaxAnimations.init();
 	elementExists('.team-images') && seqLoad.init();
+	elementExists('body') && domManipulation.init();
 	const scrollLoc = getQueryVariable("location");
 	if(scrollLoc){
 		scrollToElement('#' + scrollLoc);

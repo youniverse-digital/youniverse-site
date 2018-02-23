@@ -1,0 +1,101 @@
+.how-we-do {
+    padding-bottom: 40px;
+
+    .how-inner {
+        text-align: center;
+
+        h2 {
+            font-size: 48px;
+        }
+
+        p {
+            margin-top: 45px;
+        }
+    }
+
+    .how-circles-container {
+        width: 100%;
+        padding: 0 40px;
+        display: flex;
+        margin-top: 65px;
+        position: relative;
+        flex-wrap: wrap;
+
+
+        .how-circle {
+            width: 100%;
+            height: 250px;
+            flex: 0 0 25%;
+            border-radius: 50%;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: 'Libre Baskerville', serif;
+            margin-bottom: 40px;
+
+            @media(min-width: $laptop) {
+                width: 87%;
+            }
+
+            p {
+                font-size: 30px;
+
+                @media(min-width: $small-tablet) {
+                    font-size: 27px;
+                }
+
+                @media(min-width: $tablet) {
+                    font-size: 21px;
+                }
+
+                @media(min-width: $laptop) {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+
+    .pencil-line {
+        display: none;
+        position: absolute;
+        width: 80%;
+        bottom: -5%;
+        left: 15%;
+        z-index: 1;
+
+        @media(min-width: $tablet) {
+            display: initial;
+        }
+
+        @media(min-width: $tablet-landscape) {
+            width: 83%;
+            bottom: -15%;
+        }
+
+        @media(min-width: $laptop) {
+            width: 84%;
+            bottom: -25%;
+        }
+
+        @media(min-width: $desktop) {
+            width: 85%;
+            bottom: -25%;
+        }
+    }
+
+    .how-circle-box {
+        flex: 0 0 100%;
+        padding: 0 20px;
+
+        @media(min-width: $small-tablet) {
+            flex: 0 0 50%;
+        }
+
+        @media(min-width: $tablet) {
+            flex: 0 0 25%;
+        }
+    }
+}

@@ -27,11 +27,15 @@
                 p {
                     position: absolute;
                     color: #fff;
-                    bottom: 1%;
-                    left: 4%;
+                    bottom: 0%;
+                    left: 7%;
                     font-size: 25px;
                     font-weight: bold;
                     z-index: 10;
+                    color: #333333;
+                    background-color: white;
+                    padding: 0 30px;
+                    margin-bottom: 0;
 
                     @media(min-width: $tablet){
                         font-size: 35px;
@@ -48,15 +52,6 @@
                     left: 0;
                     width: 100%;
                     height: 200px;
-                    background: linear-gradient(transparent 30%, #888888 100%);
-
-                    &.gradient-dark {
-                        background: linear-gradient(transparent 30%,#383838 100%);
-                    }
-
-                    &.gradient-mid {
-                        background: linear-gradient(transparent 30%,#696969 100%);
-                    }
                 }
             }
         }

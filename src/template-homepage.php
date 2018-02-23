@@ -12,7 +12,7 @@
 				echo '<img src="'.get_template_directory_uri().'/dist/assets/media/logo.png" alt="Logo" class="logo-image">';
 			}
 		?>
-		<div class="container container-header">
+		<div class="container container-large">
 			<h2>Identity. Print. Screen</h2>
 		</div>
 	</div>
@@ -25,11 +25,9 @@
 		</div>
 		<div class="mobile-menu" id="close-menu"></div>
 		<ul>
-			<li><a href="#about" class="current-item">Intro</a></li>
-			<li><a href="#work">Work</a></li>
-			<li><a href="#why">Profile</a></li>
-			<li><a href="#ckn">Creative Knowledge Network</a></li>
-			<li><a href="#clients">Clients</a></li>
+			<li><a href="/" class="current-item">Home</a></li>
+			<li><a href="/about">About</a></li>
+			<li><a href="#clients">Work</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</nav>
@@ -70,7 +68,7 @@
 					</div>
 					<div>
 						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/slider-item-4.jpg">
-						<p>TV title sequence</p>
+						<p>TV title sequences</p>
 						<div class="text-underlay gradient-dark"></div>
 					</div>
 					<div>
@@ -107,7 +105,7 @@
 		<div class="container">
 			<h2>We’re here to support you, champion you. To help you grow.</h2>
 			<p>See if we’re the right fit for you.</p>
-			<a href="/playbook/" class="button">Find out more</a>
+			<a href="/about/" class="button">Find out more</a>
 		</div>
 	</section>
 
@@ -115,19 +113,27 @@
 		<!-- <img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/team.jpg"> -->
 		<div class="team-images">
 			<div class="half">
-				<img src="<?php bloginfo('stylesheet_directory') ?>/src/img/team1.jpg" alt="">
+				<a href="https://www.instagram.com/creative_knowledge_network/">
+					<img src="<?php bloginfo('stylesheet_directory') ?>/src/img/team1.jpg" alt="">
+				</a>	
 			</div>
 			
 			<div class="quarter multiple">
 				<div class="half-height">
-					<img src="<?php bloginfo('stylesheet_directory') ?>/src/img/team2.jpg" alt="">
+					<a href="https://www.instagram.com/creative_knowledge_network/">
+						<img src="<?php bloginfo('stylesheet_directory') ?>/src/img/team2.jpg" alt="">
+					</a>
 				</div>
 				<div class="half-height">
-					<img src="<?php bloginfo('stylesheet_directory') ?>/src/img/team3.jpg" alt="">
+					<a href="https://www.instagram.com/creative_knowledge_network/">
+						<img src="<?php bloginfo('stylesheet_directory') ?>/src/img/team3.jpg" alt="">\
+					</a>
 				</div>
 			</div>
 			<div class="quarter">
-				<img src="<?php bloginfo('stylesheet_directory') ?>/src/img/team4.jpg" alt="">
+				<a href="https://www.instagram.com/creative_knowledge_network/">
+					<img src="<?php bloginfo('stylesheet_directory') ?>/src/img/team4.jpg" alt="">
+				</a>
 			</div>
 		</div>
 		<!-- <div class="container">
@@ -199,7 +205,7 @@
 					<div>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						<p>Od tempor incididunt ut labore et dolore magna aliqua.</p>
-						<a href="/creative-knowledge-network/" class="button">Find out more</a>
+						<a href="https://twitter.com/ckn_news" class="button">Find out more</a>
 					</div>
 					<div>
 						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/knowledge-team.jpg">

@@ -1,4 +1,5 @@
 import scrollToElement from 'scroll-to-element';
+import jQuery from 'jquery';
 /*! scrollStop.js | (c) 2017 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/scrollStop */
 /**
  * Run functions after scrolling has stopped
@@ -83,6 +84,27 @@ function scrollToLink(e){
 	if(!isDescendant(parent, e.target)){
 		toggleMenuSystem();
 	}
+
+	(function($) {
+		console.log(element)
+		if (element == "#clients") {
+			openWorkMenu();
+		}
+	})(jQuery);
+	
+}
+
+function openWorkMenu() {
+
+	var element = document.querySelector('.button.view-more-work');
+
+	var clickEvent = new MouseEvent("click", {
+		"view": window,
+		"bubbles": true,
+		"cancelable": false
+	});
+
+	element.dispatchEvent(clickEvent);
 }
 
 function isDescendant(parent, child) {

@@ -106,6 +106,10 @@ const config = {
 			template: 'single-work.html',
 			filename: 'single-work.html'
 		}),
+		new HtmlWebpackPlugin({
+			template: 'about.html',
+			filename: 'about.html'
+		}),
 		new DashboardPlugin(),
 		// new HtmlWebpackPlugin({
 		// 	template: '.html',

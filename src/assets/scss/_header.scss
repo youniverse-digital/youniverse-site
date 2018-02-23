@@ -206,6 +206,50 @@ header {
 	}
 }
 
+.header-about {
+	height: 70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.about-header-container {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		flex: 0 0 80%;
+
+		.logo-container {
+			display: flex;
+			justify-content: center;
+
+			img {
+				align-self: flex-start;
+				max-width: 100%;
+			}
+
+		}
+	}
+
+	h1:after {
+		display: none;
+	}
+
+	.expanding-heading {
+		font-family: "SD-Gothic";
+		letter-spacing: 5px;
+		text-transform: uppercase;
+		margin-top: 60px;
+
+		@media(min-width: $tablet) {
+			letter-spacing: 20px;
+		}
+
+		@media(min-width: $laptop) {
+			letter-spacing: 30px;
+		}
+	}
+}
+
 
 @keyframes topAnim {
   0% {

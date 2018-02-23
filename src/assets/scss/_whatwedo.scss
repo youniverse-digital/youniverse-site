@@ -1,0 +1,41 @@
+.what-we-do {
+    margin-bottom: 130px;
+
+    .what-inner {
+        text-align: center;
+
+        h2 {
+            font-size: 48px;
+            margin-bottom: 65px;
+
+            &:after {
+                display: none;
+            }
+        }
+
+        p {
+            margin-bottom: 38px;
+        }
+    }
+
+    .stars-container {
+        display: flex;
+
+        .star {
+            display: flex;
+            flex: 0 0 20%;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            img {
+               width: 70%;
+            }
+
+            p {
+                margin-top: 60px;
+                font-family: 'Libre Baskerville', serif;
+            }
+        }
+    }
+}

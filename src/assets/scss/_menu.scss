@@ -86,19 +86,21 @@ $menuRight : 10px;
 		overflow: hidden;
 		width: 100%;
 		text-align: center;
-		height: calc(100% - 90px);
+		height: 80%;
 		display: flex;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
 		flex-direction: column;
-		justify-content: center;
+		justify-content: space-evenly;
 		align-items: center;
 
 		@media(min-width: $laptop){
-			height: calc(100% - 150px);
+			height: 70%;
 		}
 
 		li {
 			cursor: pointer;
-			flex-grow: 1;
 
 			a {
 				font-weight: bold;

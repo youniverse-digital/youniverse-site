@@ -1,0 +1,101 @@
+.who-for {
+    .who-for-inner {
+        text-align: center;
+
+        h2 {
+            font-size: 48px;
+            margin-bottom: 65px;
+
+            &:after {
+                display: none;
+            }
+        }
+
+        p {
+            margin-bottom: 38px;
+        }
+    }
+
+    .logo-section {
+
+        margin-top: 65px;
+        position: relative;
+
+        @media(min-width: $tablet-landscape) {
+            margin-top: 130px;
+        }
+
+        .satellite-dish {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -100%);
+        }
+
+        .logos-cap {
+            margin-bottom: -6px;
+
+            @media(min-width: $med-phone) {
+                margin-bottom: -7px;
+            }
+
+            @media(min-width: $small-tablet) {
+                margin-bottom: -8px;
+            }
+
+            @media(min-width: $laptop) {
+                margin-bottom: -10px;
+            }
+
+            @media(min-width: $large-desktop) {
+                margin-bottom: -8px;
+            }
+    
+            .cls-1 {
+                fill: #f44337;
+            }
+        }
+    
+        .logos-container {
+            width: 100%;
+            background-color: #f44337;
+            margin-top: 0;
+            padding-bottom: 120px;
+
+            .logos-inner {
+
+                .logo-row {
+                    display: flex;
+                    align-items: center;
+                    // padding: 35px 0;
+                    padding: 0;
+                    flex-wrap: wrap;
+
+                    @media(min-width: $laptop) {
+                        padding: 70px 0;
+                    }
+                    
+                    .img-container {
+                        flex: 0 0 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 35px 30px;
+
+                        @media(min-width: $tablet-landscape) {
+                            flex: 0 0 25%;
+                        }
+
+                        @media(min-width: $laptop) {
+                            padding: 0;
+                        }
+
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
