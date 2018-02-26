@@ -12,7 +12,7 @@
 		</a>
 	</div>
 
-	<a href="<?php echo home_url(); ?>?location=client" class="back-to-home home-link"></a>
+	<a href="<?php echo home_url(); ?>#clients" class="back-to-home home-link"></a>
 
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
