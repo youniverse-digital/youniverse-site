@@ -35,7 +35,7 @@
 	<section id="about">
 		<div class="container">
 			<h2>Simply Intelligent design</h2>
-			<p>We create things that people want to use.</p>
+			<p>We make things that people want to use.</p>
 			<p>That are a pleasure to engage with.</p>
 			<p>That inspire thought and action.</p>
 			<p>We make things that help you achieve greater things.</p>
@@ -109,33 +109,38 @@
 		</div>
 	</section>
 
-	<section class="team-panel">
-		<!-- <img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/team.jpg"> -->
-		<div class="team-images">
-			<div class="half">
-				<a href="https://www.instagram.com/creative_knowledge_network/">
-					<img src="<?php bloginfo('stylesheet_directory') ?>/src/img/team1.jpg" alt="">
-				</a>	
-			</div>
-			
-			<div class="quarter multiple">
-				<div class="half-height">
-					<a href="https://www.instagram.com/creative_knowledge_network/">
-						<img src="<?php bloginfo('stylesheet_directory') ?>/src/img/team2.jpg" alt="">
-					</a>
+	<div class="team-images">
+					<div class="half cycle-slideshow" data-cycle-speed="1000" data-cycle-fx="none"> 
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/large_1.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/large_2.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/large_3.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/large_4.jpg" alt="">
+					</div>
+					
+					<div class="quarter multiple">
+						<div class="half-height cycle-slideshow" data-cycle-speed="3000" data-cycle-fx="none"> 
+							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_1.jpg" alt="">
+							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_2.jpg" alt="">
+							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_3.jpg" alt="">
+							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_4.jpg" alt="">
+							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_5.jpg" alt="">
+						</div>
+						<div class="half-height cycle-slideshow" data-cycle-speed="2000" data-cycle-fx="none">
+							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_6.jpg" alt="">
+							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_7.jpg" alt="">
+							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_8.jpg" alt="">
+							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_9.jpg" alt="">
+							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_10.jpg" alt="">
+						</div>
+					</div>
+					<div class="quarter cycle-slideshow" data-cycle-speed="4000" data-cycle-fx="none">
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/port_1.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/port_2.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/port_3.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/port_4.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/port_5.jpg" alt="">
+					</div>
 				</div>
-				<div class="half-height">
-					<a href="https://www.instagram.com/creative_knowledge_network/">
-						<img src="<?php bloginfo('stylesheet_directory') ?>/src/img/team3.jpg" alt="">\
-					</a>
-				</div>
-			</div>
-			<div class="quarter">
-				<a href="https://www.instagram.com/creative_knowledge_network/">
-					<img src="<?php bloginfo('stylesheet_directory') ?>/src/img/team4.jpg" alt="">
-				</a>
-			</div>
-		</div>
 		<!-- <div class="container">
 			<ul class="team-list">
 				<li data-target='team_mem_1' class="active">Joe</li>
@@ -203,12 +208,22 @@
 			<div class="split-container">
 				<div class="two-cols">
 					<div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						<p>Od tempor incididunt ut labore et dolore magna aliqua.</p>
-						<a href="https://twitter.com/ckn_news" class="button">Find out more</a>
+						<p>The Creative Knowledge Network is our development and learning facility, set up to inform our strategic approach and creative output.</p>
+						<p>It connects individuals, companies and  institutions with the latest developments in the creative and technology industries and encourages collaboration, education and opportunity.</p>
+						<p>It ensures we deliver not only exemplary design work but also expert thought leadership to our clients.</p>
+						<div class="knowledge-social">
+							<ul>
+								<li>
+									<a href="https://www.instagram.com/creative_knowledge_network/"><img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/instagram.png" alt=""></a>
+								</li>
+								<li>
+									<a href="https://twitter.com/ckn_news"><img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/twitter.png" alt=""></a>
+								</li>
+							</ul>
+						</div>
 					</div>
 					<div>
-						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/knowledge-team.jpg">
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/CKN-image-724x544.jpg">
 					</div>
 				</div>
 			</div>

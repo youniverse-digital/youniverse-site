@@ -28,6 +28,23 @@
 		max-width: 100%;
 	}
 
+	.knowledge-social {
+		margin-top: 60px;
+		ul {
+			padding-left: 0;
+			list-style: none;
+
+			li {
+				display: inline-block;
+				padding-right: 20px;
+
+				img {
+					height: 60px;
+				}
+			}
+		}
+	}
+
 	h2 {
 		font-weight: 800;
 		margin-top: 0;

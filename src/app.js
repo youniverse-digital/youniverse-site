@@ -11,6 +11,7 @@ import parallaxAnimations from './assets/js/parallaxAnimations';
 import seqLoad from './assets/js/seqLoad';
 import starPopup from './assets/js/starPopup';
 import domManipulation from './assets/js/domManipulation';
+import imageGrid from './assets/js/imageGrid';
 
 window.onload = function(){
 	elementExists('.menu') && menu.init();
@@ -24,6 +25,7 @@ window.onload = function(){
 	elementExists('.team-images') && seqLoad.init();
 	elementExists('body') && domManipulation.init();
 	elementExists('.what-we-do') && starPopup.init();
+	elementExists('.team-images') && imageGrid.init();
 	const scrollLoc = getQueryVariable("location");
 	if(scrollLoc){
 		scrollToElement('#' + scrollLoc);
