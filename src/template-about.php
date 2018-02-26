@@ -84,12 +84,24 @@
                 <h2>What we do</h2>
                 <?php echo $what_we_do_text ?>
             </div>
+            <div class="stars-content-panel">
+                <div class="close-btn">
+                    <img src="<?php echo get_template_directory_uri() ?>/dist/assets/media/cancel-music.svg" alt="">
+                </div>
+                <div class="stars-content">
+                    <h2 class="popup-name">Strategy</h2>
+                    <ul class="stars-list">
+
+                    </ul>
+                </div>
+            </div>
             <div class="stars-container">
                 <?php if ( have_rows('what_we_do_stars') ): ?>
                     <?php while ( have_rows('what_we_do_stars') ): the_row(); ?>
                        <?php 
                             $star_name   = get_sub_field('star_title');
                             $star_filled = get_sub_field('star_filled');
+                            $star_data   = get_sub_field('star_data');
                             $star_link   = "";
 
                             if ($star_filled == true) {
@@ -101,7 +113,10 @@
 
                         <div class="star">
                             <img src="<?php bloginfo('stylesheet_directory') ?>/src/img/<?php echo $star_link ?>" alt="">
-                            <p><?php echo $star_name ?></p>
+                            <p class="star-name"><?php echo $star_name ?></p>
+                            <div class="star-info">
+                                <?php echo $star_data ?>
+                            </div>
                         </div>
 
                     <?php endwhile; ?>
