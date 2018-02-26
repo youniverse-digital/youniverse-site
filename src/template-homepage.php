@@ -13,7 +13,7 @@
 			}
 		?>
 		<div class="container container-large">
-			<h2>Identity. Print. Screen</h2>
+			<h2>Identity. Print. Digital</h2>
 		</div>
 	</div>
 
@@ -35,7 +35,7 @@
 	<section id="about">
 		<div class="container">
 			<h2>Simply Intelligent design</h2>
-			<p>We make things that people want to use.</p>
+			<p>We create things that people want to use.</p>
 			<p>That are a pleasure to engage with.</p>
 			<p>That inspire thought and action.</p>
 			<p>We make things that help you achieve greater things.</p>
