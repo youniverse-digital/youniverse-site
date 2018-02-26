@@ -278,6 +278,21 @@
                                     “Thanks so much for your help with this project. It looks fantastic - we’re so pleased”<span class="testimonial-client">Abby Parsons, Auriol Bishop, Hodder &amp Stoughton</span>
                             </p>
                         </li>
+                        <li class="testimonial-item">
+                            <p>
+                                “Having worked with youniverse on projects large and small, we’re continually impressed by their flair and enthusiasm. They’re not only great designers and creative thinkers they’re excellent listeners who quickly become part of the team. We get asked this all the time ‘this is great… who are your designers?’ ”<span class="testimonial-client">Jim Grevatte. Creative Approaches for Museums and Heritage</span>
+                            </p>
+                        </li>
+                        <li class="testimonial-item">
+                            <p>
+                                “Absolutely love it !”“I just got a shiver down my spine looking at it !!”<span class="testimonial-client">Simon Slater MD, The Payback Group</span>
+                            </p>
+                        </li>
+                        <li class="testimonial-item">
+                            <p>
+                                “And just had to say (again) how lovely it is! It’s truly one of our best websites.”<span class="testimonial-client">Emily Van Hest. International Sales &amp Marketing Manager, Transworld Publishers &amp Random House Children’s Books</span>
+                            </p>
+                        </li>
                     </ul>
                 </div>
             </div>
