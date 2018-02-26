@@ -61,11 +61,11 @@
 		<div class="inner">
 			<div class="split-container">
 				<div class="two-cols">
-					<div>
+					<div class="self-centre">
                         <h2>About Us</h2>
                         <?php echo $about_lead_text ?>
 					</div>
-					<div class="about-lead-circle-container">
+					<div class="about-lead-circle-container self-centre">
                         <img class="circle-flag" src="<?php bloginfo('stylesheet_directory') ?>/src/img/flag.png" alt="">
 						<div class="about-lead-circle">
                             <div class="circle-text-container baskerville">
