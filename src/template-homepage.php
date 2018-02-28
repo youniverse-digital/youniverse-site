@@ -208,8 +208,8 @@
 			<div class="split-container">
 				<div class="two-cols">
 					<div>
-						<p>The Creative Knowledge Network is our development and learning facility, set up to inform our strategic approach and creative output.</p>
-						<p>It connects individuals, companies and  institutions with the latest developments in the creative and technology industries and encourages collaboration, education and opportunity.</p>
+						<p>The Creative Knowledge Network is our development and learning facility. It's new and it's being set up to inform our strategic approach and creative output.</p>
+						<p>It connects individuals, companies and institutions with the latest developments in the creative and technology industries and encourages collaboration, education and opportunity.</p>
 						<p>It ensures we deliver not only exemplary design work but also expert thought leadership to our clients.</p>
 						<div class="knowledge-social">
 							<ul>
