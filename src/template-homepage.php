@@ -104,7 +104,7 @@
 	<section id="why">
 		<div class="container">
 			<p class="section-title">We’re here to support you, champion you.<br> To help you grow.</p>
-			<p>Our remit is simple. We listen, we act and we solve our clients problems.<br> Your success is our business.</p>
+			<p>Our remit is simple. We listen, we engage and we solve our clients problems.<br> Your success is our business.</p>
 			<p>See if we’re the right fit for you.</p>
 			<a href="/about/" class="button">Find out more</a>
 		</div>
@@ -116,6 +116,7 @@
 						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/large_2.jpg" alt="">
 						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/large_3.jpg" alt="">
 						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/large_4.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/large_5.jpg" alt="">
 					</div>
 					
 					<div class="quarter multiple">
@@ -132,6 +133,7 @@
 							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_8.jpg" alt="">
 							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_9.jpg" alt="">
 							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_10.jpg" alt="">
+							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_11.jpg" alt="">
 						</div>
 					</div>
 					<div class="quarter cycle-slideshow" data-cycle-speed="4000" data-cycle-fx="none">

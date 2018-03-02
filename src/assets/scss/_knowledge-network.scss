@@ -22,7 +22,17 @@
 
     @media(min-width: $desktop){
     	// padding-bottom: 290px;
-    }
+	}
+	
+	p {
+		@media(min-width: $tablet-landscape) {
+			font-size: 22px;
+		}
+
+		@media(min-width: $desktop) {
+			font-size: 27px;
+		}
+	}
 
 	img {
 		max-width: 100%;
