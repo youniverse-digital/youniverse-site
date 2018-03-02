@@ -58,12 +58,12 @@
 					</div>
 					<div>
 						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/slider-item-2.jpg">
-						<p>Author Support</p>
+						<p>Books</p>
 						<div class="text-underlay"></div>
 					</div>
 					<div>
 						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/slider-item-3.jpg">
-						<p>Reports</p>
+						<p>Brochures and reports</p>
 						<div class="text-underlay"></div>
 					</div>
 					<div>
@@ -103,7 +103,8 @@
 
 	<section id="why">
 		<div class="container">
-			<h2>We’re here to support you, champion you. To help you grow.</h2>
+			<p class="section-title">We’re here to support you, champion you.<br> To help you grow.</p>
+			<p>Our remit is simple. We listen, we act and we solve our clients problems.<br> Your success is our business.</p>
 			<p>See if we’re the right fit for you.</p>
 			<a href="/about/" class="button">Find out more</a>
 		</div>
@@ -211,7 +212,8 @@
 						<p>The Creative Knowledge Network is our development and learning facility. It's new and it's being set up to inform our strategic approach and creative output.</p>
 						<p>It connects individuals, companies and institutions with the latest developments in the creative and technology industries and encourages collaboration, education and opportunity.</p>
 						<p>It ensures we deliver not only exemplary design work but also expert thought leadership to our clients.</p>
-						<div class="knowledge-social">
+						<p>The Creative Knowledge Network launches March 2018</p>
+						<!-- <div class="knowledge-social">
 							<ul>
 								<li>
 									<a href="https://www.instagram.com/creative_knowledge_network/"><img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/instagram.png" alt=""></a>
@@ -220,7 +222,7 @@
 									<a href="https://twitter.com/ckn_news"><img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/twitter.png" alt=""></a>
 								</li>
 							</ul>
-						</div>
+						</div> -->
 					</div>
 					<div>
 						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/CKN-image-724x544.jpg">
