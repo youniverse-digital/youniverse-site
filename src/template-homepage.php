@@ -111,23 +111,23 @@
 	</section>
 
 	<div class="team-images">
-					<div class="half cycle-slideshow" data-cycle-speed="1000" data-cycle-fx="none"> 
-						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/large_1.jpg" alt="">
-						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/large_2.jpg" alt="">
-						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/large_3.jpg" alt="">
-						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/large_4.jpg" alt="">
-						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/large_5.jpg" alt="">
+					<div class="half slideshow" data-cycle-speed="1000" data-cycle-fx="none"> 
+						<img class="insta-img" src="">
+						<img class="insta-img" src="">
+						<img class="insta-img" src="">
+						<img class="insta-img" src="">
+						<img class="insta-img" src="">
 					</div>
 					
 					<div class="quarter multiple">
-						<div class="half-height cycle-slideshow" data-cycle-speed="3000" data-cycle-fx="none"> 
+						<div class="half-height slideshow" data-cycle-speed="3000" data-cycle-fx="none"> 
 							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_1.jpg" alt="">
 							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_2.jpg" alt="">
 							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_3.jpg" alt="">
 							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_4.jpg" alt="">
 							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_5.jpg" alt="">
 						</div>
-						<div class="half-height cycle-slideshow" data-cycle-speed="2000" data-cycle-fx="none">
+						<div class="half-height slideshow" data-cycle-speed="2000" data-cycle-fx="none">
 							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_6.jpg" alt="">
 							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_7.jpg" alt="">
 							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_8.jpg" alt="">
@@ -136,7 +136,7 @@
 							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_11.jpg" alt="">
 						</div>
 					</div>
-					<div class="quarter cycle-slideshow" data-cycle-speed="4000" data-cycle-fx="none">
+					<div class="quarter slideshow" data-cycle-speed="4000" data-cycle-fx="none">
 						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/port_1.jpg" alt="">
 						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/port_2.jpg" alt="">
 						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/port_3.jpg" alt="">

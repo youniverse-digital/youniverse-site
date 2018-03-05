@@ -10,7 +10,6 @@
         max-width: 100%;
         object-fit: cover;
         object-position: center;
-        opacity: 0;
         transition: opacity 0.4s ease-in;
     }
 
@@ -20,8 +19,12 @@
     }
 
     .quarter {
-        flex: 0 0 25%;
+        flex: 0 0 50%;
         max-height: 100%;
+
+        @media (min-width: $tablet-landscape) {
+            flex: 0 0 25%;
+        }
 
         &.multiple {
             display: flex;
@@ -29,6 +32,7 @@
 
             .half-height {
                 flex: 0 0 50%;
+                max-height: 50%;
             }
         }
 
