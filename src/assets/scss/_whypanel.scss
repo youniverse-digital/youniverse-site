@@ -3,6 +3,10 @@
 
 	.container {
 
+		@media(min-width: $laptop) {
+			margin-top: 100px;
+		}
+
 		p {
 			@media(min-width: $laptop){
 				font-size: 30px;

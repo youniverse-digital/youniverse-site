@@ -800,6 +800,10 @@ header {
         object-fit: initial; }
 
 @media (min-width: 1280px) {
+  #why .container, #why .container-large, #why .split-container, #why .menu.playbook-menu ul, .menu.playbook-menu #why ul {
+    margin-top: 100px; } }
+
+@media (min-width: 1280px) {
   #why .container p, #why .container-large p, #why .split-container p, #why .menu.playbook-menu ul p, .menu.playbook-menu #why ul p {
     font-size: 30px; } }
 
