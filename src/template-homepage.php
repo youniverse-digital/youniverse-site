@@ -30,7 +30,7 @@
 			}
 		?>
 		<div class="container container-large">
-			<h2><?php echo $header_tagline ?> GSEHOGIHSEI</h2>
+			<h2><?php echo $header_tagline ?></h2>
 		</div>
 	</div>
 
