@@ -715,14 +715,14 @@ header {
   @media (min-width: 1440px) {
     #about {
       margin-bottom: 120px; } }
-  @media (min-width: 1280px) {
-    #about .container, #about .container-large, #about .split-container, #about .menu.playbook-menu ul, .menu.playbook-menu #about ul {
-      margin-top: 200px;
-      margin-bottom: 200px; } }
   @media (min-width: 768px) {
     #about .container, #about .container-large, #about .split-container, #about .menu.playbook-menu ul, .menu.playbook-menu #about ul {
       margin-top: 150px;
       margin-bottom: 150px; } }
+  @media (min-width: 1280px) {
+    #about .container, #about .container-large, #about .split-container, #about .menu.playbook-menu ul, .menu.playbook-menu #about ul {
+      margin-top: 200px;
+      margin-bottom: 200px; } }
   @media (min-width: 560px) {
     #about .container h2, #about .container-large h2, #about .split-container h2, #about .menu.playbook-menu ul h2, .menu.playbook-menu #about ul h2 {
       margin-bottom: 40px; } }

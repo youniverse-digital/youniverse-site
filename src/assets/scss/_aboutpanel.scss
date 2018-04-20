@@ -17,15 +17,14 @@
 
 	.container {
 
-		@media(min-width: $laptop) {
-			margin-top: 200px;
-			margin-bottom: 200px;
-		}
-
 		@media(min-width: $tablet) {
 			margin-top: 150px;
 			margin-bottom: 150px;
-			
+		}
+
+		@media(min-width: $laptop) {
+			margin-top: 200px;
+			margin-bottom: 200px;
 		}
 
 		h2 {
