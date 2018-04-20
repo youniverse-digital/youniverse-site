@@ -800,7 +800,7 @@ header {
         object-fit: initial; }
 
 @media (min-width: 1280px) {
-  #why .container, #why .container-large, #why .split-container, #why .menu.playbook-menu ul, .menu.playbook-menu #why ul {
+  #why {
     margin-top: 100px; } }
 
 @media (min-width: 1280px) {
