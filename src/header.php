@@ -9,6 +9,7 @@
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 		<link href="https://use.typekit.net/lgy5mzb.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+		<meta name="google-site-verification" content="lzIwVhAGjURo7rFF914L45jgDpD2w5NE40PGGmIhtpI" />
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
