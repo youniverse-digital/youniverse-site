@@ -801,7 +801,7 @@ header {
 
 @media (min-width: 1280px) {
   #why {
-    margin-top: 100px; } }
+    margin-top: 200px; } }
 
 @media (min-width: 1280px) {
   #why .container p, #why .container-large p, #why .split-container p, #why .menu.playbook-menu ul p, .menu.playbook-menu #why ul p {
