@@ -21,14 +21,7 @@
 
 	<div class="header">
 		<img src="<?php echo $header_background_image ?>" alt="hero image 2020" class="bg-image">
-		<?php
-			$mainLogo = get_field('main_logo', 'options');
-			if($mainLogo){
-				echo '<img src="'.$mainLogo.'" alt="Logo" class="logo-image">';
-			}else {
-				echo '<img src="'.get_template_directory_uri().'/assets/media/ydllogotext.png" alt="Logo" class="logo-image">';
-			}
-		?>
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/media/ydllogotext.png" alt="Logo" class="logo-image">
 		<div class="container container-large">
 			<h2><?php echo $header_tagline ?></h2>
 		</div>
@@ -40,7 +33,6 @@
 		<div class="logo">
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/media/ydl-logo-black.png" alt="youniverse logo">
 		</div>
-		
 		<div class="mobile-menu" id="close-menu"></div>
 		<ul>
 			<li><a href="/" class="current-item">Home</a></li>
