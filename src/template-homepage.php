@@ -26,7 +26,7 @@
 			if($mainLogo){
 				echo '<img src="'.$mainLogo.'" alt="Logo" class="logo-image">';
 			}else {
-				echo '<img src="'.get_template_directory_uri().'/assets/media/logo.png" alt="Logo" class="logo-image">';
+				echo '<img src="'.get_template_directory_uri().'/assets/media/ydllogotext.png" alt="Logo" class="logo-image">';
 			}
 		?>
 		<div class="container container-large">
