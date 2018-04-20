@@ -112,10 +112,11 @@
     text-align: center;
     color: $font-colour;
     font-weight: 600;
+    font-size: 28px;
     display: inline-block;
     margin: $column-gutter auto $column-gutter 0;
     border: 3px solid #000;
-    padding: $column-padding/2 $column-padding;
+    padding: 10px 20px;
     transition: all 0.3s ease-in-out;
 
     &:hover, &:focus, &:active {
@@ -124,18 +125,14 @@
     }
 
     @media(min-width: $laptop){
-    	font-size: 30px;
-    	padding: $column-padding/2 $column-padding;
     	margin: $column-gutter auto $column-gutter 0;
     }
 
     @media(min-width: $desktop){
-    	font-size: 43px;
     	padding: $column-padding $column-padding*2;
     }
 
     @media(min-width: $large-desktop){
-    	padding: 2px $column-padding*5;
     	border-width: 4px;
     	margin: $column-gutter auto 0 0;
     }
