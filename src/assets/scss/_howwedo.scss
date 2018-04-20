@@ -35,6 +35,11 @@
             color: white;
             font-family: 'Libre Baskerville', serif;
             margin-bottom: 40px;
+            transition: transform 0.2s ease;
+
+            &:hover {
+                transform: scale(1.05);
+            }
 
             @media(min-width: $laptop) {
                 width: 87%;
@@ -58,13 +63,60 @@
         }
     }
 
+    .pencil-dash {
+        width: auto;
+        height: auto;
+        position: absolute;
+        right: 15px;
+        top: -50px;
+        width: 30px;
+        display: none;
+        opacity: 0;
+
+        &.animated {
+            animation-name: pencil-animation;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            animation-delay: 4s;
+        }
+
+        @media(min-width: $tablet) {
+            display: initial;
+        }
+
+        @media(min-width: $tablet-landscape) {
+            top: -40px;
+            right: 20px;
+            width: auto;
+        }
+
+        @media(min-width: $laptop) {
+            top: -50px;
+        }
+    }
+
     .pencil-line {
         display: none;
         position: absolute;
         width: 80%;
         bottom: -5%;
-        left: 15%;
+        left: 14%;
         z-index: 1;
+
+        .cls-3, .cls-4 {
+            stroke: #0054ff;
+        }
+
+        .cls-4 {
+            stroke-dasharray: 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5  2000;
+            stroke-dashoffset: 3500;
+            
+            &.animated {
+                animation-name: dash-animation;
+                animation-duration: 4s;
+                animation-fill-mode: forwards;
+            }
+        }
 
         @media(min-width: $tablet) {
             display: initial;
@@ -73,6 +125,7 @@
         @media(min-width: $tablet-landscape) {
             width: 83%;
             bottom: -15%;
+            left: 11%;
         }
 
         @media(min-width: $laptop) {
@@ -97,5 +150,26 @@
         @media(min-width: $tablet) {
             flex: 0 0 25%;
         }
+    }
+}
+
+@keyframes dash-animation {
+    0% {
+        stroke-dashoffset: 3500;
+    }
+
+    100% {
+        stroke-dashoffset: 1600;
+    }
+
+}
+
+@keyframes pencil-animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }

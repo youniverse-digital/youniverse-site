@@ -12,6 +12,7 @@ import seqLoad from './assets/js/seqLoad';
 import starPopup from './assets/js/starPopup';
 import domManipulation from './assets/js/domManipulation';
 import imageGrid from './assets/js/imageGrid';
+import pencilAnimation from './assets/js/pencilAnimation';
 
 window.onload = function(){
 	elementExists('.menu') && menu.init();
@@ -26,6 +27,7 @@ window.onload = function(){
 	elementExists('body') && domManipulation.init();
 	elementExists('.what-we-do') && starPopup.init();
 	elementExists('.team-images') && imageGrid.init();
+	elementExists('.how-we-do') && pencilAnimation.init();
 	const scrollLoc = getQueryVariable("location");
 	if(scrollLoc){
 		scrollToElement('#' + scrollLoc);

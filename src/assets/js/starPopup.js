@@ -1,4 +1,5 @@
 import jQuery from 'jquery';
+import ScrollMagic from 'scrollmagic';
 
 function init() {
     (function($) {
@@ -6,6 +7,7 @@ function init() {
         const whatWeDo = $('.what-we-do');
         const popup    = $('.stars-content');
         const closeBtn = $('.stars-content-panel .close-btn');
+        const controller = new ScrollMagic.Controller();
 
         closeBtn.on('click', function(e) {
             whatWeDo.removeClass('stars-open');
@@ -24,6 +26,25 @@ function init() {
                 whatWeDo.addClass('stars-open');
             })
         })
+
+        const starReveal = new ScrollMagic.Scene({
+            triggerElement: '.star',
+            triggerHook: 1,
+            duration: '100%'
+        })
+        .on('start', function() {
+            let images = $('.star-img');
+
+            images.each(function(i) {
+                let image = $(this);
+                setTimeout(function() {
+                   image.addClass('animated');
+                }, 200 * i)
+            })
+        })
+        .addTo(controller);
+
+
     })(jQuery)
     
 }

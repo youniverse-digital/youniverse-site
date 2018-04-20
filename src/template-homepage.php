@@ -1,9 +1,26 @@
 <?php /* Template Name: Home Page Template */ ?>
 
-<?php get_header(); ?>
+<?php 
+	get_header(); 
+
+	/* Custom Fields */
+
+	$header_background_image = get_field('header_background_image');
+	$header_tagline			 = get_field('header_tagline');
+
+	$lead_subheading = get_field('lead_subheading');
+	$lead_content    = get_field('lead_content');
+
+	$about_subheading = get_field('about_subheading');
+	$about_content	  = get_field('about_content');
+
+	$ckn_subheading = get_field('ckn_subheading');
+	$ckn_content	= get_field('ckn_content');
+	$ckn_image      = get_field('ckn_image');
+?>
 
 	<div class="header">
-		<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/hero-1.jpg" alt="hero image 2020" class="bg-image">
+		<img src="<?php echo $header_background_image ?>" alt="hero image 2020" class="bg-image">
 		<?php
 			$mainLogo = get_field('main_logo', 'options');
 			if($mainLogo){
@@ -13,7 +30,7 @@
 			}
 		?>
 		<div class="container container-large">
-			<h2>Identity. Print. Digital</h2>
+			<h2><?php echo $header_tagline ?></h2>
 		</div>
 	</div>
 
@@ -34,62 +51,55 @@
 
 	<section id="about">
 		<div class="container">
-			<h2>Simply Intelligent design</h2>
-			<p>We make things that people want to use.</p>
-			<p>That are a pleasure to engage with.</p>
-			<p>That inspire thought and action.</p>
-			<p>We make things that help you achieve greater things.</p>
+			<h2><?php echo $lead_subheading ?></h2>
+			<?php echo $lead_content ?>
 		</div>
 	</section>
 
 	<section class="work-slider" id="work">
 		<div class="container-large">
+			<?php 
+				if ( have_rows('carousel_slider_content') ) :
+					$count = 0;
+			?>
             <div class="slider-wrapper">
             	<div class="slider" id="myslider">
+					<?php 
+						while ( have_rows('carousel_slider_content') ) : the_row();
+
+						$title 				= get_sub_field('slider_title');
+						$image 				= get_sub_field('slider_image');
+						$gradient_colour    = get_sub_field('gradient_colour');
+
+						if ( $gradient_colour == "light" ) {
+							$gradient_output = "text-underlay";
+						} elseif ( $gradient_colour == "medium" ) {
+							$gradient_output = "text-underlay gradient-mid";
+						} elseif ( $gradient_colour == "dark" ) {
+							$gradient_output = "text-underlay gradient-dark";
+						}
+						
+						$count++;
+					?>
 					<div>
-						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/work-item-3.jpg">
-						<p>Brand Identity</p>
-						<div class="text-underlay"></div>
-					</div>
-					<div>
-						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/slider-item.jpg">
-						<p>Digital Development</p>
-						<div class="text-underlay"></div>
-					</div>
-					<div>
-						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/slider-item-2.jpg">
-						<p>Books</p>
-						<div class="text-underlay"></div>
-					</div>
-					<div>
-						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/slider-item-3.jpg">
-						<p>Brochures and reports</p>
-						<div class="text-underlay"></div>
-					</div>
-					<div>
-						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/slider-item-4.jpg">
-						<p>TV title sequences</p>
-						<div class="text-underlay gradient-dark"></div>
-					</div>
-					<div>
-						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/slider-item-5.jpg">
-						<p>Illustration</p>
-						<div class="text-underlay gradient-mid"></div>
-					</div>
-					<div>
-						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/slider-item-6.jpg">
-						<p>Compositing</p>
-						<div class="text-underlay gradient-dark"></div>
-					</div>
+						<img src="<?php echo $image ?>">
+						<p><?php echo $title ?></p>
+						<div class="<?php echo $gradient_output ?>"></div>
+					</div>	
+					<?php endwhile; ?>
 				</div>
+				
 				<ul class="dots">
-				    <li class="active"></li>
-				    <li></li>
-				    <li></li>
-				    <li></li>
-				    <li></li>
-				    <li></li>
-				    <li></li>
+					<?php
+						for ($i = 0; $i < $count; $i++) {
+							if ($i == 0) {
+								echo '<li class="active" style="margin-left: 10px"></li>';
+							} else {
+								echo '<li style="margin-left: 10px"></li>';
+							}
+						}
+					?>
+
 				</ul>
 				<span class="prev">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#2E435A" d="M302.67 90.877l55.77 55.508L254.575 250.75 358.44 355.116l-55.77 55.506L143.56 250.75z"/></g></svg>
@@ -97,53 +107,91 @@
                 <span class="next">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#2E435A" d="M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z"/></g></svg>
                 </span>
-            </div>
+			</div>
+			<?php 
+				endif;
+			?>
 		</div>
 	</section>
 
 	<section id="why">
 		<div class="container">
-			<p class="section-title">We’re here to support you, champion you.<br> To help you grow.</p>
-			<p>Our remit is simple. We listen, we engage and we solve our clients problems.<br> Your success is our business.</p>
-			<p>See if we’re the right fit for you.</p>
+			<p class="section-title"><?php echo $about_subheading ?></p>
+			<?php echo $about_content ?>
 			<a href="/about/" class="button">Find out more</a>
 		</div>
 	</section>
 
-	<div class="team-images">
-					<div class="half slideshow" data-cycle-speed="1000" data-cycle-fx="none"> 
-						<img class="insta-img" src="">
-						<img class="insta-img" src="">
-						<img class="insta-img" src="">
-						<img class="insta-img" src="">
-						<img class="insta-img" src="">
-					</div>
-					
-					<div class="quarter multiple">
-						<div class="half-height slideshow" data-cycle-speed="3000" data-cycle-fx="none"> 
-							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_1.jpg" alt="">
-							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_2.jpg" alt="">
-							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_3.jpg" alt="">
-							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_4.jpg" alt="">
-							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_5.jpg" alt="">
-						</div>
-						<div class="half-height slideshow" data-cycle-speed="2000" data-cycle-fx="none">
-							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_6.jpg" alt="">
-							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_7.jpg" alt="">
-							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_8.jpg" alt="">
-							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_9.jpg" alt="">
-							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_10.jpg" alt="">
-							<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/small_11.jpg" alt="">
-						</div>
-					</div>
-					<div class="quarter slideshow" data-cycle-speed="4000" data-cycle-fx="none">
-						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/port_1.jpg" alt="">
-						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/port_2.jpg" alt="">
-						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/port_3.jpg" alt="">
-						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/port_4.jpg" alt="">
-						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/port_5.jpg" alt="">
+		<div class="team-images">
+
+			<?php 
+				$photo_count = 16;
+				$i = 0;
+				$image_it = 0;
+
+				if ( have_rows('images_grid') ) :
+
+					$images = [];
+
+					while ( have_rows('images_grid') ) : the_row();
+						// if ( $i == 0 ) {
+						// 	echo '<div class="quarter multiple">';
+						// } elseif ( $i % 4 == 0 ) {
+						// 	echo '</div><div class="quarter multiple">';
+						// }
+
+						array_push($images, get_sub_field('social_image'));
+
+						$i++;
+					endwhile;
+
+
+					for ($j = 0; $j < 4; $j++) {
+						echo '<div class="quarter multiple">';
+							for ($k = 0; $k < 2; $k++) {
+								echo '<div class="half-height slideshow insta-container" data-insta-count="2">';
+									for ($l = 0; $l < 2; $l++) {
+										echo '<img src="' . $images[$image_it] . '" >';
+										$image_it++;
+									}
+								echo '</div>';
+							}
+						echo '</div>';
+					}
+				endif;
+			?>
+
+
+			<!-- <div class="quarter multiple">
+				<div class="half-height slideshow insta-container" data-insta-count="2">
+					img
+					img
+				 </div>
+				<div class="half-height slideshow insta-container" data-insta-count="2">
+					img
+					img
+				</div>
+			</div>
+			<div class="quarter multiple">
+				<div class="half-height slideshow insta-container" data-insta-count="2"> </div>
+				<div class="half-height slideshow insta-container" data-insta-count="2"></div>
+			</div>
+			<div class="quarter multiple">
+				<div class="half-height slideshow insta-container" data-insta-count="2"> </div>
+				<div class="half-height slideshow insta-container" data-insta-count="2"></div>
+			</div>
+			<div class="quarter multiple">
+				<div class="half-height slideshow insta-container" data-insta-count="2"> </div>
+				<div class="half-height slideshow insta-container" data-insta-count="2"></div>
+			</div> -->
+			<a href="http://instagram.com/creative_knowledge_network">
+				<div class="hover-container">
+					<div class="insta-link-box">
+							<img src="<?php echo get_template_directory_uri() ?>/dist/assets/media/instagram.png" alt="">
 					</div>
 				</div>
+			</a>
+		</div>
 		<!-- <div class="container">
 			<ul class="team-list">
 				<li data-target='team_mem_1' class="active">Joe</li>
@@ -206,15 +254,12 @@
 		<div class="inner">
 			<div class="container">
 				<h2>Creative Knowledge<span>.</span>Network</h2>
-				<h3>Stimulating thought, support and action</h3>
+				<h3><?php echo $ckn_subheading ?></h3>
 			</div>
 			<div class="split-container">
 				<div class="two-cols">
 					<div>
-						<p>The Creative Knowledge Network is our development and learning facility. It's new and it's being set up to inform our strategic approach and creative output.</p>
-						<p>It connects individuals, companies and institutions with the latest developments in the creative and technology industries and encourages collaboration, education and opportunity.</p>
-						<p>It ensures we deliver not only exemplary design work but also expert thought leadership to our clients.</p>
-						<p>The Creative Knowledge Network launches March 2018</p>
+						<?php echo $ckn_content ?>
 						<!-- <div class="knowledge-social">
 							<ul>
 								<li>
@@ -227,7 +272,7 @@
 						</div> -->
 					</div>
 					<div>
-						<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/CKN-image-724x544.jpg">
+						<img src="<?php echo $ckn_image ?>">
 					</div>
 				</div>
 			</div>

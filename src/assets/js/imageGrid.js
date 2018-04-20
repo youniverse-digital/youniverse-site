@@ -10,51 +10,11 @@ function init() {
     (function($) {
         console.log("Initalising Cycle...");
 
-        $.ajax({
-            url: INSTAGRAM_API + "users/self/media/recent/?access_token=" + ACCESS_TOKEN,
-            success: function(data) {
-                populateInstaImages(data);
-            },
-            error: function(err) {
-                console.log(err);
-            }
-        })
-
         function populateInstaImages(data) {
             const INSTA_CONTAINER = $('.insta-container');
             const SLIDESHOWS = $('.slideshow');
 
             const IS_MOBILE = browserCheck.isMobile();
-
-            
-
-            INSTA_CONTAINER.each(function(index) {
-
-                if (!IS_MOBILE) {
-                    let instaCount = $(this).data('insta-count');
-
-                    for (let i = 0; i < instaCount; i++) {
-
-                        const IMG_SOURCE = data['data'][instagramCount]['images']['standard_resolution']['url'];
-        
-
-                        $(INSTA_CONTAINER[index]).append('<img src="' + IMG_SOURCE + '" alt="" />');
-        
-                        instagramCount++;
-        
-                        if (instagramCount == 21) {
-                            instagramCount = 0;
-                        }
-                    }
-                } else {
-
-                    const IMG_SOURCE = data['data'][instagramCount]['images']['standard_resolution']['url'];
-
-                    $(this).html('<img src="' + IMG_SOURCE + '" alt="" />');
-
-                    instagramCount++;
-                }
-            })
 
             if (!browserCheck.isMobile()) {
                 SLIDESHOWS.each(function(i) {
@@ -65,15 +25,9 @@ function init() {
                     });
                 })
             }
-
-            
-            // const INSTA_IMAGES = $('.insta-img');
-            // const IMG_LENGTH = INSTA_IMAGES.length;
-
-            // for (let i = 0; i < IMG_LENGTH; i++) {
-            //     INSTA_IMAGES[i].src = data['data'][i]['images']['standard_resolution']['url'];
-            // }
         }
+
+        populateInstaImages();
     })(jQuery)
 }
 
