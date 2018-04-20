@@ -112,7 +112,7 @@
                         ?>
 
                         <div class="star">
-                            <img class="star-img" src="<?php bloginfo('stylesheet_directory') ?>/img/<?php echo $star_link ?>" alt="">
+                            <img class="star-img" src="<?php bloginfo('stylesheet_directory') ?>/assets/media/<?php echo $star_link ?>" alt="">
                             <p class="star-name"><?php echo $star_name ?></p>
                             <div class="star-info">
                                 <?php echo $star_data ?>
