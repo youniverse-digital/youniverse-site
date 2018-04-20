@@ -105,7 +105,7 @@ blockquote {
       margin: 0 0 13px 0; } }
 
 .what-we-do, .how-we-do, .who-for, .project-management, .testimonials-about {
-  margin-top: 100px !important; }
+  margin-top: 200px !important; }
 
 @media (min-width: 768px) {
   .two-cols {
