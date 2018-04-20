@@ -134,7 +134,7 @@
            </div>
         </div>
         <div class="how-circles-container">
-            <svg id="Layer_1" class="pencil-line" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1243.95 397.57"><defs><style>.cls-3,.cls-4{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:3px;}.cls-4{stroke-dasharray:6.01 6.01;}</style></defs><title>Untitled-2</title><path class="cls-3" d="M71.5,293.5s.37,1,1.09,2.79" transform="translate(-70.1 -89.43)"/><path class="cls-4" d="M74.85,301.86c24.14,58,175.86,387.4,363.63-8.36,205-432,349.42-26,349.42-26s183.49,479,391.39,0c0,0,20.92-65.29,129.42-172.77" transform="translate(-70.1 -89.43)"/><path class="cls-3" d="M1310.86,92.6l2.14-2.1" transform="translate(-70.1 -89.43)"/></svg>
+            <svg id="Layer_1" class="pencil-line" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1243.95 397.57"><defs><style>.cls-3,.cls-4{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:3px;}.cls-4{stroke-dasharray:6.01 6.01;}</style></defs><title>Untitled-2</title><path class="cls-3" d="M71.5,293.5s.37,1,1.09,2.79" transform="translate(-70.1 -89.43)"/><path class="cls-4" d="M74.85,301.86c24.14,58,175.86,387.4,363.63-8.36,205-432,349.42-26,349.42-26s183.49,479,391.39,0c0,0,20.92-65.29,129.42-172.77" transform="translate(-70.1 -89.43)"/></svg>
             <img src="<?php echo get_template_directory_uri() ?>/assets/media/pencil-dash.png" alt="" class="pencil-dash">
             <?php if ( have_rows('how_we_do_it_circles') ): ?>
                 <?php while ( have_rows('how_we_do_it_circles') ): the_row(); ?>
