@@ -799,47 +799,44 @@ header {
         height: auto;
         object-fit: initial; }
 
-@media (min-width: 1280px) {
-  #why {
-    margin-top: 200px; } }
-
-@media (min-width: 1280px) {
-  #why .container p, #why .container-large p, #why .split-container p, #why .menu.playbook-menu ul p, .menu.playbook-menu #why ul p {
-    font-size: 30px; } }
-
-@media (min-width: 1440px) {
-  #why .container p, #why .container-large p, #why .split-container p, #why .menu.playbook-menu ul p, .menu.playbook-menu #why ul p {
-    font-size: 36px; } }
-
-#why .container h2, #why .container-large h2, #why .split-container h2, #why .menu.playbook-menu ul h2, .menu.playbook-menu #why ul h2, #why .container .section-title, #why .container-large .section-title, #why .split-container .section-title, #why .menu.playbook-menu ul .section-title, .menu.playbook-menu #why ul .section-title {
-  margin-bottom: 13px;
-  font-weight: bold;
-  font-size: 36px; }
-  @media (min-width: 560px) {
-    #why .container h2, #why .container-large h2, #why .split-container h2, #why .menu.playbook-menu ul h2, .menu.playbook-menu #why ul h2, #why .container .section-title, #why .container-large .section-title, #why .split-container .section-title, #why .menu.playbook-menu ul .section-title, .menu.playbook-menu #why ul .section-title {
-      margin-bottom: 30px; } }
-  #why .container h2:after, #why .container-large h2:after, #why .split-container h2:after, #why .menu.playbook-menu ul h2:after, .menu.playbook-menu #why ul h2:after, #why .container .section-title:after, #why .container-large .section-title:after, #why .split-container .section-title:after, #why .menu.playbook-menu ul .section-title:after, .menu.playbook-menu #why ul .section-title:after {
-    display: none; }
+#why {
+  margin-top: 100px; }
   @media (min-width: 1280px) {
-    #why .container h2, #why .container-large h2, #why .split-container h2, #why .menu.playbook-menu ul h2, .menu.playbook-menu #why ul h2, #why .container .section-title, #why .container-large .section-title, #why .split-container .section-title, #why .menu.playbook-menu ul .section-title, .menu.playbook-menu #why ul .section-title {
-      font-size: 52px;
-      margin-bottom: 39px; } }
+    #why {
+      margin-top: 200px; } }
+  @media (min-width: 1280px) {
+    #why .container p, #why .container-large p, #why .split-container p, #why .menu.playbook-menu ul p, .menu.playbook-menu #why ul p {
+      font-size: 30px; } }
   @media (min-width: 1440px) {
-    #why .container h2, #why .container-large h2, #why .split-container h2, #why .menu.playbook-menu ul h2, .menu.playbook-menu #why ul h2, #why .container .section-title, #why .container-large .section-title, #why .split-container .section-title, #why .menu.playbook-menu ul .section-title, .menu.playbook-menu #why ul .section-title {
-      font-size: 60px;
-      margin-bottom: 52px; } }
-  @media (min-width: 1600px) {
-    #why .container h2, #why .container-large h2, #why .split-container h2, #why .menu.playbook-menu ul h2, .menu.playbook-menu #why ul h2, #why .container .section-title, #why .container-large .section-title, #why .split-container .section-title, #why .menu.playbook-menu ul .section-title, .menu.playbook-menu #why ul .section-title {
-      margin-bottom: 100px; } }
-
-@media (min-width: 560px) {
-  #why .container .button, #why .container-large .button, #why .split-container .button, #why .menu.playbook-menu ul .button, .menu.playbook-menu #why ul .button {
-    margin-top: 30px;
-    margin-bottom: 50px; } }
-
-@media (min-width: 1280px) {
-  #why .container .button, #why .container-large .button, #why .split-container .button, #why .menu.playbook-menu ul .button, .menu.playbook-menu #why ul .button {
-    margin-top: 50px; } }
+    #why .container p, #why .container-large p, #why .split-container p, #why .menu.playbook-menu ul p, .menu.playbook-menu #why ul p {
+      font-size: 36px; } }
+  #why .container h2, #why .container-large h2, #why .split-container h2, #why .menu.playbook-menu ul h2, .menu.playbook-menu #why ul h2, #why .container .section-title, #why .container-large .section-title, #why .split-container .section-title, #why .menu.playbook-menu ul .section-title, .menu.playbook-menu #why ul .section-title {
+    margin-bottom: 13px;
+    font-weight: bold;
+    font-size: 36px; }
+    @media (min-width: 560px) {
+      #why .container h2, #why .container-large h2, #why .split-container h2, #why .menu.playbook-menu ul h2, .menu.playbook-menu #why ul h2, #why .container .section-title, #why .container-large .section-title, #why .split-container .section-title, #why .menu.playbook-menu ul .section-title, .menu.playbook-menu #why ul .section-title {
+        margin-bottom: 30px; } }
+    #why .container h2:after, #why .container-large h2:after, #why .split-container h2:after, #why .menu.playbook-menu ul h2:after, .menu.playbook-menu #why ul h2:after, #why .container .section-title:after, #why .container-large .section-title:after, #why .split-container .section-title:after, #why .menu.playbook-menu ul .section-title:after, .menu.playbook-menu #why ul .section-title:after {
+      display: none; }
+    @media (min-width: 1280px) {
+      #why .container h2, #why .container-large h2, #why .split-container h2, #why .menu.playbook-menu ul h2, .menu.playbook-menu #why ul h2, #why .container .section-title, #why .container-large .section-title, #why .split-container .section-title, #why .menu.playbook-menu ul .section-title, .menu.playbook-menu #why ul .section-title {
+        font-size: 52px;
+        margin-bottom: 39px; } }
+    @media (min-width: 1440px) {
+      #why .container h2, #why .container-large h2, #why .split-container h2, #why .menu.playbook-menu ul h2, .menu.playbook-menu #why ul h2, #why .container .section-title, #why .container-large .section-title, #why .split-container .section-title, #why .menu.playbook-menu ul .section-title, .menu.playbook-menu #why ul .section-title {
+        font-size: 60px;
+        margin-bottom: 52px; } }
+    @media (min-width: 1600px) {
+      #why .container h2, #why .container-large h2, #why .split-container h2, #why .menu.playbook-menu ul h2, .menu.playbook-menu #why ul h2, #why .container .section-title, #why .container-large .section-title, #why .split-container .section-title, #why .menu.playbook-menu ul .section-title, .menu.playbook-menu #why ul .section-title {
+        margin-bottom: 100px; } }
+  @media (min-width: 560px) {
+    #why .container .button, #why .container-large .button, #why .split-container .button, #why .menu.playbook-menu ul .button, .menu.playbook-menu #why ul .button {
+      margin-top: 30px;
+      margin-bottom: 50px; } }
+  @media (min-width: 1280px) {
+    #why .container .button, #why .container-large .button, #why .split-container .button, #why .menu.playbook-menu ul .button, .menu.playbook-menu #why ul .button {
+      margin-top: 50px; } }
 
 .social-icon {
   display: inline-block;
