@@ -35,7 +35,7 @@
 	<div class="header-about">
         <div class="about-header-container">
             <div class="logo-container">
-                <img src="<?php bloginfo('stylesheet_directory') ?>/src/img/ydl-logo-large.png" alt="">
+                <img src="<?php bloginfo('stylesheet_directory') ?>/assets/media/ydl-logo-large.png" alt="">
             </div>
             
             <h1 class="expanding-heading">Expanding since 2010</h1>
@@ -46,7 +46,7 @@
 
 	<nav class="menu">
 		<div class="logo">
-			<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/ydl-logo-black.png" alt="youniverse logo">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/media/ydl-logo-black.png" alt="youniverse logo">
 		</div>
 		<div class="mobile-menu" id="close-menu"></div>
 		<ul>
@@ -66,7 +66,7 @@
                         <?php echo $about_lead_text ?>
 					</div>
 					<div class="about-lead-circle-container self-centre">
-                        <img class="circle-flag" src="<?php bloginfo('stylesheet_directory') ?>/src/img/flag.png" alt="">
+                        <img class="circle-flag" src="<?php bloginfo('stylesheet_directory') ?>/assets/media/flag.png" alt="">
 						<div class="about-lead-circle">
                             <div class="circle-text-container baskerville">
                                 <?php echo $about_lead_circle_text ?>
@@ -86,7 +86,7 @@
             </div>
             <div class="stars-content-panel">
                 <div class="close-btn">
-                    <img src="<?php echo get_template_directory_uri() ?>/dist/assets/media/cancel-music.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/media/cancel-music.svg" alt="">
                 </div>
                 <div class="stars-content">
                     <h2 class="popup-name">Strategy</h2>
@@ -135,7 +135,7 @@
         </div>
         <div class="how-circles-container">
             <svg id="Layer_1" class="pencil-line" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1243.95 397.57"><defs><style>.cls-3,.cls-4{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:3px;}.cls-4{stroke-dasharray:6.01 6.01;}</style></defs><title>Untitled-2</title><path class="cls-3" d="M71.5,293.5s.37,1,1.09,2.79" transform="translate(-70.1 -89.43)"/><path class="cls-4" d="M74.85,301.86c24.14,58,175.86,387.4,363.63-8.36,205-432,349.42-26,349.42-26s183.49,479,391.39,0c0,0,20.92-65.29,129.42-172.77" transform="translate(-70.1 -89.43)"/><path class="cls-3" d="M1310.86,92.6l2.14-2.1" transform="translate(-70.1 -89.43)"/></svg>
-            <img src="<?php echo get_template_directory_uri() ?>/dist/assets/media/pencil-dash.png" alt="" class="pencil-dash">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/media/pencil-dash.png" alt="" class="pencil-dash">
             <?php if ( have_rows('how_we_do_it_circles') ): ?>
                 <?php while ( have_rows('how_we_do_it_circles') ): the_row(); ?>
                     <?php
@@ -164,7 +164,7 @@
         </div>
 
         <div class="logo-section">
-            <img class="satellite-dish" src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/dish.png" alt="">
+            <img class="satellite-dish" src="<?php echo get_template_directory_uri(); ?>/assets/media/dish.png" alt="">
             <svg xmlns="http://www.w3.org/2000/svg" class="logos-cap" viewBox="0 0 1365.78 191"><title>logos-rect-cap</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M1365.78,191H0C199.05,69.81,432.82,0,682.89,0S1166.73,69.81,1365.78,191Z"/></g></g></svg>
 
             <div class="logos-container">
