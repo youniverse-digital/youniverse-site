@@ -19,7 +19,7 @@
 	$ckn_image      = get_field('ckn_image');
 ?>
 
-	<div class="header">
+	<div class="header parallax-header">
 		<img src="<?php echo $header_background_image ?>" alt="hero image 2020" class="bg-image">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/media/ydllogotext.png" alt="Logo" class="logo-image">
 		<div class="container container-large">
