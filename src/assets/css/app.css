@@ -104,7 +104,7 @@ blockquote {
       max-width: none;
       margin: 0 0 13px 0; } }
 
-.what-we-do, .how-we-do, .who-for, .project-management, .testimonials-about {
+.what-we-do, .how-we-do, .who-for, .testimonials-about {
   margin-top: 200px !important; }
 
 @media (min-width: 768px) {
