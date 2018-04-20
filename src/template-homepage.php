@@ -26,7 +26,7 @@
 			if($mainLogo){
 				echo '<img src="'.$mainLogo.'" alt="Logo" class="logo-image">';
 			}else {
-				echo '<img src="'.get_template_directory_uri().'/dist/assets/media/logo.png" alt="Logo" class="logo-image">';
+				echo '<img src="'.get_template_directory_uri().'/assets/media/logo.png" alt="Logo" class="logo-image">';
 			}
 		?>
 		<div class="container container-large">
@@ -38,7 +38,7 @@
 
 	<nav class="menu">
 		<div class="logo">
-			<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/ydl-logo-black.png" alt="youniverse logo">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/media/ydl-logo-black.png" alt="youniverse logo">
 		</div>
 		<div class="mobile-menu" id="close-menu"></div>
 		<ul>
@@ -187,7 +187,7 @@
 			<a href="http://instagram.com/creative_knowledge_network">
 				<div class="hover-container">
 					<div class="insta-link-box">
-							<img src="<?php echo get_template_directory_uri() ?>/dist/assets/media/instagram.png" alt="">
+							<img src="<?php echo get_template_directory_uri() ?>/assets/media/instagram.png" alt="">
 					</div>
 				</div>
 			</a>
@@ -330,10 +330,10 @@
 	</section>
 
 	<section class="contact" id="contact">
-		<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/contact.jpg" alt="contact image" class="contact-bg">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/media/contact.jpg" alt="contact image" class="contact-bg">
 		<div class="container">
 			<div class="map">
-				<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/glow.png">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/media/glow.png">
 				<div>
 					<p class="phone">0116 253 3426</p>
 					<p><strong>Leicester Studio</strong></p>
@@ -343,7 +343,7 @@
 					<p><a href="mailto:contact@youniverse.co.uk">contact@youniverse.co.uk</a></p>
 					<p><a href="">Skype us: youniverseltd</p></a>
 				</div>
-				<img src="<?php echo get_template_directory_uri(); ?>/dist/assets/media/map-hires.png" class="map-overlay">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/media/map-hires.png" class="map-overlay">
 			</div>
 		</div>
 	</section>
