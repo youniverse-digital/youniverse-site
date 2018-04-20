@@ -715,27 +715,38 @@ header {
   @media (min-width: 1440px) {
     #about {
       margin-bottom: 120px; } }
-  @media (min-width: 560px) {
-    #about .container h2, #about .container-large h2, #about .split-container h2, #about .menu.playbook-menu ul h2, .menu.playbook-menu #about ul h2 {
-      margin-bottom: 40px; } }
-  @media (min-width: 1280px) {
-    #about .container h2, #about .container-large h2, #about .split-container h2, #about .menu.playbook-menu ul h2, .menu.playbook-menu #about ul h2 {
-      font-size: 52px; } }
-  @media (min-width: 1440px) {
-    #about .container h2, #about .container-large h2, #about .split-container h2, #about .menu.playbook-menu ul h2, .menu.playbook-menu #about ul h2 {
-      font-size: 62px; } }
-  @media (min-width: 1600px) {
-    #about .container h2, #about .container-large h2, #about .split-container h2, #about .menu.playbook-menu ul h2, .menu.playbook-menu #about ul h2 {
-      margin-bottom: 40px; } }
-  @media (min-width: 1600px) {
-    #about .container h2:after, #about .container-large h2:after, #about .split-container h2:after, #about .menu.playbook-menu ul h2:after, .menu.playbook-menu #about ul h2:after {
-      margin-top: 45px; } }
-  @media (min-width: 1280px) {
-    #about .container p, #about .container-large p, #about .split-container p, #about .menu.playbook-menu ul p, .menu.playbook-menu #about ul p {
-      font-size: 32px; } }
-  @media (min-width: 1440px) {
-    #about .container p, #about .container-large p, #about .split-container p, #about .menu.playbook-menu ul p, .menu.playbook-menu #about ul p {
-      font-size: 38px; } }
+  #about .container, #about .container-large, #about .split-container, #about .menu.playbook-menu ul, .menu.playbook-menu #about ul {
+    margin-top: 200px;
+    margin-bottom: 200px; }
+    @media (min-width: 1280px) {
+      #about .container, #about .container-large, #about .split-container, #about .menu.playbook-menu ul, .menu.playbook-menu #about ul {
+        margin-top: 150px;
+        margin-bottom: 150px; } }
+    @media (min-width: 768px) {
+      #about .container, #about .container-large, #about .split-container, #about .menu.playbook-menu ul, .menu.playbook-menu #about ul {
+        margin-top: 100px;
+        margin-bottom: 100px; } }
+    @media (min-width: 560px) {
+      #about .container h2, #about .container-large h2, #about .split-container h2, #about .menu.playbook-menu ul h2, .menu.playbook-menu #about ul h2 {
+        margin-bottom: 40px; } }
+    @media (min-width: 1280px) {
+      #about .container h2, #about .container-large h2, #about .split-container h2, #about .menu.playbook-menu ul h2, .menu.playbook-menu #about ul h2 {
+        font-size: 52px; } }
+    @media (min-width: 1440px) {
+      #about .container h2, #about .container-large h2, #about .split-container h2, #about .menu.playbook-menu ul h2, .menu.playbook-menu #about ul h2 {
+        font-size: 62px; } }
+    @media (min-width: 1600px) {
+      #about .container h2, #about .container-large h2, #about .split-container h2, #about .menu.playbook-menu ul h2, .menu.playbook-menu #about ul h2 {
+        margin-bottom: 40px; } }
+    @media (min-width: 1600px) {
+      #about .container h2:after, #about .container-large h2:after, #about .split-container h2:after, #about .menu.playbook-menu ul h2:after, .menu.playbook-menu #about ul h2:after {
+        margin-top: 45px; } }
+    @media (min-width: 1280px) {
+      #about .container p, #about .container-large p, #about .split-container p, #about .menu.playbook-menu ul p, .menu.playbook-menu #about ul p {
+        font-size: 32px; } }
+    @media (min-width: 1440px) {
+      #about .container p, #about .container-large p, #about .split-container p, #about .menu.playbook-menu ul p, .menu.playbook-menu #about ul p {
+        font-size: 38px; } }
 
 .team-images {
   display: flex;
