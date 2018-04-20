@@ -40,6 +40,7 @@
 		<div class="logo">
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/media/ydl-logo-black.png" alt="youniverse logo">
 		</div>
+		
 		<div class="mobile-menu" id="close-menu"></div>
 		<ul>
 			<li><a href="/" class="current-item">Home</a></li>
