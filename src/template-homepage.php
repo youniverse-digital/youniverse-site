@@ -10,7 +10,7 @@
 
 	$lead_subheading = get_field('lead_subheading');
 	$lead_content    = get_field('lead_content');
-
+	
 	$about_subheading = get_field('about_subheading');
 	$about_content	  = get_field('about_content');
 

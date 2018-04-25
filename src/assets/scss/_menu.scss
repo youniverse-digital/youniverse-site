@@ -137,6 +137,10 @@ $menuRight : 10px;
 						background-color: #000;
 					}
 				}
+
+				&:hover {
+					color: $youniverse-pink;
+				}
 			}
 		}
 	}
